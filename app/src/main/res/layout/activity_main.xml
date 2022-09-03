@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_contaner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.92"
+
+        >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="@color/black"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHeight_percent="0.08"
+
+
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/home_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/home_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                  android:paddingTop="8dp"
+                    android:layout_weight="1.75"
+
+                    android:src="@drawable/home"
+                    app:tint="@color/white"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1.25"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+
+                    android:gravity="center_horizontal"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/booking_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/booking_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingTop="8dp"
+                    android:layout_weight="1.75"
+
+                    android:src="@drawable/booking"
+                    app:tint="@color/white"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1.25"
+                    android:text="@string/book"
+                    android:textColor="@color/white"
+
+                    android:gravity="center_horizontal"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/event_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/event_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingTop="8dp"
+                    android:layout_weight="1.75"
+
+                    android:src="@drawable/event"
+                    app:tint="@color/white"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1.25"
+                    android:text="@string/event"
+                    android:textColor="@color/white"
+
+                    android:gravity="center_horizontal"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/profile_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingTop="8dp"
+                    android:layout_weight="1.75"
+
+                    android:src="@drawable/profile"
+                    app:tint="@color/white"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1.25"
+                    android:text="@string/profile"
+                    android:textColor="@color/white"
+
+                    android:gravity="center_horizontal"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/more_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="3"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/more_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingTop="8dp"
+                    android:layout_weight="1.75"
+
+                    android:src="@drawable/more"
+                    app:tint="@color/white"
+
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1.25"
+                    android:text="@string/more"
+                    android:textColor="@color/white"
+
+                    android:gravity="center_horizontal"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

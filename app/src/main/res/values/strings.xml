@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">yamaha</string>
+    <string name="logo_text">YAMAHA MUSIC SCHOOL</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="skip">Skip</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_with">I agree with privacy and policy.</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="back">Back</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_accout">Don\'t have an account? Sign up</string>
+    <string name="remamber_me">Remember me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="book">Book</string>
+    <string name="event">Event</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="juniour_course">Junior Cources</string>
+    <string name="book_a_lession">Book a Lession</string>
+    <string name="book_script_1">If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.</string>
+    <string name="welcome">Welcome!</string>
+    <string name="book_now">Book Now!</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="subscribe">SUBSCRIBE</string>
+</resources>
