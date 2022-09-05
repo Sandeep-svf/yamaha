@@ -39,6 +39,10 @@
     <string name="text_collapsed">Collapsed</string>
     <string name="contact_us">Contact Us</string>
     <string name="faq">FAQ</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_consition">Terms  and Conditions</string>
+    <string name="sub_newsletter">Subscribe to Newsletter</string>
+    <string name="visit_website">Visit out website</string>
 
 
     <string-array name="string_array_alcohol">
