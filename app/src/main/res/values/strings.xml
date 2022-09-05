@@ -30,4 +30,24 @@
     <string name="upcoming">UPCOMING</string>
     <string name="previous">PREVIOUS</string>
     <string name="subscribe">SUBSCRIBE</string>
+
+
+
+    <string name="text_alcohol">Settings</string>
+
+    <string name="text_expanded">Expanded</string>
+    <string name="text_collapsed">Collapsed</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq">FAQ</string>
+
+
+    <string-array name="string_array_alcohol">
+        <item>Account Information</item>
+        <item>Change Password</item>
+        <item>Language</item>
+        <item>City</item>
+    </string-array>
+
+
+
 </resources>
