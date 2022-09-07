@@ -32,7 +32,6 @@
     <string name="subscribe">SUBSCRIBE</string>
 
 
-
     <string name="text_alcohol">Settings</string>
 
     <string name="text_expanded">Expanded</string>
@@ -43,6 +42,11 @@
     <string name="term_consition">Terms  and Conditions</string>
     <string name="sub_newsletter">Subscribe to Newsletter</string>
     <string name="visit_website">Visit out website</string>
+    <string name="schedule">Schedule</string>
+    <string name="payment">Payment</string>
+    <string name="logout">Logout</string>
+    <string name="growing_with_yahamha">Growing with Yamaha</string>
+    <string name="advance_ensamble_course">Advance Ensamble Course (ANC)</string>
 
 
     <string-array name="string_array_alcohol">
@@ -51,7 +55,6 @@
         <item>Language</item>
         <item>City</item>
     </string-array>
-
 
 
 </resources>

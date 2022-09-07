@@ -13,7 +13,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         android:scaleType="fitXY"
         android:src="@drawable/more_image_banner"
         app:layout_constraintHeight_percent="0.2"
@@ -39,8 +38,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHeight_percent="0.8"
             >
-
-
 
         <androidx.cardview.widget.CardView
             android:layout_marginTop="2dp"
@@ -72,15 +69,11 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-
                     app:layout_constraintHeight_percent="0.65"
-
                     android:src="@drawable/contact_us"
-
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-
                     app:layout_constraintWidth_percent="0.15"
                     >
 

@@ -4,10 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
@@ -67,6 +69,24 @@ public class ProfileFragment extends Fragment {
      */
     private void initListeners() {
 
+
+
+       /* expandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+            @Override
+            public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
+                ImageView groupIndicator = (ImageView) clickedView.findViewById(R.id.help_group_indicator);
+                if (parent.isGroupExpanded(groupPosition)) {
+                    parent.collapseGroup(groupPosition);
+                    groupIndicator.setImageResource(R.drawable.down_icon);
+                } else {
+                    parent.expandGroup(groupPosition);
+                    groupIndicator.setImageResource(R.drawable.up_icon);
+                }
+                return true;
+            }
+        });*/
+
+
         // ExpandableListView on child click listener
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
 
@@ -121,12 +141,31 @@ public class ProfileFragment extends Fragment {
         // initializing the list of child
         listDataChild = new HashMap<>();
 
+
+
+
+     /*   DisplayMetrics metrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int width = metrics.widthPixels;
+
+
+        expandableListView.setIndicatorBounds(width - GetPixelFromDips(50), width - GetPixelFromDips(10));
+
+*/
+
         // initializing the adapter object
         expandableListViewAdapter = new ExpandableListViewAdapter(getActivity(), listDataGroup, listDataChild);
 
         // setting list adapter
         expandableListView.setAdapter(expandableListViewAdapter);
 
+    }
+
+    private int GetPixelFromDips(float pixels) {
+        // Get the screen's density scale
+        final float scale = getResources().getDisplayMetrics().density;
+        // Convert the dps to pixels, based on density scale
+        return (int) (pixels * scale + 0.5f);
     }
 
     /*

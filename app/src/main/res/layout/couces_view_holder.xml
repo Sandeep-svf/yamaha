@@ -142,6 +142,7 @@
     </androidx.cardview.widget.CardView>
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/next_button_course"
         android:layout_width="0dp"
         android:layout_height="0dp"
 

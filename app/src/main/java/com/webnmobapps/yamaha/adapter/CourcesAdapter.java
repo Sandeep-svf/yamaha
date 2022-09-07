@@ -8,10 +8,17 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.courses.JuniourCourseFragment;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
 
@@ -33,6 +40,21 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
     public void onBindViewHolder(@NonNull CourcesViewHolder holder, int position) {
 
         Glide.with(context).load(R.drawable.juniour_course_image).placeholder(R.drawable.ic_launcher_background).into(holder.course_image);
+
+        holder.next_button_course.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                JuniourCourseFragment fragment = new JuniourCourseFragment();
+                FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+
+
     }
 
     @Override
@@ -43,9 +65,11 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
 class CourcesViewHolder extends RecyclerView.ViewHolder {
 
     AppCompatImageView course_image;
+    CircleImageView next_button_course;
 
     public CourcesViewHolder(@NonNull View itemView) {
         super(itemView);
         course_image=itemView.findViewById(R.id.course_image);
+        next_button_course=itemView.findViewById(R.id.next_button_course);
     }
 }

@@ -4,18 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/button_bg.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_bg_juniour_course.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_bg_juniour_course_2.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_text_color.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/edittext_bg.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/group_idicator.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/user_profile_custom_bg.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_login.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_login2.xml" value="0.18" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_signup.xml" value="0.16" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_splash.xml" value="0.16" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/contact_us_xml.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/couces_view_holder.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_booking.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_course.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_event.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_juniour_course.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_more.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_previous_event.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_profile.xml" value="0.209375" />
