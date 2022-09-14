@@ -25,6 +25,7 @@
     <string name="juniour_course">Junior Cources</string>
     <string name="book_a_lession">Book a Lession</string>
     <string name="book_script_1">If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.</string>
+    <string name="book_script_2">If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.</string>
     <string name="welcome">Welcome!</string>
     <string name="book_now">Book Now!</string>
     <string name="upcoming">UPCOMING</string>
@@ -57,6 +58,16 @@
     <string name="lession_duraion">Lession Duration</string>
     <string name="course_settings">Cource Setting</string>
     <string name="course_fee">Course Fee</string>
+    <string name="yamaha_piano_course">Yamaha Piano Course</string>
+    <string name="piano_grade_exm">Yamaha Piano Grade Examination</string>
+    <string name="yamaha_grade">YAMAHA \n GRADES</string>
+    <string name="other_grade">OTHER \n GRADES</string>
+    <string name="exm_recom">Examination are recommended but not mendatory.</string>
+    <string name="yamaha_grade_exm">YAMAHA GRADE EXAMINATION</string>
+    <string name="course_progressin">Course Progression</string>
+    <string name="yamaha_guitar_course">Yamaha Guitar Course</string>
+    <string name="let_us_develp">Let us develop the guitarist in you!</string>
+    <string name="yamaha_clc_guitar_level_of_exm">Yamaha Classical Guitar Level of Examination</string>
 
 
     <string-array name="string_array_alcohol">
