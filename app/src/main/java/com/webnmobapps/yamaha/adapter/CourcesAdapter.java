@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.courses.JuniourCourseFragment;
+import com.webnmobapps.yamaha.courses.MusicFriendCourseFragment;
 import com.webnmobapps.yamaha.courses.YamahaPianoCourseFragment;
 import com.webnmobapps.yamaha.courses.yamahaGuitarCoursesFragment;
 
@@ -64,6 +65,13 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
                     fragmentTransaction.commit();
                 }else if(position==2){
                     yamahaGuitarCoursesFragment fragment = new yamahaGuitarCoursesFragment();
+                    FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                }else if(position==3){
+                    MusicFriendCourseFragment fragment = new MusicFriendCourseFragment();
                     FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.fragment_contaner, fragment);
