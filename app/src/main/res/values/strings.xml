@@ -50,6 +50,13 @@
     <string name="juniour_ensamble_course">Juniour Ensamble Course (ANC)</string>
     <string name="junior_music_course">Junior Music Course (JMC)</string>
     <string name="program_structure">Program Structure</string>
+    <string name="details">Details</string>
+    <string name="target_student">Target Students</string>
+    <string name="number_of_lession">Number of lessions</string>
+    <string name="course_material">Course Materials</string>
+    <string name="lession_duraion">Lession Duration</string>
+    <string name="course_settings">Cource Setting</string>
+    <string name="course_fee">Course Fee</string>
 
 
     <string-array name="string_array_alcohol">

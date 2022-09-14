@@ -55,6 +55,9 @@ public class JuniourCourseFragment extends Fragment {
                     image_view_jmc.setImageResource(R.drawable.course_details);
                     image_view_jxc.setImageResource(R.drawable.course_details);
                     flag_jnc = false;
+                    flag_jxc = true;
+                    flag_jmc = true;
+                    flag_anc = true;
                 }else{
                     jnc_attatched_layout.setVisibility(View.GONE);
                     image_view_jnc.setImageResource(R.drawable.course_details);
@@ -77,6 +80,9 @@ public class JuniourCourseFragment extends Fragment {
                     image_view_jnc.setImageResource(R.drawable.course_details);
                     image_view_jxc.setImageResource(R.drawable.course_details);
                     flag_anc = false;
+                    flag_jxc = true;
+                    flag_jmc = true;
+                    flag_jnc = true;
                 }else{
                     anc_attatched_layout.setVisibility(View.GONE);
                     image_view_anc.setImageResource(R.drawable.course_details);
@@ -99,6 +105,9 @@ public class JuniourCourseFragment extends Fragment {
                         image_view_jnc.setImageResource(R.drawable.course_details);
                         image_view_jxc.setImageResource(R.drawable.course_details);
                         flag_jmc = false;
+                        flag_jxc = true;
+                        flag_jnc = true;
+                        flag_anc = true;
                     }else{
                         jmc_attatched_layout.setVisibility(View.GONE);
                         image_view_jmc.setImageResource(R.drawable.course_details);
@@ -123,10 +132,14 @@ public class JuniourCourseFragment extends Fragment {
                     image_view_jnc.setImageResource(R.drawable.course_details);
                     image_view_jmc.setImageResource(R.drawable.course_details);
                     flag_jxc = false;
+                    flag_jnc = true;
+                    flag_jmc = true;
+                    flag_anc = true;
                 }else{
                     jxc_attatched_layout.setVisibility(View.GONE);
                     image_view_jxc.setImageResource(R.drawable.course_details);
                     flag_jxc = true;
+
                 }
             }
         });

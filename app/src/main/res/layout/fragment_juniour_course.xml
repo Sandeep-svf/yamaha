@@ -250,7 +250,7 @@
                             app:layout_constraintHeight_percent="0.98"
                             android:text="@string/advance_ensamble_course"
                             android:gravity="center"
-                            android:textSize="12dp"
+                            android:textSize="@dimen/text_size_10dp"
                             >
 
                         </androidx.appcompat.widget.AppCompatTextView>
@@ -315,7 +315,7 @@
                             app:layout_constraintHeight_percent="0.98"
                             android:text="@string/juniour_ensamble_course"
                             android:gravity="center"
-                            android:textSize="12dp"
+                            android:textSize="@dimen/text_size_10dp"
                             >
 
                         </androidx.appcompat.widget.AppCompatTextView>
@@ -394,7 +394,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintHeight_percent="0.98"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
-                                android:textSize="12dp"
+                                android:textSize="@dimen/text_size_10dp"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -429,7 +429,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintHeight_percent="0.98"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
-                                android:textSize="12dp"
+                                android:textSize="@dimen/text_size_10dp"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -556,7 +556,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintHeight_percent="0.98"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
-                                android:textSize="12dp"
+                                android:textSize="@dimen/text_size_10dp"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -591,7 +591,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintHeight_percent="0.98"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
-                                android:textSize="12dp"
+                                android:textSize="@dimen/text_size_10dp"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -705,7 +705,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                         </androidx.cardview.widget.CardView>
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/jmc_attatched_layout"
-
+android:visibility="gone"
                             android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -716,6 +716,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                             >
 
                             <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout1_jmc_attached"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -727,10 +728,12 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 >
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_marginTop="15dp"
                                     android:id="@+id/jmc_text1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
 
+                                    android:fontFamily="@font/daxcompact_medium"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
@@ -747,7 +750,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                     android:layout_marginTop="10dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-
+                                    android:fontFamily="@font/daxcompact_medium"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                    app:layout_constraintTop_toBottomOf="@+id/jmc_text1"
@@ -759,8 +762,317 @@ app:layout_constraintBottom_toBottomOf="parent"
 
 
                                     ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout2_jmc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout1_jmc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginTop="5dp"
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text_beside_image"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:text="what to excpect at the end of JMC?"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text2_beside_image"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/jmc_image_attached"
+                                    app:layout_constraintTop_toBottomOf="@+id/text_beside_image"
+                                    android:text="@string/book_script_1"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/jmc_image_attached"
+                                    android:layout_width="0dp"
+                                    android:layout_height="150dp"
+                                 app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/text_beside_image"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:padding="5dp"
+
+                                    android:src="@drawable/ic_launcher_background"
+                                    android:scaleType="fitXY"
+
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatImageView>
+
+
+
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout2_jmc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:elevation="14dp"
+                                app:cardCornerRadius="4dp"
+
+
+
+
+                                >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintWidth_percent="0.9"
+
+                                    >
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintWidth_percent="0.9"
+
+                                    >
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/cd_text1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/purple_app_theam_color"
+                                        android:text="@string/details"
+                                        app:fontFamily="@font/daxcompact_extrabold"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+
+                                        >
+
+
+                                    </androidx.appcompat.widget.AppCompatTextView>
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="0dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintWidth_percent="0.5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/cd_text1"
+                                        app:layout_constraintStart_toStartOf="parent">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+
+                                            android:textColor="@color/purple_app_theam_color"
+
+
+                                            android:text="@string/target_student"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            />
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="4-5 Years Old"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/number_of_lession"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            android:layout_marginTop="15dp"
+                                            />
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="40 lessions per year"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/course_material"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            android:layout_marginTop="15dp"
+                                            />
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="Textbooks 1-4"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="Workbooks 1-4"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="Audio and Video Materials"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="Student's Kit"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            android:layout_marginBottom="15dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:layout_width="0dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintWidth_percent="0.5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/cd_text1"
+                                        app:layout_constraintEnd_toEndOf="parent">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+
+                                            android:textColor="@color/purple_app_theam_color"
+
+
+                                            android:text="@string/lession_duraion"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            />
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="60 Minutes"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/course_settings"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            android:layout_marginTop="15dp"
+                                            />
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/daxcompact_medium"
+                                            android:text="Group (4-10 students)"
+                                            app:fontFamily="@font/daxcompact_bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                        <androidx.appcompat.widget.AppCompatButton
+                                            android:id="@+id/login_button_jxc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="30dp"
+
+                                            android:layout_gravity="center"
+                                            app:layout_constraintWidth_percent="0.9"
+                                            app:layout_constraintHeight_percent="0.15"
+                                            app:layout_constraintVertical_bias="0.55"
+                                            android:text="@string/course_fee"
+                                            android:layout_marginTop="30dp"
+                                            android:textColor="@color/white"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/sub_heading_14dp"
+                                            android:background="@drawable/button_bg"
+                                            >
+
+                                        </androidx.appcompat.widget.AppCompatButton>
+
+
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -824,13 +1136,370 @@ app:layout_constraintBottom_toBottomOf="parent"
                             android:id="@+id/jxc_attatched_layout"
                             android:visibility="gone"
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_jxc"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             android:background="@color/white"
                             >
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout1_jxc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
 
+
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/jxc_text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+                                    android:text="@string/book_script_1"
+                                    android:textColor="@color/purple_app_theam_color"
+                                    android:textSize="12dp"
+                                    android:justificationMode="inter_word"
+
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/jxc_text2"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/jxc_text1"
+
+                                    android:text="@string/book_script_1"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:justificationMode="inter_word"
+
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout2_jxc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout1_jxc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginTop="5dp"
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text_beside_image_jxc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:text="what to excpect at the end of JMC?"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text2_beside_image_jxc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/jmc_image_attached_jxc"
+                                    app:layout_constraintTop_toBottomOf="@+id/text_beside_image_jxc"
+                                    android:text="@string/book_script_1"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/jmc_image_attached_jxc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="150dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/text_beside_image_jxc"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:padding="5dp"
+
+                                    android:src="@drawable/ic_launcher_background"
+                                    android:scaleType="fitXY"
+
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatImageView>
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout2_jxc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:elevation="14dp"
+                                app:cardCornerRadius="4dp"
+
+
+
+
+                                >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintWidth_percent="0.9"
+
+                                    >
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintWidth_percent="0.9"
+
+                                        >
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/cd_text1_jxc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/details"
+                                            app:fontFamily="@font/daxcompact_extrabold"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+
+                                            >
+
+
+                                        </androidx.appcompat.widget.AppCompatTextView>
+
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_jxc"
+                                            app:layout_constraintStart_toStartOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/target_student"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="4-5 Years Old"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/number_of_lession"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="40 lessions per year"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_material"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Textbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Workbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Audio and Video Materials"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Student's Kit"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginBottom="15dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_jxc"
+                                            app:layout_constraintEnd_toEndOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/lession_duraion"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="60 Minutes"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_settings"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Group (4-10 students)"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatButton
+                                                android:id="@+id/login_button"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+
+                                                android:layout_gravity="center"
+                                                app:layout_constraintWidth_percent="0.9"
+                                                app:layout_constraintHeight_percent="0.15"
+                                                app:layout_constraintVertical_bias="0.55"
+                                                android:text="@string/course_fee"
+                                                android:layout_marginTop="30dp"
+                                                android:textColor="@color/white"
+                                                android:textStyle="bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:background="@drawable/button_bg"
+                                                >
+
+                                            </androidx.appcompat.widget.AppCompatButton>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -894,13 +1563,373 @@ app:layout_constraintBottom_toBottomOf="parent"
                             android:id="@+id/jnc_attatched_layout"
                             android:visibility="gone"
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_jnc"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             android:background="@color/white"
                             >
 
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout1_jnc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+
+
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_marginTop="15dp"
+                                    android:id="@+id/jnc_text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+                                    android:text="@string/book_script_1"
+                                    android:textColor="@color/purple_app_theam_color"
+                                    android:textSize="12dp"
+                                    android:justificationMode="inter_word"
+
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+                            <!--    <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/jnc_text2"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/jnc_text1"
+
+                                    android:text="@string/book_script_1"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:justificationMode="inter_word"
+
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>-->
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout2_jnc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout1_jnc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginTop="5dp"
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text_beside_image_jnc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:text="what to excpect at the end of JMC?"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text2_beside_image_jnc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/jmc_image_attached_jnc"
+                                    app:layout_constraintTop_toBottomOf="@+id/text_beside_image_jnc"
+                                    android:text="@string/book_script_1"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/jmc_image_attached_jnc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="150dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/text_beside_image_jnc"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:padding="5dp"
+
+                                    android:src="@drawable/ic_launcher_background"
+                                    android:scaleType="fitXY"
+
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatImageView>
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout2_jnc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:elevation="14dp"
+                                app:cardCornerRadius="4dp"
+
+
+
+
+                                >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintWidth_percent="0.9"
+
+                                    >
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintWidth_percent="0.9"
+
+                                        >
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/cd_text1_jnc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/details"
+                                            app:fontFamily="@font/daxcompact_extrabold"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+
+                                            >
+
+
+                                        </androidx.appcompat.widget.AppCompatTextView>
+
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_jnc"
+                                            app:layout_constraintStart_toStartOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/target_student"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="4-5 Years Old"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/number_of_lession"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="40 lessions per year"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_material"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Textbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Workbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Audio and Video Materials"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Student's Kit"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginBottom="15dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_jnc"
+                                            app:layout_constraintEnd_toEndOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/lession_duraion"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="60 Minutes"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_settings"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Group (4-10 students)"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatButton
+                                                android:id="@+id/login_button_jnc"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+
+                                                android:layout_gravity="center"
+                                                app:layout_constraintWidth_percent="0.9"
+                                                app:layout_constraintHeight_percent="0.15"
+                                                app:layout_constraintVertical_bias="0.55"
+                                                android:text="@string/course_fee"
+                                                android:layout_marginTop="30dp"
+                                                android:textColor="@color/white"
+                                                android:textStyle="bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:background="@drawable/button_bg"
+                                                >
+
+                                            </androidx.appcompat.widget.AppCompatButton>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -964,13 +1993,370 @@ app:layout_constraintBottom_toBottomOf="parent"
                             android:id="@+id/anc_attatched_layout"
                             android:visibility="gone"
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_anc"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             android:background="@color/white"
                             >
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout1_anc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
 
+
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_marginTop="15dp"
+                                    android:id="@+id/anc_text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+                                    android:text="@string/book_script_1"
+                                    android:textColor="@color/purple_app_theam_color"
+                                    android:textSize="12dp"
+                                    android:justificationMode="inter_word"
+
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/anc_text2"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/anc_text1"
+
+                                        android:text="@string/book_script_1"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp"
+                                        android:justificationMode="inter_word"
+
+
+                                        ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sublayout2_anc_attached"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout1_anc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginTop="5dp"
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text_beside_image_anc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:text="what to excpect at the end of JMC?"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/text2_beside_image_anc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/jmc_image_attached_anc"
+                                    app:layout_constraintTop_toBottomOf="@+id/text_beside_image_anc"
+                                    android:text="@string/book_script_1"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    app:layout_constraintWidth_percent="0.6"
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/jmc_image_attached_anc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="150dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/text_beside_image_anc"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:fontFamily="@font/daxcompact_bold"
+                                    android:padding="5dp"
+
+                                    android:src="@drawable/ic_launcher_background"
+                                    android:scaleType="fitXY"
+
+                                    >
+
+                                </androidx.appcompat.widget.AppCompatImageView>
+
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@+id/sublayout2_anc_attached"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:elevation="14dp"
+                                app:cardCornerRadius="4dp"
+
+
+
+
+                                >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintWidth_percent="0.9"
+
+                                    >
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintWidth_percent="0.9"
+
+                                        >
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/cd_text1_anc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/purple_app_theam_color"
+                                            android:text="@string/details"
+                                            app:fontFamily="@font/daxcompact_extrabold"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+
+                                            >
+
+
+                                        </androidx.appcompat.widget.AppCompatTextView>
+
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_anc"
+                                            app:layout_constraintStart_toStartOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/target_student"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="4-5 Years Old"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/number_of_lession"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="40 lessions per year"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_material"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Textbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Workbooks 1-4"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Audio and Video Materials"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Student's Kit"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginBottom="15dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+                                        <androidx.appcompat.widget.LinearLayoutCompat
+                                            android:layout_width="0dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintWidth_percent="0.5"
+                                            android:orientation="vertical"
+                                            app:layout_constraintTop_toBottomOf="@+id/cd_text1_anc"
+                                            app:layout_constraintEnd_toEndOf="parent">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+
+                                                android:textColor="@color/purple_app_theam_color"
+
+
+                                                android:text="@string/lession_duraion"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="60 Minutes"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/purple_app_theam_color"
+                                                android:text="@string/course_settings"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:layout_marginTop="15dp"
+                                                />
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/daxcompact_medium"
+                                                android:text="Group (4-10 students)"
+                                                app:fontFamily="@font/daxcompact_bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                                            <androidx.appcompat.widget.AppCompatButton
+                                                android:id="@+id/login_button_anc"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+
+                                                android:layout_gravity="center"
+                                                app:layout_constraintWidth_percent="0.9"
+                                                app:layout_constraintHeight_percent="0.15"
+                                                app:layout_constraintVertical_bias="0.55"
+                                                android:text="@string/course_fee"
+                                                android:layout_marginTop="30dp"
+                                                android:textColor="@color/white"
+                                                android:textStyle="bold"
+                                                android:textSize="@dimen/sub_heading_14dp"
+                                                android:background="@drawable/button_bg"
+                                                >
+
+                                            </androidx.appcompat.widget.AppCompatButton>
+
+
+                                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
