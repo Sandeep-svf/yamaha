@@ -62,7 +62,7 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
                     fragmentTransaction.replace(R.id.fragment_contaner, fragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
-                }else if(position==3){
+                }else if(position==2){
                     yamahaGuitarCoursesFragment fragment = new yamahaGuitarCoursesFragment();
                     FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
