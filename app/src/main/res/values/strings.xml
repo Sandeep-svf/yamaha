@@ -71,6 +71,33 @@
     <string name="music_friend_course">Music Friend Course</string>
     <string name="start_ur_musical">"Start your musical journey with your favorite instrument! "</string>
     <string name="piano_keyboard_course">Piano/Keyboard Course</string>
+    <string name="popular_music_course">Popular Music Courses</string>
+    <string name="share_ur_creativity">"Share your creativity and passion and become the performer you always wanted to be! "</string>
+    <string name="pmc_key">PMC Key Features</string>
+    <string name="yamaha_unique_program">Yamaha\'s Unique Program</string>
+    <string name="acoustic_guitar">Acoustic Guitar</string>
+    <string name="electric_guitar">Electric Guitar</string>
+    <string name="electric_bass">Electric Bass</string>
+    <string name="yms_course_price_list">YMS COURSE PRICE LIST</string>
+    <string name="course_type">Course Type</string>
+    <string name="one_month_vat">1 month + VAT</string>
+    <string name="one_month_with_vat">1 month with VAT + Reg.Fee</string>
+    <string name="three_month_plus">3 month + 10% disc + VAT</string>
+    <string name="three_month_plus_10">3 month + 10% disc with VAT + Reg.Fee</string>
+    <string name="indivisual_group">Individual/Group</string>
+    <string name="faimly_discount">Faimly Discount (10%)</string>
+    <string name="juniour_course_caps">JUNIOR COURSE</string>
+    <string name="five_month">5 months + VAT</string>
+    <string name="five_month_plus_vat">5 months with VAT + Reg.Fee</string>
+    <string name="yms_grade_exam_price_list">YMS GRADE EXAMS PRICE LIST</string>
+    <string name="exam">Exam</string>
+    <string name="level">Level</string>
+    <string name="price">Price</string>
+    <string name="price_with_vat">Price with VAT</string>
+    <string name="student_grade_exam">Student Grade Exam</string>
+    <string name="fundamental_skill">Fundamental Skill Survey</string>
+    <string name="grade_13">Grade 13</string>
+    <string name="teacher_grade_exam">Teacher Grade Exam</string>
 
 
     <string-array name="string_array_alcohol">

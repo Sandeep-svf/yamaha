@@ -2,9 +2,13 @@ package com.webnmobapps.yamaha.courses;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +17,12 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.feestructure.FeeStructureFragment;
 
 
 public class JuniourCourseFragment extends Fragment {
 
-
+    AppCompatButton course_fee_button_jxc,fee_structure_button_jmc;
     AppCompatImageView junior_course_imag_1,junior_course_imag_2,image_view_jmc,image_view_jxc,image_view_jnc,image_view_anc;
     Boolean flag_jmc = true;
     Boolean flag_jxc = true;
@@ -41,6 +46,31 @@ public class JuniourCourseFragment extends Fragment {
         } finally {
             Toast.makeText(getActivity(), "Something went wrong while loading image.....", Toast.LENGTH_SHORT).show();
         }
+
+
+        fee_structure_button_jmc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        course_fee_button_jxc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
 
         image_view_jnc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,5 +189,7 @@ public class JuniourCourseFragment extends Fragment {
         image_view_anc = view.findViewById(R.id.image_view_anc);
         jnc_attatched_layout = view.findViewById(R.id.jnc_attatched_layout);
         anc_attatched_layout = view.findViewById(R.id.anc_attatched_layout);
+        course_fee_button_jxc = view.findViewById(R.id.course_fee_button_jxc);
+        fee_structure_button_jmc = view.findViewById(R.id.fee_structure_button_jmc);
     }
 }
