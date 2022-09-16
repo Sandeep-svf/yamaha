@@ -19,7 +19,6 @@ import com.webnmobapps.yamaha.adapter.CourcesAdapter;
 
 public class CourseFragment extends Fragment {
 
-
     AppCompatImageView course_banner_image;
     RecyclerView rcv_courses;
 
@@ -32,13 +31,11 @@ public class CourseFragment extends Fragment {
 
         Glide.with(getActivity()).load(R.drawable.courses_banner).placeholder(R.drawable.ic_launcher_background).into(course_banner_image);
 
-
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         CourcesAdapter courcesAdapter = new CourcesAdapter(getActivity());
         rcv_courses.setLayoutManager(linearLayoutManager);
         rcv_courses.setAdapter(courcesAdapter);
-
 
         return  view;
     }

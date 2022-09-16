@@ -262,18 +262,10 @@
             </androidx.cardview.widget.CardView>
 
 
-            <com.alespero.expandablecardview.ExpandableCardView
 
-
-
-                >
-
-
-            </com.alespero.expandablecardview.ExpandableCardView>
 
 
             <androidx.cardview.widget.CardView
-                android:visibility="gone"
                 android:layout_marginTop="2dp"
                 android:id="@+id/setting_cardview"
                 android:layout_width="0dp"

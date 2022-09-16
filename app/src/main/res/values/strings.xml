@@ -7,6 +7,7 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="email">Email</string>
+    <string name="email2">Email:</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="i_agree_with">I agree with privacy and policy.</string>
@@ -98,6 +99,19 @@
     <string name="fundamental_skill">Fundamental Skill Survey</string>
     <string name="grade_13">Grade 13</string>
     <string name="teacher_grade_exam">Teacher Grade Exam</string>
+    <string name="account_information">Account Information</string>
+    <string name="edit">Edit</string>
+    <string name="change_password">Change Password</string>
+    <string name="show">Show</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="save">Save</string>
+    <string name="english">English</string>
+    <string name="arbic">Arabic</string>
+    <string name="language">Languages</string>
+    <string name="city">City</string>
+    <string name="riyadh">Riyadh</string>
+    <string name="jeddah">Jeddah</string>
 
 
     <string-array name="string_array_alcohol">
