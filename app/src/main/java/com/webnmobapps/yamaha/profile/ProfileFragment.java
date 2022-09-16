@@ -2,7 +2,11 @@ package com.webnmobapps.yamaha.profile;
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -14,6 +18,7 @@ import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
+import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,13 +26,13 @@ import java.util.List;
 
 
 public class ProfileFragment extends Fragment {
+
     private ExpandableListView expandableListView;
-
     private ExpandableListViewAdapter expandableListViewAdapter;
-
     private List<String> listDataGroup;
-
     private HashMap<String, List<String>> listDataChild;
+
+    private ConstraintLayout schedule_layout;
 
 
     @Override
@@ -40,6 +45,22 @@ public class ProfileFragment extends Fragment {
 
         // initializing the views
         initViews(view);
+
+        schedule_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ScheduleFragment fragment = new ScheduleFragment();
+                FragmentManager fragmentManager = (getActivity()).getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+
+
+
 
         // initializing the listeners
         initListeners();
@@ -61,6 +82,7 @@ public class ProfileFragment extends Fragment {
     private void initViews(View view) {
 
         expandableListView = view.findViewById(R.id.expandableListView);
+        schedule_layout = view.findViewById(R.id.schedule_layout);
 
     }
 
@@ -68,6 +90,7 @@ public class ProfileFragment extends Fragment {
      * method to initialize the listeners
      */
     private void initListeners() {
+
 
 
 
@@ -103,6 +126,9 @@ public class ProfileFragment extends Fragment {
                         .show();*/
                 return false;
             }
+
+
+
         });
 
         // ExpandableListView Group expanded listener

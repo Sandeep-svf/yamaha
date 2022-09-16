@@ -3,6 +3,7 @@ package com.webnmobapps.yamaha.events;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -22,6 +23,7 @@ import java.util.List;
 
 public class EventFragment extends Fragment {
 
+    ConstraintLayout container_event;
     AppCompatImageView book_imag_1, book_imag_2;
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
@@ -51,6 +53,7 @@ public class EventFragment extends Fragment {
         book_imag_2 = view.findViewById(R.id.event_imag_2);
         viewPager = view.findViewById(R.id.viewpager);
         tabLayout = view.findViewById(R.id.tabs);
+        container_event = view.findViewById(R.id.container_event);
 
     }
     private void setupTabtitle() {

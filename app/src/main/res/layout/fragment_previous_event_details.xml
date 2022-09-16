@@ -28,7 +28,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.51"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_launcher_background"
             >
 
         </androidx.appcompat.widget.AppCompatImageView>
@@ -44,7 +43,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.5"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_launcher_background"
             >
 
         </androidx.appcompat.widget.AppCompatImageView>
@@ -90,13 +88,11 @@
                         android:id="@+id/back_arrow_image"
                         android:layout_width="0dp"
                         android:layout_height="25dp"
-
                        app:layout_constraintWidth_percent="0.1"
-                        android:src="@drawable/ic_launcher_background"
+                        android:src="@drawable/ic_baseline_arrow_back_android_24"
+                        android:tint="@color/black"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
-
-
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -167,26 +163,43 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     >
 
-                    <VideoView
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/girl_with_piano"
 
                         >
 
 
-                    </VideoView>
+                    </androidx.appcompat.widget.AppCompatImageView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:src="@drawable/ic_baseline_play_circle_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:tint="@color/white"
+
+                        ></de.hdodenhof.circleimageview.CircleImageView>
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         app:layout_constraintWidth_percent="0.15"
                         app:layout_constraintHeight_percent="0.15"
-                        android:src="@drawable/ic_launcher_background"
+                        android:src="@drawable/ic_baseline_arrow_back_android_24"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintHorizontal_bias="0.05"
+                        android:tint="@color/white"
                         ></androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -194,12 +207,13 @@
                         android:layout_height="0dp"
                         app:layout_constraintWidth_percent="0.15"
                         app:layout_constraintHeight_percent="0.15"
-                        android:src="@drawable/ic_launcher_background"
+                        android:src="@drawable/ic_baseline_arrow_forward_android_24"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintHorizontal_bias="0.95"
+                        android:tint="@color/white"
                         ></androidx.appcompat.widget.AppCompatImageView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

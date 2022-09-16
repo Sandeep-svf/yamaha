@@ -38,6 +38,6 @@ public class PreviousEventDetailsFragment extends Fragment {
 
     private void intis(View view) {
         previous_event_details_imag_2 = view.findViewById(R.id.previous_event_details_imag_2);
-        previous_event_details_imag_2 = view.findViewById(R.id.previous_event_details_imag_1);
+        previous_event_details_imag_1 = view.findViewById(R.id.previous_event_details_imag_1);
     }
 }
