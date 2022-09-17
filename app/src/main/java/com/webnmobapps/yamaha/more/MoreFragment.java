@@ -98,6 +98,8 @@ public class MoreFragment extends Fragment {
             if(layout_type.equals("1")){
                 final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
+
             }else if(layout_type.equals("2")){
                 final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
