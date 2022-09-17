@@ -39,7 +39,6 @@ public class ProfileFragment extends Fragment {
     private ExpandableListViewAdapter expandableListViewAdapter;
     private List<String> listDataGroup;
     private HashMap<String, List<String>> listDataChild;
-
     private ConstraintLayout schedule_layout;
 
 
@@ -171,6 +170,8 @@ public class ProfileFragment extends Fragment {
 
         LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View alertLayout = null;
+
+
         if(childPosition==0){
              alertLayout = inflater.inflate(R.layout.account_information, null);
 
@@ -183,7 +184,6 @@ public class ProfileFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
-
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {

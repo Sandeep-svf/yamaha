@@ -1,11 +1,14 @@
 package com.webnmobapps.yamaha.more;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
@@ -87,34 +90,49 @@ public class MoreFragment extends Fragment {
 
     private void alert_dialog(String layout_type) {
 
+        // Dialoogs...
+        Dialog dialogs;
 
-            AlertDialog dialogs;
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), android.R.style.Theme_Black_NoTitleBar_Fullscreen);
-
+        LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View alertLayout = null;
 
-       // Toast.makeText(getActivity(), layout_type, Toast.LENGTH_SHORT).show();
 
-            if(layout_type.equals("1")){
-                final LayoutInflater inflater = getLayoutInflater();
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+        if(layout_type.equals("1")){
+            alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
 
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }else if(layout_type.equals("2")){
-                final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
             }else if(layout_type.equals("3")){
-                final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
             }else if(layout_type.equals("4")){
-                final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
             }else if(layout_type.equals("5")){
-                final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
             }else if(layout_type.equals("6")){
-                final LayoutInflater inflater = getLayoutInflater();
                 alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+
             }
 
             final AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
