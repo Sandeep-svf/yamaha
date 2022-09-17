@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/angle.xml" value="0.17222222222222222" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/button_bg.xml" value="0.22552083333333334" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_bg_event_list.xml" value="0.175" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_bg_juniour_course.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_bg_juniour_course_2.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/custom_text_bg.xml" value="0.16666666666666666" />
@@ -18,17 +17,13 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/piano_grage_bg.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/piano_grage_bg2.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/drawable/user_profile_custom_bg.xml" value="0.1935185185185185" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/account_information.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_login.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_login2.xml" value="0.18" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_signup.xml" value="0.16" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/activity_splash.xml" value="0.16" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/change_password.xml" value="0.196875" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/city.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/contact_us_xml.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/couces_view_holder.xml" value="0.22" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/event_list_view_holder.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_booking.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_course.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_event.xml" value="0.209375" />
@@ -38,17 +33,22 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_music_friend_course.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_popular_music_course.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_previous_event.xml" value="0.209375" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_previous_event_details.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_profile.xml" value="0.209375" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_schedule.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_upcoming_event.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_yamaha_guitar_courses.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_yamaha_piano_course.xml" value="0.2" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/language.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/list_row_child.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/list_row_group.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/previous_event_view_holder.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/upcoming_event_view_holder.xml" value="0.209375" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/account_information.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/contact_us_xml.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_fee_structure.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_more.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_previous_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_previous_event_details.xml" value="0.136" />
+        <entry key="..\:/Users/svfsa/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
@@ -61,7 +61,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.75" />
+        <option name="scale" value="0.136" />
       </ProjectState>
     </option>
   </component>
