@@ -2,12 +2,14 @@ package com.webnmobapps.yamaha.profile;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -26,6 +28,7 @@ import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
+import com.webnmobapps.yamaha.basicfunction.Login2Activity;
 import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 
 import java.util.ArrayList;
@@ -40,6 +43,7 @@ public class ProfileFragment extends Fragment {
     private List<String> listDataGroup;
     private HashMap<String, List<String>> listDataChild;
     private ConstraintLayout schedule_layout;
+    private CardView logout_cardview;
 
 
     @Override
@@ -52,6 +56,21 @@ public class ProfileFragment extends Fragment {
 
         // initializing the views
         initViews(view);
+
+
+        logout_cardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Login2Activity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // To clean up all activities
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.putExtra("finish", true);
+                startActivity(intent);
+
+                Toast.makeText(getActivity(), "User logout successfully", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         schedule_layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +109,7 @@ public class ProfileFragment extends Fragment {
 
         expandableListView = view.findViewById(R.id.expandableListView);
         schedule_layout = view.findViewById(R.id.schedule_layout);
+        logout_cardview = view.findViewById(R.id.logout_cardview);
 
     }
 

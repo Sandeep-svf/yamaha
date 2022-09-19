@@ -29,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
 
         intis();
 
+        // loading default fragment ...........
+        CourseFragment pageFragment = new CourseFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        // ((ConstraintLayout)findViewById(R.id.fragment_contaner)).removeAllViews();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+        fragmentTransaction.replace(R.id.fragment_contaner, pageFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
         home_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
