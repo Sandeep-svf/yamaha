@@ -36,7 +36,6 @@ public class MoreFragment extends Fragment {
 
         intis(view);
 
-
         visit_website_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,7 +90,7 @@ public class MoreFragment extends Fragment {
     private void alert_dialog(String layout_type) {
 
         // Dialoogs...
-        Dialog dialogs;
+        final Dialog dialogs;
 
         LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View alertLayout = null;
@@ -99,7 +98,6 @@ public class MoreFragment extends Fragment {
 
         if(layout_type.equals("1")){
             alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
-
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
 
             dialogs = new Dialog(getActivity());
@@ -135,7 +133,7 @@ public class MoreFragment extends Fragment {
 
             }
 
-            final AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+           /* final AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
             alert.setView(alertLayout);
             alert.setCancelable(false);
             dialogs = alert.create();
@@ -144,7 +142,7 @@ public class MoreFragment extends Fragment {
         dialogs.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         dialogs.show();
-            dialogs.setCanceledOnTouchOutside(true);
+            dialogs.setCanceledOnTouchOutside(true);*/
 
         }
 

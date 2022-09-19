@@ -112,6 +112,7 @@
     <string name="city">City</string>
     <string name="riyadh">Riyadh</string>
     <string name="jeddah">Jeddah</string>
+    <string name="course_contant">Course Contents</string>
 
 
     <string-array name="string_array_alcohol">
