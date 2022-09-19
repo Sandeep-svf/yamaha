@@ -29,6 +29,7 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/contact_us_xml.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/couces_view_holder.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/event_list_view_holder.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/faq_xml.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_booking.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_course.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/fragment_event.xml" value="0.209375" />
@@ -48,7 +49,11 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/list_row_child.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/list_row_group.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/previous_event_view_holder.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/privacy_policy_xml.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/subcribe_to_news_letter_xml.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/terms_conditions_xml.xml" value="0.209375" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/upcoming_event_view_holder.xml" value="0.209375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/yamaha/app/src/main/res/layout/visit_our_website_xml.xml" value="0.209375" />
       </map>
     </option>
   </component>

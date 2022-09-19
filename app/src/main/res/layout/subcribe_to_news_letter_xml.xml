@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_app_theam_color"
+    android:alpha="0.8"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.9"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent="0.333"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:gravity="center_vertical"
+                android:text="@string/sign_up_to_news_letter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sub_heading_14dp"
+                android:fontFamily="@font/daxcompact_bold"
+
+
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cross_image_layout"
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:src="@drawable/cross_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                >
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jdfklds"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/cross_image_layout"
+
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/default_text_size_12dp"
+                    android:fontFamily="@font/daxcompact_medium"
+                    android:inputType="textEmailAddress"
+
+                    android:hint="@string/enter_your_email_address"
+                    android:background="@null"
+                    ></androidx.appcompat.widget.AppCompatEditText>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@+id/jdfklds"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center_vertical"
+                android:text="@string/subscribe_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sub_heading_14dp"
+                android:fontFamily="@font/daxcompact_bold"
+
+
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
@@ -26,6 +28,7 @@ public class MoreFragment extends Fragment {
 
     ConstraintLayout contact_us_layout, faq_layout, privacy_policy_layout, terms_condition_layout, subscribe_layout, visit_website_layout;
     private String layout_type;
+
 
 
     @Override
@@ -117,19 +120,121 @@ public class MoreFragment extends Fragment {
             });
 
             }else if(layout_type.equals("2")){
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+                alertLayout = inflater.inflate(R.layout.faq_xml, null);
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }else if(layout_type.equals("3")){
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+                alertLayout = inflater.inflate(R.layout.privacy_policy_xml, null);
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }else if(layout_type.equals("4")){
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+                alertLayout = inflater.inflate(R.layout.terms_conditions_xml, null);
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }else if(layout_type.equals("5")){
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+                alertLayout = inflater.inflate(R.layout.subcribe_to_news_letter_xml, null);
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }else if(layout_type.equals("6")){
-                alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
+                alertLayout = inflater.inflate(R.layout.visit_our_website_xml, null);
+            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final WebView web = alertLayout.findViewById(R.id.webview_website);
+
+            dialogs = new Dialog(getActivity());
+            dialogs.setContentView(alertLayout);
+            dialogs.setCancelable(false);
+            dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.show();
+            dialogs.setCanceledOnTouchOutside(true);
+
+
+            // Webview....
+
+            web.setWebViewClient(new WebViewClient());
+            web.getSettings().setLoadsImagesAutomatically(true);
+            web.getSettings().setJavaScriptEnabled(true);
+            web.getSettings().setBuiltInZoomControls(true);
+            //   web.getSettings().setSupportZoom(true);
+            web.getSettings().setLoadWithOverviewMode(true);
+            web.getSettings().setUseWideViewPort(true);
+            web.getSettings().setAllowContentAccess(true);
+            web.loadUrl("https://adawliahyms.com/");
+            web.setWebViewClient(new WebViewClient());
+
+            // https://adawliahyms.com/
+
+            cross_image_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogs.dismiss();
+                }
+            });
 
             }
 
@@ -153,6 +258,7 @@ public class MoreFragment extends Fragment {
         privacy_policy_layout = view.findViewById(R.id.privacy_policy_layout);
         terms_condition_layout = view.findViewById(R.id.terms_condition_layout);
         subscribe_layout = view.findViewById(R.id.subscribe_layout);
-        visit_website_layout = view.findViewById(R.id.subscribe_layout);
+        visit_website_layout = view.findViewById(R.id.visit_website_layout);
+
     }
 }

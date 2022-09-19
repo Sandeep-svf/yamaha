@@ -113,6 +113,9 @@
     <string name="riyadh">Riyadh</string>
     <string name="jeddah">Jeddah</string>
     <string name="course_contant">Course Contents</string>
+    <string name="sign_up_to_news_letter">Sign Up to Newsletter</string>
+    <string name="enter_your_email_address">Enter your Email address</string>
+    <string name="subscribe_now">Subscribe Now</string>
 
 
     <string-array name="string_array_alcohol">
