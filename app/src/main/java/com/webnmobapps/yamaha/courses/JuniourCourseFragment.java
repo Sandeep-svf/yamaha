@@ -22,7 +22,7 @@ import com.webnmobapps.yamaha.feestructure.FeeStructureFragment;
 
 public class JuniourCourseFragment extends Fragment {
 
-    AppCompatButton course_fee_button_jxc,fee_structure_button_jmc;
+    AppCompatButton course_fee_button_jxc,fee_structure_button_jmc,course_fee_button_jnc,course_fee_button_anc;
     AppCompatImageView junior_course_imag_1,junior_course_imag_2,image_view_jmc,image_view_jxc,image_view_jnc,image_view_anc;
     Boolean flag_jmc = true;
     Boolean flag_jxc = true;
@@ -44,9 +44,32 @@ public class JuniourCourseFragment extends Fragment {
         } catch (Exception exception) {
             exception.printStackTrace();
         } finally {
-            Toast.makeText(getActivity(), "Something went wrong while loading image.....", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getActivity(), "Something went wrong while loading image.....", Toast.LENGTH_SHORT).show();
         }
 
+        course_fee_button_anc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        course_fee_button_jnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
 
         fee_structure_button_jmc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -191,5 +214,7 @@ public class JuniourCourseFragment extends Fragment {
         anc_attatched_layout = view.findViewById(R.id.anc_attatched_layout);
         course_fee_button_jxc = view.findViewById(R.id.course_fee_button_jxc);
         fee_structure_button_jmc = view.findViewById(R.id.fee_structure_button_jmc);
+        course_fee_button_jnc = view.findViewById(R.id.course_fee_button_jnc);
+        course_fee_button_anc = view.findViewById(R.id.course_fee_button_anc);
     }
 }

@@ -12,9 +12,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -49,7 +47,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.51"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/music_friend_course_image"
             >
 
         </androidx.appcompat.widget.AppCompatImageView>
@@ -65,7 +63,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.5"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/juniour_course"
             >
 
         </androidx.appcompat.widget.AppCompatImageView>
@@ -1556,7 +1554,7 @@ android:visibility="gone"
                         </androidx.appcompat.widget.LinearLayoutCompat>
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/jnc_attatched_layout"
-
+android:visibility="gone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_jnc"
@@ -1898,7 +1896,7 @@ android:visibility="gone"
 
 
                                             <androidx.appcompat.widget.AppCompatButton
-                                                android:id="@+id/login_button_jnc"
+                                                android:id="@+id/course_fee_button_jnc"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="30dp"
 
@@ -1986,7 +1984,7 @@ android:visibility="gone"
                         </androidx.appcompat.widget.LinearLayoutCompat>
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/anc_attatched_layout"
-                            android:visibility="gone"
+                        android:visibility="gone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_anc"
@@ -2325,7 +2323,7 @@ android:visibility="gone"
 
 
                                             <androidx.appcompat.widget.AppCompatButton
-                                                android:id="@+id/login_button_anc"
+                                                android:id="@+id/course_fee_button_anc"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="30dp"
 

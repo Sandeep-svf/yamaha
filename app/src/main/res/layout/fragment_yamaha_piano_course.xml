@@ -864,7 +864,7 @@ app:layout_constraintWidth_percent="0.9"
                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/login_button_jxc"
+                                android:id="@+id/yamaha_piano_button_jxc"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
 
