@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,6 +17,8 @@ import com.webnmobapps.yamaha.courses.CourseFragment;
 import com.webnmobapps.yamaha.events.EventFragment;
 import com.webnmobapps.yamaha.more.MoreFragment;
 import com.webnmobapps.yamaha.profile.ProfileFragment;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         intis();
+        //language();
 
         // loading default fragment ...........
         CourseFragment pageFragment = new CourseFragment();
@@ -142,7 +147,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    private void language() {
 
+        Locale locale = new Locale("en");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        MainActivity.this.getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+
+    }
     private void intis() {
         home_layout = findViewById(R.id.home_layout);
         booking_layout = findViewById(R.id.booking_layout);

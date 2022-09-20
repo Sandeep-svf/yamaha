@@ -61,8 +61,8 @@
     <string name="course_fee">Course Fee</string>
     <string name="yamaha_piano_course">Yamaha Piano Course</string>
     <string name="piano_grade_exm">Yamaha Piano Grade Examination</string>
-    <string name="yamaha_grade">YAMAHA \n GRADES</string>
-    <string name="other_grade">OTHER \n GRADES</string>
+    <string name="yamaha_grade" translatable="false">YAMAHA \n GRADES</string>
+    <string name="other_grade" translatable="false">OTHER \n GRADES</string>
     <string name="exm_recom">Examination are recommended but not mendatory.</string>
     <string name="yamaha_grade_exm">YAMAHA GRADE EXAMINATION</string>
     <string name="course_progressin">Course Progression</string>

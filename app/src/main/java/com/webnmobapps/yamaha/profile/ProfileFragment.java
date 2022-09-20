@@ -3,6 +3,7 @@ package com.webnmobapps.yamaha.profile;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 
 public class ProfileFragment extends Fragment {
@@ -56,6 +58,12 @@ public class ProfileFragment extends Fragment {
 
         // initializing the views
         initViews(view);
+
+
+        //language(getActivity());
+
+
+
 
 
         logout_cardview.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +107,16 @@ public class ProfileFragment extends Fragment {
 
 
         return  view;
+    }
+
+    private void language(FragmentActivity getActivity2) {
+
+        Locale locale = new Locale("ar");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
+
     }
 
 
@@ -146,7 +164,7 @@ public class ProfileFragment extends Fragment {
 
                 Log.e("check_position", String.valueOf(childPosition)+"0");
 
-              alert_dialog(childPosition);
+              alert_dialog(childPosition, getActivity());
                 return false;
             }
 
@@ -184,7 +202,7 @@ public class ProfileFragment extends Fragment {
 
     }
 
-    private void alert_dialog(int childPosition) {
+    private void alert_dialog(int childPosition, Context context) {
         // Dialoogs...
         Dialog dialogs;
 
@@ -254,6 +272,13 @@ public class ProfileFragment extends Fragment {
                 public void onClick(View view) {
                     dialogs.dismiss();
                 }
+
+                // set language
+
+
+
+
+
             });
 
         }else if(childPosition==3){
