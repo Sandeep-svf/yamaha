@@ -2,15 +2,19 @@ package com.webnmobapps.yamaha.courses;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.feestructure.FeeStructureFragment;
 
 
 public class PopularMusicCourseFragment extends Fragment {
@@ -21,6 +25,7 @@ public class PopularMusicCourseFragment extends Fragment {
     Boolean flag_coustic_guitar = true;
     Boolean flag_electric_guitar = true;
     Boolean flag_electric_bass = true;
+    AppCompatButton popular_course_course_fee_1, popular_course_course_fee_2, popular_course_course_fee_3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,6 +33,43 @@ public class PopularMusicCourseFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_popular_music_course, container, false);
         intis(view);
+
+        popular_course_course_fee_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        popular_course_course_fee_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+
+        popular_course_course_fee_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeeStructureFragment fragment = new FeeStructureFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_contaner, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
 
         image_view_acoustic_guitar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,9 +118,6 @@ public class PopularMusicCourseFragment extends Fragment {
             }
         });
 
-
-
-
         return view;
     }
 
@@ -89,5 +128,8 @@ public class PopularMusicCourseFragment extends Fragment {
         linear_layout_acoustic_guitar = view.findViewById(R.id.jmc_attatched_layout);
         linear_layout_eletric_guitar = view.findViewById(R.id.jxc_attatched_layout);
         linear_layout_eletric_bass = view.findViewById(R.id.jnc_attatched_layout);
+        popular_course_course_fee_3 = view.findViewById(R.id.popular_course_course_fee_3);
+        popular_course_course_fee_2 = view.findViewById(R.id.popular_course_course_fee_2);
+        popular_course_course_fee_1 = view.findViewById(R.id.popular_course_course_fee_1);
     }
 }
