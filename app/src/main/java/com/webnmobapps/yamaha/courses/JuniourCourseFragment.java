@@ -39,12 +39,12 @@ public class JuniourCourseFragment extends Fragment {
         init(view);
 
         try {
-            Glide.with(getActivity()).load(R.drawable.juniour_course_image).placeholder(R.drawable.ic_launcher_background).into(junior_course_imag_1);
-            Glide.with(getActivity()).load(R.drawable.courses_banner).placeholder(R.drawable.ic_launcher_background).into(junior_course_imag_2);
+            Glide.with(getActivity()).load(R.drawable.juniour_course_banner_image).placeholder(R.drawable.ic_launcher_background).into(junior_course_imag_1);
+            Glide.with(getActivity()).load(R.drawable.juniour_course).placeholder(R.drawable.ic_launcher_background).into(junior_course_imag_2);
         } catch (Exception exception) {
             exception.printStackTrace();
         } finally {
-           // Toast.makeText(getActivity(), "Something went wrong while loading image.....", Toast.LENGTH_SHORT).show();
+           //    Toast.makeText(getActivity(), "Something went wrong while loading image.....", Toast.LENGTH_SHORT).show();
         }
 
         course_fee_button_anc.setOnClickListener(new View.OnClickListener() {

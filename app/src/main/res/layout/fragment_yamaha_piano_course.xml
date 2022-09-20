@@ -49,7 +49,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.51"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background"
+                    android:background="@color/purple_app_theam_color"
                     >
 
                 </androidx.appcompat.widget.AppCompatImageView>

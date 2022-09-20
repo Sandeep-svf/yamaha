@@ -31,8 +31,8 @@ public class YamahaPianoCourseFragment extends Fragment {
         intis(view);
 
         try {
-            Glide.with(getActivity()).load(R.drawable.juniour_course_image).placeholder(R.drawable.ic_launcher_background).into(piano_course_imag_1);
-            Glide.with(getActivity()).load(R.drawable.courses_banner).placeholder(R.drawable.ic_launcher_background).into(piano_course_imag_2);
+            Glide.with(getActivity()).load(R.drawable.yamaha_piano_course).placeholder(R.drawable.ic_launcher_background).into(piano_course_imag_1);
+            Glide.with(getActivity()).load(R.drawable.piano_123).placeholder(R.drawable.ic_launcher_background).into(piano_course_imag_2);
         } catch (Exception exception) {
             exception.printStackTrace();
         } finally {

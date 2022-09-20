@@ -46,7 +46,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.51"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background"
+                    android:background="@color/purple_app_theam_color"
+                    android:src="@drawable/popular_music_course"
                     >
 
                 </androidx.appcompat.widget.AppCompatImageView>
@@ -62,7 +63,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.5"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/popular_music_123"
                     >
 
                 </androidx.appcompat.widget.AppCompatImageView>
