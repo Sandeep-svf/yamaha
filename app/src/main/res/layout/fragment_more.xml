@@ -89,7 +89,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:text="@string/contact_us"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/daxcompact_bold"
                     android:textSize="16dp"
                     android:gravity="center_vertical"
                     >
@@ -152,7 +152,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:text="@string/faq"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/daxcompact_bold"
                     android:textSize="16dp"
                     android:gravity="center_vertical"
                     >
@@ -216,7 +216,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/privacy_policy"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >
@@ -280,7 +280,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/term_consition"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >
@@ -344,7 +344,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/sub_newsletter"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >
@@ -408,7 +408,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/visit_website"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >

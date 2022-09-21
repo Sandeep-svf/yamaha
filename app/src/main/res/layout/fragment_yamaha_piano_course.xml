@@ -96,7 +96,7 @@ android:orientation="vertical"
                     android:text="@string/yamaha_piano_course"
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="@dimen/heading_extra_20dp"
-                    android:fontFamily="@font/daxcompact_extrabold"
+                    android:fontFamily="@font/daxcompact_bold"
                     >
 
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -165,7 +165,7 @@ android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
 
 
-                    android:fontFamily="@font/daxcompact_extrabold"
+                    android:fontFamily="@font/daxcompact_bold"
                     android:textSize="@dimen/heading_extra_20dp"
                     android:textColor="@color/purple_app_theam_color"
                     android:text="@string/piano_grade_exm"
@@ -614,7 +614,7 @@ android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:fontFamily="@font/daxcompact_medium"
+                        android:fontFamily="@font/daxcompact_bold"
                         android:gravity="center"
                         android:text="@string/yamaha_grade_exm"
                         android:textColor="@color/white"
@@ -693,7 +693,7 @@ app:layout_constraintWidth_percent="0.9"
                             android:textSize="18dp"
                             android:textColor="@color/purple_app_theam_color"
                             android:text="@string/details"
-                            app:fontFamily="@font/daxcompact_extrabold"
+                            app:fontFamily="@font/daxcompact_bold"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
 
@@ -868,6 +868,7 @@ app:layout_constraintWidth_percent="0.9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
 
+                                android:fontFamily="@font/daxcompact_bold"
                                 android:layout_gravity="center"
                                 app:layout_constraintWidth_percent="0.9"
                                 app:layout_constraintHeight_percent="0.15"

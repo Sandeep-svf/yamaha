@@ -96,7 +96,7 @@
                     android:text="@string/music_friend_course"
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="@dimen/heading_extra_20dp"
-                    android:fontFamily="@font/daxcompact_extrabold"
+                    android:fontFamily="@font/daxcompact_bold"
                     >
 
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -176,7 +176,7 @@
                     android:text="@string/piano_keyboard_course"
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="@dimen/heading_extra_20dp"
-                    android:fontFamily="@font/daxcompact_extrabold"
+                    android:fontFamily="@font/daxcompact_bold"
                     >
 
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -231,7 +231,7 @@
                             android:text="@string/details"
                             android:textColor="@color/purple_app_theam_color"
                             android:textSize="18dp"
-                            app:fontFamily="@font/daxcompact_extrabold"
+                            app:fontFamily="@font/daxcompact_bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
 
@@ -376,6 +376,7 @@
                             android:layout_height="30dp"
                             android:layout_marginBottom="10dp"
 
+                            android:fontFamily="@font/daxcompact_bold"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/button_bg"
@@ -425,7 +426,7 @@
                 android:text="@string/piano_keyboard_course"
                 android:textColor="@color/purple_app_theam_color"
                 android:textSize="@dimen/heading_extra_20dp"
-                android:fontFamily="@font/daxcompact_extrabold"
+                android:fontFamily="@font/daxcompact_bold"
                 >
 
             </androidx.appcompat.widget.AppCompatTextView>
@@ -476,7 +477,7 @@
                             android:text="@string/details"
                             android:textColor="@color/purple_app_theam_color"
                             android:textSize="18dp"
-                            app:fontFamily="@font/daxcompact_extrabold"
+                            app:fontFamily="@font/daxcompact_bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
 
@@ -620,6 +621,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
 
+                            android:fontFamily="@font/daxcompact_bold"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/button_bg"

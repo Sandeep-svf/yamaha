@@ -86,29 +86,20 @@
 
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/english_layout"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="8"
                         android:gravity="center"
-
-                        android:textColor="@color/black"
-                        android:background="@null"
+                        android:textColor="@color/white"
+                        android:background="@color/black"
                         android:textSize="@dimen/default_text_size_12dp"
                         android:fontFamily="@font/daxcompact_medium"
-                        android:textColorHint="@color/black"
-                        android:hint="@string/english"
+
+                        android:text="@string/english"
                         ></androidx.appcompat.widget.AppCompatTextView>
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:textColor="@color/purple_app_theam_color"
-                        android:textSize="@dimen/default_text_size_12dp"
-                        android:fontFamily="@font/daxcompact_medium"
-                        android:text="@string/show"
-                        ></androidx.appcompat.widget.AppCompatTextView>
+
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -125,6 +116,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/arbic_layout"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="8"
@@ -133,8 +125,8 @@
                     android:background="@null"
                     android:textSize="@dimen/default_text_size_12dp"
                     android:fontFamily="@font/daxcompact_medium"
-                    android:textColorHint="@color/black"
-                    android:hint="@string/arbic"
+
+                    android:text="@string/arbic"
                     ></androidx.appcompat.widget.AppCompatTextView>
 
 
@@ -149,17 +141,18 @@
 
 
                 >
+
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/save_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="10dp"
-                    android:textSize="@dimen/heading_extra_20dp"
-                    android:fontFamily="@font/daxcompact_medium"
-                    android:text="@string/save"
                     android:layout_alignParentRight="true"
-                    ></androidx.appcompat.widget.AppCompatTextView>
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/daxcompact_medium"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/heading_extra_20dp"></androidx.appcompat.widget.AppCompatTextView>
 
             </RelativeLayout>
 

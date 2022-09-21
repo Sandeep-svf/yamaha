@@ -92,7 +92,7 @@
                     android:text="@string/juniour_course"
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="18dp"
-                    android:textStyle="bold">
+                    android:fontFamily="@font/daxcompact_bold">
 
                 </androidx.appcompat.widget.AppCompatTextView>
 
@@ -102,6 +102,7 @@
                     android:layout_marginTop="10dp"
 
 
+                    android:fontFamily="@font/daxcompact_medium"
                     android:text="Acquire life long musical skill with YAHAMA"
                     android:textColor="@color/purple_app_theam_color"
 
@@ -116,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-
+                    android:fontFamily="@font/daxcompact_medium"
 
                     android:text="@string/book_script_1"
                     android:textColor="@color/black"
@@ -164,7 +165,7 @@
                         android:text="@string/program_structure"
                         android:textColor="@color/white"
                         android:textSize="18dp"
-                        android:textStyle="bold"
+                        
 
                         app:layout_constraintBottom_toTopOf="@+id/jc_txt2"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -234,6 +235,7 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="0dp"
                             android:layout_height="0dp"
+                            app:fontFamily="@font/daxcompact_medium"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -309,6 +311,7 @@
                             android:text="@string/juniour_ensamble_course"
                             android:gravity="center"
                             android:textSize="@dimen/text_size_10dp"
+                            app:fontFamily="@font/daxcompact_medium"
                             >
 
                         </androidx.appcompat.widget.AppCompatTextView>
@@ -388,6 +391,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
                                 android:textSize="@dimen/text_size_10dp"
+                                app:fontFamily="@font/daxcompact_medium"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -423,6 +427,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
                                 android:textSize="@dimen/text_size_10dp"
+                                app:fontFamily="@font/daxcompact_medium"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -550,6 +555,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
                                 android:textSize="@dimen/text_size_10dp"
+                                app:fontFamily="@font/daxcompact_medium"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -585,6 +591,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                 android:text="@string/juniour_ensamble_course"
                                 android:gravity="center"
                                 android:textSize="@dimen/text_size_10dp"
+                                app:fontFamily="@font/daxcompact_medium"
                                 >
 
                             </androidx.appcompat.widget.AppCompatTextView>
@@ -658,6 +665,7 @@ app:layout_constraintBottom_toBottomOf="parent"
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="0dp"
+
                                 android:layout_height="match_parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -668,7 +676,7 @@ app:layout_constraintBottom_toBottomOf="parent"
 
                                 android:text="@string/junior_music_course"
                                 android:gravity="center"
-                                android:textStyle="bold"
+                              app:fontFamily="@font/daxcompact_bold"
                                 android:textColor="@color/purple_app_theam_color"
                                 android:textSize="14dp"
                                 >
@@ -698,7 +706,8 @@ app:layout_constraintBottom_toBottomOf="parent"
                         </androidx.cardview.widget.CardView>
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/jmc_attatched_layout"
-android:visibility="gone"
+
+                            android:visibility="gone"
                             android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1050,7 +1059,7 @@ android:visibility="gone"
                                             android:text="@string/course_fee"
                                             android:layout_marginTop="30dp"
                                             android:textColor="@color/white"
-                                            android:textStyle="bold"
+                                          app:fontFamily="@font/daxcompact_bold"
                                             android:textSize="@dimen/sub_heading_14dp"
                                             android:background="@drawable/button_bg"
                                             >
@@ -1074,6 +1083,7 @@ android:visibility="gone"
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_marginTop="10dp"
                             android:id="@+id/linear_layout_jxc"
+                            android:elevation="1dp"
                             android:layout_width="match_parent"
                             android:layout_height="36dp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -1098,7 +1108,7 @@ android:visibility="gone"
 
                                 android:text="@string/junior_music_course"
                                 android:gravity="center"
-                                android:textStyle="bold"
+                              app:fontFamily="@font/daxcompact_bold"
                                 android:textColor="@color/purple_app_theam_color"
                                 android:textSize="14dp"
                                 >
@@ -1477,7 +1487,7 @@ android:visibility="gone"
                                                 android:text="@string/course_fee"
                                                 android:layout_marginTop="30dp"
                                                 android:textColor="@color/white"
-                                                android:textStyle="bold"
+                                              app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 android:background="@drawable/button_bg"
                                                 >
@@ -1502,6 +1512,7 @@ android:visibility="gone"
                             android:layout_marginTop="10dp"
                             android:id="@+id/linear_layout_jnc"
                             android:layout_width="match_parent"
+                            android:elevation="1dp"
                             android:layout_height="36dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -1525,7 +1536,7 @@ android:visibility="gone"
 
                                 android:text="@string/junior_music_course"
                                 android:gravity="center"
-                                android:textStyle="bold"
+                              app:fontFamily="@font/daxcompact_bold"
                                 android:textColor="@color/purple_app_theam_color"
                                 android:textSize="14dp"
                                 >
@@ -1907,7 +1918,7 @@ android:visibility="gone"
                                                 android:text="@string/course_fee"
                                                 android:layout_marginTop="30dp"
                                                 android:textColor="@color/white"
-                                                android:textStyle="bold"
+                                              app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 android:background="@drawable/button_bg"
                                                 >
@@ -1930,7 +1941,7 @@ android:visibility="gone"
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_marginTop="10dp"
                             android:id="@+id/linear_layout_anc"
-
+                            android:elevation="1dp"
                             android:layout_width="match_parent"
                             android:layout_height="36dp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -1945,6 +1956,7 @@ android:visibility="gone"
 
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="0dp"
+                                android:layout_marginBottom="5dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -1955,7 +1967,7 @@ android:visibility="gone"
 
                                 android:text="@string/junior_music_course"
                                 android:gravity="center"
-                                android:textStyle="bold"
+                              app:fontFamily="@font/daxcompact_bold"
                                 android:textColor="@color/purple_app_theam_color"
                                 android:textSize="14dp"
                                 >
@@ -2334,7 +2346,7 @@ android:visibility="gone"
                                                 android:text="@string/course_fee"
                                                 android:layout_marginTop="30dp"
                                                 android:textColor="@color/white"
-                                                android:textStyle="bold"
+                                              app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 android:background="@drawable/button_bg"
                                                 >

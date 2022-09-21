@@ -72,7 +72,7 @@
 
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="16dp"
-                    android:textStyle="bold"
+                    app:fontFamily="@font/daxcompact_bold"
                     android:maxLines="2"
 
                     >
@@ -96,6 +96,7 @@
                     app:layout_constraintHeight_percent="0.4"
                     app:layout_constraintVertical_bias="0.55"
 
+                    app:fontFamily="@font/daxcompact_medium"
                     android:textSize="12dp"
                     android:textColor="@color/black"
                     android:text="Program music or programatic music is a type of instrumental art music that attempts to musically render an extramusical narrative."
@@ -115,6 +116,7 @@ app:layout_constraintEnd_toEndOf="parent"
                     android:gravity="center"
                     android:textColor="@color/white"
                    android:textSize="14dp"
+                    app:fontFamily="@font/daxcompact_bold"
                     android:background="@color/purple_app_theam_color"
                     >
 

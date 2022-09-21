@@ -110,4 +110,5 @@
     <string name="sign_up_to_news_letter">اشترك في النشرة الإخبارية</string>
     <string name="enter_your_email_address">أدخل عنوان بريدك الالكتروني</string>
     <string name="subscribe_now">إشترك الآن</string>
+    <string name="setting">إعدادات</string>
 </resources>

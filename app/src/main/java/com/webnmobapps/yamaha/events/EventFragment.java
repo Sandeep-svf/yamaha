@@ -58,6 +58,7 @@ public class EventFragment extends Fragment {
     }
     private void setupTabtitle() {
         tabLayout.getTabAt(0).setText(getResources().getString(R.string.upcoming));
+
         tabLayout.getTabAt(1).setText(getResources().getString(R.string.previous));
 
 

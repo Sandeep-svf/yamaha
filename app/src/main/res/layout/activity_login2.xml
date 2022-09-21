@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:text="@string/login"
         android:textSize="25dp"
+        android:fontFamily="@font/daxcompact_bold"
         android:textColor="@color/purple_app_theam_color"
         android:textStyle="bold"
         app:layout_constraintVertical_bias="0.15"
@@ -53,6 +54,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.25"
 
+            android:fontFamily="@font/daxcompact_medium"
             app:layout_constraintHeight_percent="0.15"
             android:paddingStart="10dp"
             android:hint="@string/email"
@@ -69,7 +71,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
+            android:fontFamily="@font/daxcompact_medium"
             app:layout_constraintVertical_bias="0.25"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.15"
@@ -133,7 +135,7 @@
                     app:layout_constraintStart_toEndOf="@+id/checkbox_layout"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-
+                    android:fontFamily="@font/daxcompact_medium"
                     android:text="@string/remamber_me"
                     android:textColor="@color/white"
                     >
@@ -166,7 +168,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-
+                    android:fontFamily="@font/daxcompact_medium"
 
                     android:text="@string/forgot_password"
                     android:textColor="@color/purple_app_theam_color"
@@ -192,6 +194,7 @@
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintVertical_bias="0.55"
         android:text="@string/login"
+        android:fontFamily="@font/daxcompact_bold"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="18dp"
@@ -212,7 +215,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
+        android:fontFamily="@font/daxcompact_medium"
         android:text="@string/back"
         android:textColor="@color/white"
         android:textSize="14dp"
@@ -230,7 +233,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
+        android:fontFamily="@font/daxcompact_medium"
         android:text="@string/dont_have_an_accout"
         android:textColor="@color/white"
         android:textSize="14dp"

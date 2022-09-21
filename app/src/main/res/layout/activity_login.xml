@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
 
         app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/daxcompact_medium"
 
         app:layout_constraintStart_toStartOf="parent"
 
@@ -78,6 +79,7 @@
             app:layout_constraintHeight_percent="0.15"
             app:layout_constraintVertical_bias="0.25"
             android:text="@string/signup"
+            android:fontFamily="@font/daxcompact_bold"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18dp"
@@ -97,6 +99,7 @@
             app:layout_constraintWidth_percent="0.9"
             app:layout_constraintHeight_percent="0.15"
             app:layout_constraintVertical_bias="0.55"
+            android:fontFamily="@font/daxcompact_bold"
             android:text="@string/login"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -116,6 +119,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
 
+            android:fontFamily="@font/daxcompact_medium"
             android:text="@string/skip"
             android:textColor="@color/white"
             android:textSize="14dp"

@@ -34,6 +34,34 @@ public class MainActivity extends AppCompatActivity {
         intis();
         //language();
 
+        // default setting for bottom menu
+        home_image.setImageResource(R.drawable.home_color);
+        booking_image.setImageResource(R.drawable.booking);
+        event_image.setImageResource(R.drawable.event);
+        profile_image.setImageResource(R.drawable.profile);
+        more_image.setImageResource(R.drawable.more);
+
+     /*   try {
+            String language = getIntent().getStringExtra("language");
+            if(language.equals("en")){
+                Locale locale = new Locale("en");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                MainActivity.this.getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+
+            }else if(language.equals("ar")){
+                Locale locale = new Locale("ar");
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                MainActivity.this.getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+
+            }
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }*/
+
         // loading default fragment ...........
         CourseFragment pageFragment = new CourseFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();

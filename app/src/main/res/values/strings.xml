@@ -64,7 +64,7 @@
     <string name="yamaha_grade" translatable="false">YAMAHA \n GRADES</string>
     <string name="other_grade" translatable="false">OTHER \n GRADES</string>
     <string name="exm_recom">Examination are recommended but not mendatory.</string>
-    <string name="yamaha_grade_exm">YAMAHA GRADE EXAMINATION</string>
+    <string name="yamaha_grade_exm" translatable="false">YAMAHA GRADE EXAMINATION</string>
     <string name="course_progressin">Course Progression</string>
     <string name="yamaha_guitar_course">Yamaha Guitar Course</string>
     <string name="let_us_develp">Let us develop the guitarist in you!</string>
@@ -116,6 +116,7 @@
     <string name="sign_up_to_news_letter">Sign Up to Newsletter</string>
     <string name="enter_your_email_address">Enter your Email address</string>
     <string name="subscribe_now">Subscribe Now</string>
+    <string name="setting">Settings</string>
 
 
     <string-array name="string_array_alcohol">

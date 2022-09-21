@@ -12,16 +12,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
-
         app:layout_constraintHeight_percent="0.75"
-
         android:background="@color/custom_bg_profile"
-
         >
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -89,7 +84,7 @@
             android:gravity="center"
             android:text="Lena Wilson"
             android:textSize="18dp"
-            android:textStyle="bold"
+           android:fontFamily="@font/daxcompact_bold"
             android:textColor="@color/black"
 
             >
@@ -101,6 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            app:fontFamily="@font/daxcompact_medium"
             app:layout_constraintTop_toBottomOf="@+id/user_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -190,8 +186,10 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/schedule"
+
+
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                       android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >
@@ -252,7 +250,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/payment"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                       android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical">
 
@@ -262,13 +260,161 @@
             </androidx.cardview.widget.CardView>
 
 
-
-
-
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="2dp"
                 android:id="@+id/setting_cardview"
                 android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/payment_cardview"
+
+                android:elevation="4dp"
+
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.1"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.65"
+                        android:src="@drawable/ic_baseline_settings_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintWidth_percent="0.15"
+                        >
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        app:layout_constraintWidth_percent="0.85"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="@string/setting"
+                        android:textColor="@color/black"
+                       android:fontFamily="@font/daxcompact_bold"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical">
+                    </androidx.appcompat.widget.AppCompatTextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/account_information_layout"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="0dp"
+                app:fontFamily="@font/daxcompact_medium"
+                android:background="@drawable/text_border"
+                android:text="@string/account_information"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_cardview"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.1"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingStart="15dp"
+                android:gravity="center_vertical">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/change_password_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/text_border"
+                android:visibility="gone"
+                android:text="@string/change_password"
+                app:fontFamily="@font/daxcompact_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_information_layout"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.1"
+
+
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingStart="15dp"
+                android:gravity="center_vertical"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/language_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/text_border"
+                android:visibility="gone"
+                android:text="@string/language"
+                app:fontFamily="@font/daxcompact_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/change_password_layout"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.1"
+
+
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingStart="15dp"
+                android:gravity="center_vertical"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/city_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/text_border"
+                android:visibility="gone"
+                android:text="@string/city"
+                app:fontFamily="@font/daxcompact_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_layout"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.1"
+
+
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingStart="15dp"
+                android:gravity="center_vertical"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="2dp"
+                android:id="@+id/settingasdas_cardview"
+                android:layout_width="0dp"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -295,6 +441,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:transcriptMode="alwaysScroll"
+                        android:groupIndicator="@drawable/ic_baseline_settings_24"
+
                         ></ExpandableListView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -308,7 +456,7 @@
 
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/setting_cardview"
+                app:layout_constraintTop_toBottomOf="@+id/city_layout"
 
                 android:elevation="4dp"
 
@@ -352,7 +500,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:text="@string/logout"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
+                       android:fontFamily="@font/daxcompact_bold"
                         android:textSize="16dp"
                         android:gravity="center_vertical"
                         >

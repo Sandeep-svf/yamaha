@@ -68,6 +68,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
 
+
                                 android:layout_marginTop="5dp"
                                 android:text="YAMAHA PIANO COURSE"
                                 android:textSize="@dimen/sub_heading_14dp"
@@ -336,6 +337,7 @@
 
                             android:layout_marginTop="10dp"
 
+                            app:fontFamily="@font/daxcompact_medium"
                             android:justificationMode="inter_word"
                             android:text="@string/book_script_1"
                             android:textColor="@color/black"
@@ -439,6 +441,7 @@
 
                             android:layout_marginTop="10dp"
 
+                            app:fontFamily="@font/daxcompact_medium"
                             android:justificationMode="inter_word"
                             android:text="@string/book_script_1"
                             android:textColor="@color/black"

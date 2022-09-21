@@ -67,6 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
 
+                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/home"
@@ -103,7 +104,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-
+                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/book"
@@ -139,7 +140,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-
+                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/event"
@@ -175,7 +176,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-
+                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/profile"
@@ -211,7 +212,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-
+                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/more"

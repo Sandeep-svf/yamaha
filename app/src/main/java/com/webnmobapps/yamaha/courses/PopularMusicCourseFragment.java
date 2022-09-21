@@ -20,7 +20,6 @@ import com.webnmobapps.yamaha.feestructure.FeeStructureFragment;
 
 public class PopularMusicCourseFragment extends Fragment {
 
-
     AppCompatImageView image_view_acoustic_guitar,image_view_electric_guitar,image_view_electric_bass;
     ConstraintLayout linear_layout_acoustic_guitar,linear_layout_eletric_guitar, linear_layout_eletric_bass;
     Boolean flag_coustic_guitar = true;
@@ -53,6 +52,7 @@ public class PopularMusicCourseFragment extends Fragment {
         popular_course_course_fee_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
             /*    FeeStructureFragment fragment = new FeeStructureFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -84,15 +84,21 @@ public class PopularMusicCourseFragment extends Fragment {
         image_view_acoustic_guitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                linear_layout_acoustic_guitar.setVisibility(View.VISIBLE);
-                linear_layout_eletric_guitar.setVisibility(View.GONE);
-                linear_layout_eletric_bass.setVisibility(View.GONE);
-                image_view_acoustic_guitar.setImageResource(R.drawable.down_arrow);
-                image_view_electric_guitar.setImageResource(R.drawable.course_details);
-                image_view_electric_bass.setImageResource(R.drawable.course_details);
-                flag_coustic_guitar = false;
-                flag_electric_guitar = true;
-                flag_electric_bass = true;
+                if (flag_coustic_guitar) {
+                    linear_layout_acoustic_guitar.setVisibility(View.VISIBLE);
+                    linear_layout_eletric_guitar.setVisibility(View.GONE);
+                    linear_layout_eletric_bass.setVisibility(View.GONE);
+                    image_view_acoustic_guitar.setImageResource(R.drawable.down_arrow);
+                    image_view_electric_guitar.setImageResource(R.drawable.course_details);
+                    image_view_electric_bass.setImageResource(R.drawable.course_details);
+                    flag_coustic_guitar = false;
+                    flag_electric_guitar = true;
+                    flag_electric_bass = true;
+                } else {
+                    linear_layout_acoustic_guitar.setVisibility(View.GONE);
+                    image_view_acoustic_guitar.setImageResource(R.drawable.course_details);
+                    flag_coustic_guitar = true;
+                }
 
             }
         });
@@ -100,15 +106,21 @@ public class PopularMusicCourseFragment extends Fragment {
         image_view_electric_guitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                linear_layout_acoustic_guitar.setVisibility(View.GONE);
-                linear_layout_eletric_guitar.setVisibility(View.VISIBLE);
-                linear_layout_eletric_bass.setVisibility(View.GONE);
-                image_view_acoustic_guitar.setImageResource(R.drawable.course_details);
-                image_view_electric_guitar.setImageResource(R.drawable.down_arrow);
-                image_view_electric_bass.setImageResource(R.drawable.course_details);
-                flag_coustic_guitar = true;
-                flag_electric_guitar = false;
-                flag_electric_bass = true;
+                if (flag_electric_guitar) {
+                    linear_layout_acoustic_guitar.setVisibility(View.GONE);
+                    linear_layout_eletric_guitar.setVisibility(View.VISIBLE);
+                    linear_layout_eletric_bass.setVisibility(View.GONE);
+                    image_view_acoustic_guitar.setImageResource(R.drawable.course_details);
+                    image_view_electric_guitar.setImageResource(R.drawable.down_arrow);
+                    image_view_electric_bass.setImageResource(R.drawable.course_details);
+                    flag_coustic_guitar = true;
+                    flag_electric_guitar = false;
+                    flag_electric_bass = true;
+                } else {
+                    linear_layout_eletric_guitar.setVisibility(View.GONE);
+                    image_view_electric_guitar.setImageResource(R.drawable.course_details);
+                    flag_electric_guitar = true;
+                }
 
             }
         });
@@ -116,15 +128,21 @@ public class PopularMusicCourseFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                linear_layout_acoustic_guitar.setVisibility(View.GONE);
-                linear_layout_eletric_guitar.setVisibility(View.GONE);
-                linear_layout_eletric_bass.setVisibility(View.VISIBLE);
-                image_view_acoustic_guitar.setImageResource(R.drawable.course_details);
-                image_view_electric_guitar.setImageResource(R.drawable.course_details);
-                image_view_electric_bass.setImageResource(R.drawable.down_arrow);
-                flag_coustic_guitar = true;
-                flag_electric_guitar = true;
-                flag_electric_bass = false;
+                if (flag_electric_bass) {
+                    linear_layout_acoustic_guitar.setVisibility(View.GONE);
+                    linear_layout_eletric_guitar.setVisibility(View.GONE);
+                    linear_layout_eletric_bass.setVisibility(View.VISIBLE);
+                    image_view_acoustic_guitar.setImageResource(R.drawable.course_details);
+                    image_view_electric_guitar.setImageResource(R.drawable.course_details);
+                    image_view_electric_bass.setImageResource(R.drawable.down_arrow);
+                    flag_coustic_guitar = true;
+                    flag_electric_guitar = true;
+                    flag_electric_bass = false;
+                } else {
+                    linear_layout_eletric_bass.setVisibility(View.GONE);
+                    image_view_electric_bass.setImageResource(R.drawable.course_details);
+                    flag_electric_bass = true;
+                }
             }
         });
 

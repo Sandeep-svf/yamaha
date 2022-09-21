@@ -67,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
+                android:fontFamily="@font/daxcompact_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +79,6 @@
 
                 android:textColor="@color/purple_app_theam_color"
                 android:textSize="16dp"
-                android:textStyle="bold"
 
                 >
 
@@ -91,6 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
+                android:fontFamily="@font/daxcompact_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +103,6 @@
 
                 android:textColor="@color/black"
                 android:textSize="@dimen/sub_heading_14dp"
-                android:textStyle="bold"
                 android:maxLines="2"
 
 
@@ -117,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
 
+                android:fontFamily="@font/daxcompact_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +128,6 @@
                 android:text="A Junior school is a type of school which provides primary education to children, often in the age range from 8 and 13."
                 android:textColor="@color/purple_app_theam_color"
                 android:textSize="12dp"
-                android:textStyle="bold"
                 android:maxLines="4"
                 app:layout_constraintHeight_percent="0.5"
 
