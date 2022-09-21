@@ -1,5 +1,6 @@
 package com.webnmobapps.yamaha.profile;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -27,9 +29,11 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.webnmobapps.yamaha.MainActivity;
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
 import com.webnmobapps.yamaha.basicfunction.Login2Activity;
+import com.webnmobapps.yamaha.basicfunction.SplashActivity;
 import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 
 import java.util.ArrayList;
@@ -46,6 +50,7 @@ public class ProfileFragment extends Fragment {
     private HashMap<String, List<String>> listDataChild;
     private ConstraintLayout schedule_layout;
     private CardView logout_cardview;
+    private String languageFlag = "en";
 
 
     @Override
@@ -258,6 +263,9 @@ public class ProfileFragment extends Fragment {
         }else if(childPosition==2){
              alertLayout = inflater.inflate(R.layout.language, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView english_layout = alertLayout.findViewById(R.id.english_layout);
+            final AppCompatTextView arbic_layout = alertLayout.findViewById(R.id.arbic_layout);
+            final AppCompatTextView save_layout = alertLayout.findViewById(R.id.save_layout);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -266,6 +274,63 @@ public class ProfileFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+            arbic_layout.setOnClickListener(new View.OnClickListener() {
+                @SuppressLint("ResourceAsColor")
+                @Override
+                public void onClick(View view) {
+                    languageFlag = "ar";
+                    english_layout.setTextColor(R.color.black);
+                    arbic_layout.setTextColor(R.color.white);
+                    arbic_layout.setBackgroundResource(R.color.black);
+                    english_layout.setBackgroundResource(R.color.white);
+                }
+            });
+
+            english_layout.setOnClickListener(new View.OnClickListener() {
+                @SuppressLint("ResourceAsColor")
+                @Override
+                public void onClick(View view) {
+                    english_layout.setBackgroundResource(R.color.black);
+                    english_layout.setTextColor(R.color.white);
+                    arbic_layout.setBackgroundResource(R.color.white);
+                    arbic_layout.setTextColor(R.color.black);
+
+                    languageFlag = "en";
+                }
+            });
+
+            save_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(languageFlag.equals("en")){
+                        Locale locale = new Locale("en");
+                        Locale.setDefault(locale);
+                        Configuration config = new Configuration();
+                        config.locale = locale;
+                        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
+
+                        Intent intent = new Intent(getActivity(), SplashActivity.class);
+                        startActivity(intent);
+                        dialogs.dismiss();
+                    }else if(languageFlag.equals("ar")){
+                        Locale locale = new Locale("ar");
+                        Locale.setDefault(locale);
+                        Configuration config = new Configuration();
+                        config.locale = locale;
+                        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
+
+                        Intent intent = new Intent(getActivity(),SplashActivity.class);
+                        startActivity(intent);
+                        dialogs.dismiss();
+                    }else{
+                        Toast.makeText(getActivity(), "Something went wrong. Please try again.", Toast.LENGTH_SHORT).show();
+                        dialogs.dismiss();
+                    }
+                }
+            });
+
+
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
                 @Override
