@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".feestructure.FeeStructureFragment">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <androidx.appcompat.widget.AppCompatImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:tint="@color/black"
+                                android:src="@drawable/ic_baseline_arrow_back_android_24"
+                                ></androidx.appcompat.widget.AppCompatImageView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginTop="5dp"
+                                android:text="YAMAHA PIANO COURSE"
+                                android:textSize="@dimen/sub_heading_14dp"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:textColor="@color/black"
+                                android:layout_marginStart="10dp"
+
+                                ></androidx.appcompat.widget.AppCompatTextView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+
+                            android:background="@drawable/custom_text_bg3"
+                            android:fontFamily="@font/daxcompact_bold"
+                            android:gravity="center"
+
+                            android:text="@string/yms_course_price_list"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_extra_20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            >
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/course_type"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/one_month_vat"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/one_month_with_vat"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/three_month_plus"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/three_month_plus_10"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/indivisual_group"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_10dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/faimly_discount"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_10dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="920"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="10dp"
+
+                            android:justificationMode="inter_word"
+                            android:text="@string/book_script_1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+
+
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_text_bg3"
+                            android:fontFamily="@font/daxcompact_bold"
+                            android:gravity="center"
+
+                            android:text="@string/juniour_course_caps"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_extra_20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            >
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/five_month"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="@string/five_month_plus_vat"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="3450"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg4"
+                                android:fontFamily="@font/daxcompact_bold"
+                                android:gravity="center"
+                                android:text="3665"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="10dp"
+
+                            android:justificationMode="inter_word"
+                            android:text="@string/book_script_1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+
+
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/custom_text_bg3"
+                            android:fontFamily="@font/daxcompact_bold"
+                            android:gravity="center"
+
+                            android:text="@string/yms_grade_exam_price_list"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_extra_20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            >
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/exam"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/level"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/price"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_text_bg3"
+                                android:fontFamily="@font/daxcompact_medium"
+                                android:gravity="center"
+                                android:text="@string/price_with_vat"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_text_size_12dp">
+
+                            </androidx.appcompat.widget.AppCompatTextView>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="364dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="364dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+
+                                >
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="241dp"
+                                    android:background="@drawable/custom_text_bg3"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/student_grade_exam"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/default_text_size_12dp"
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="118dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/custom_text_bg3"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/teacher_grade_exam"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/default_text_size_12dp"
+
+                                    ></androidx.appcompat.widget.AppCompatTextView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="12">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/fundamental_skill"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="@string/grade_13"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="12">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="12">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/custom_text_bg4"
+                                    android:fontFamily="@font/daxcompact_medium"
+                                    android:gravity="center"
+                                    android:text="80"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

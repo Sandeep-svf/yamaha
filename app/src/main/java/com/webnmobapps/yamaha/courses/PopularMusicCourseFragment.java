@@ -1,5 +1,6 @@
 package com.webnmobapps.yamaha.courses;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatButton;
@@ -37,24 +38,30 @@ public class PopularMusicCourseFragment extends Fragment {
         popular_course_course_fee_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FeeStructureFragment fragment = new FeeStructureFragment();
+               /* FeeStructureFragment fragment = new FeeStructureFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_contaner, fragment);
                 fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();*/
+
+                Intent intent = new Intent(getActivity(), FeeStructureFragment.class);
+                startActivity(intent);
             }
         });
 
         popular_course_course_fee_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FeeStructureFragment fragment = new FeeStructureFragment();
+            /*    FeeStructureFragment fragment = new FeeStructureFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_contaner, fragment);
                 fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();*/
+
+                Intent intent = new Intent(getActivity(), FeeStructureFragment.class);
+                startActivity(intent);
             }
         });
 
@@ -62,12 +69,15 @@ public class PopularMusicCourseFragment extends Fragment {
         popular_course_course_fee_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FeeStructureFragment fragment = new FeeStructureFragment();
+           /*     FeeStructureFragment fragment = new FeeStructureFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_contaner, fragment);
                 fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();*/
+
+                Intent intent = new Intent(getActivity(), FeeStructureFragment.class);
+                startActivity(intent);
             }
         });
 
