@@ -1,6 +1,5 @@
 package com.webnmobapps.yamaha.profile;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -8,16 +7,9 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.widget.ExpandableListView;
-import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -25,10 +17,20 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
 import com.webnmobapps.yamaha.basicfunction.Login2Activity;
-import com.webnmobapps.yamaha.basicfunction.SplashActivity;
+import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,17 +45,15 @@ public class ProfileFragment extends Fragment {
     private List<String> listDataGroup;
     private HashMap<String, List<String>> listDataChild;
     private ConstraintLayout schedule_layout;
-    private CardView logout_cardview, setting_cardview;
-    private String languageFlag = "en";
-    private AppCompatTextView account_information_layout, change_password_layout, language_layout, city_layout;
-    private boolean settingFlag = true;
+    private CardView logout_cardview;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        View view =  inflater.inflate(R.layout.fragment_profile, container, false);
+
 
 
         // initializing the views
@@ -63,60 +63,8 @@ public class ProfileFragment extends Fragment {
         //language(getActivity());
 
 
-        setting_cardview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (settingFlag) {
-                    account_information_layout.setVisibility(View.VISIBLE);
-                    change_password_layout.setVisibility(View.VISIBLE);
-                    language_layout.setVisibility(View.VISIBLE);
-                    city_layout.setVisibility(View.VISIBLE);
-                    settingFlag = false;
-                } else {
-                    account_information_layout.setVisibility(View.GONE);
-                    change_password_layout.setVisibility(View.GONE);
-                    language_layout.setVisibility(View.GONE);
-                    city_layout.setVisibility(View.GONE);
-                    settingFlag = true;
-                }
-            }
-        });
 
-        city_layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                alert_dialog(3, getActivity());
-
-            }
-        });
-
-        language_layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                alert_dialog(2, getActivity());
-
-            }
-        });
-
-        change_password_layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                alert_dialog(1, getActivity());
-
-            }
-        });
-
-        account_information_layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                alert_dialog(0, getActivity());
-
-            }
-        });
 
         logout_cardview.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,6 +93,9 @@ public class ProfileFragment extends Fragment {
         });
 
 
+
+
+
         // initializing the listeners
         initListeners();
 
@@ -155,7 +106,7 @@ public class ProfileFragment extends Fragment {
         initListData();
 
 
-        return view;
+        return  view;
     }
 
     private void language(FragmentActivity getActivity2) {
@@ -164,7 +115,7 @@ public class ProfileFragment extends Fragment {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getActivity().getBaseContext().getResources().updateConfiguration(config, getActivity().getBaseContext().getResources().getDisplayMetrics());
+        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
 
     }
 
@@ -177,11 +128,6 @@ public class ProfileFragment extends Fragment {
         expandableListView = view.findViewById(R.id.expandableListView);
         schedule_layout = view.findViewById(R.id.schedule_layout);
         logout_cardview = view.findViewById(R.id.logout_cardview);
-        account_information_layout = view.findViewById(R.id.account_information_layout);
-        change_password_layout = view.findViewById(R.id.change_password_layout);
-        language_layout = view.findViewById(R.id.language_layout);
-        city_layout = view.findViewById(R.id.city_layout);
-        setting_cardview = view.findViewById(R.id.setting_cardview);
 
     }
 
@@ -216,11 +162,12 @@ public class ProfileFragment extends Fragment {
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
 
-                Log.e("check_position", childPosition + "0");
+                Log.e("check_position", String.valueOf(childPosition)+"0");
 
-                alert_dialog(childPosition, getActivity());
+              alert_dialog(childPosition, getActivity());
                 return false;
             }
+
 
 
         });
@@ -231,7 +178,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onGroupExpand(int groupPosition) {
 
-                Log.e("check_position", groupPosition + "1");
+                Log.e("check_position", String.valueOf(groupPosition)+"1");
                 Toast.makeText(getActivity(),
                         listDataGroup.get(groupPosition) + " " + getString(R.string.text_collapsed),
                         Toast.LENGTH_SHORT).show();
@@ -244,7 +191,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onGroupCollapse(int groupPosition) {
 
-                Log.e("check_position", groupPosition + "2");
+                Log.e("check_position", String.valueOf(groupPosition)+"2");
 
                 Toast.makeText(getActivity(),
                         listDataGroup.get(groupPosition) + " " + getString(R.string.text_collapsed),
@@ -263,16 +210,16 @@ public class ProfileFragment extends Fragment {
         View alertLayout = null;
 
 
-        if (childPosition == 0) {
-            alertLayout = inflater.inflate(R.layout.account_information, null);
+        if(childPosition==0){
+             alertLayout = inflater.inflate(R.layout.account_information, null);
 
-            final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
             dialogs.setCancelable(false);
             dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
 
@@ -285,8 +232,9 @@ public class ProfileFragment extends Fragment {
             });
 
 
-        } else if (childPosition == 1) {
-            alertLayout = inflater.inflate(R.layout.change_password, null);
+
+        }else if(childPosition==1){
+             alertLayout = inflater.inflate(R.layout.change_password, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
 
 
@@ -294,9 +242,10 @@ public class ProfileFragment extends Fragment {
             dialogs.setContentView(alertLayout);
             dialogs.setCancelable(false);
             dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
@@ -306,76 +255,17 @@ public class ProfileFragment extends Fragment {
                 }
             });
 
-        } else if (childPosition == 2) {
-            alertLayout = inflater.inflate(R.layout.language, null);
+        }else if(childPosition==2){
+             alertLayout = inflater.inflate(R.layout.language, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
-            final AppCompatTextView english_layout = alertLayout.findViewById(R.id.english_layout);
-            final AppCompatTextView arbic_layout = alertLayout.findViewById(R.id.arbic_layout);
-            final AppCompatTextView save_layout = alertLayout.findViewById(R.id.save_layout);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
             dialogs.setCancelable(false);
             dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
-
-            arbic_layout.setOnClickListener(new View.OnClickListener() {
-                @SuppressLint("ResourceAsColor")
-                @Override
-                public void onClick(View view) {
-                    languageFlag = "ar";
-                    english_layout.setTextColor(R.color.black);
-                    arbic_layout.setTextColor(R.color.white);
-                    arbic_layout.setBackgroundResource(R.color.black);
-                    english_layout.setBackgroundResource(R.color.white);
-                }
-            });
-
-            english_layout.setOnClickListener(new View.OnClickListener() {
-                @SuppressLint("ResourceAsColor")
-                @Override
-                public void onClick(View view) {
-                    english_layout.setBackgroundResource(R.color.black);
-                    english_layout.setTextColor(R.color.white);
-                    arbic_layout.setBackgroundResource(R.color.white);
-                    arbic_layout.setTextColor(R.color.black);
-
-                    languageFlag = "en";
-                }
-            });
-
-            save_layout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (languageFlag.equals("en")) {
-                        Locale locale = new Locale("en");
-                        Locale.setDefault(locale);
-                        Configuration config = new Configuration();
-                        config.locale = locale;
-                        getActivity().getBaseContext().getResources().updateConfiguration(config, getActivity().getBaseContext().getResources().getDisplayMetrics());
-
-                        Intent intent = new Intent(getActivity(), SplashActivity.class);
-                        startActivity(intent);
-                        dialogs.dismiss();
-                    } else if (languageFlag.equals("ar")) {
-                        Locale locale = new Locale("ar");
-                        Locale.setDefault(locale);
-                        Configuration config = new Configuration();
-                        config.locale = locale;
-                        getActivity().getBaseContext().getResources().updateConfiguration(config, getActivity().getBaseContext().getResources().getDisplayMetrics());
-
-                        Intent intent = new Intent(getActivity(), SplashActivity.class);
-                        startActivity(intent);
-                        dialogs.dismiss();
-                    } else {
-                        Toast.makeText(getActivity(), "Something went wrong. Please try again.", Toast.LENGTH_SHORT).show();
-                        dialogs.dismiss();
-                    }
-                }
-            });
-
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -386,17 +276,20 @@ public class ProfileFragment extends Fragment {
                 // set language
 
 
+
+
+
             });
 
-        } else if (childPosition == 3) {
-            alertLayout = inflater.inflate(R.layout.city, null);
+        }else if(childPosition==3){
+             alertLayout = inflater.inflate(R.layout.city, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
             dialogs.setCancelable(false);
             dialogs.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.FILL_PARENT);
+            dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
 
@@ -409,6 +302,10 @@ public class ProfileFragment extends Fragment {
             });
 
         }
+        
+
+
+
 
 
     }
@@ -481,5 +378,5 @@ public class ProfileFragment extends Fragment {
         // notify the adapter
         expandableListViewAdapter.notifyDataSetChanged();
     }
-
+    
 }
