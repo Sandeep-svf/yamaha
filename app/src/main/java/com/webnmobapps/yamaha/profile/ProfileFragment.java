@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -45,7 +46,9 @@ public class ProfileFragment extends Fragment {
     private List<String> listDataGroup;
     private HashMap<String, List<String>> listDataChild;
     private ConstraintLayout schedule_layout;
-    private CardView logout_cardview;
+    private CardView logout_cardview,setting_cardview;
+    private AppCompatTextView account_information_layout,change_password_layout,language_layout,city_layout;
+    private boolean settingsFlag = true;
 
 
     @Override
@@ -55,16 +58,57 @@ public class ProfileFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_profile, container, false);
 
 
-
         // initializing the views
         initViews(view);
 
-
         //language(getActivity());
 
+        setting_cardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (settingsFlag) {
+                    account_information_layout.setVisibility(View.VISIBLE);
+                    change_password_layout.setVisibility(View.VISIBLE);
+                    language_layout.setVisibility(View.VISIBLE);
+                    city_layout.setVisibility(View.VISIBLE);
+                    settingsFlag = false;
+                } else {
+                    account_information_layout.setVisibility(View.GONE);
+                    change_password_layout.setVisibility(View.GONE);
+                    language_layout.setVisibility(View.GONE);
+                    city_layout.setVisibility(View.GONE);
+                    settingsFlag = true;
+                }
+            }
+        });
 
+        account_information_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert_dialog(0,getActivity());
+            }
+        });
 
+        change_password_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert_dialog(1,getActivity());
+            }
+        });
 
+        language_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert_dialog(2,getActivity());
+            }
+        });
+
+        city_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alert_dialog(3,getActivity());
+            }
+        });
 
         logout_cardview.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +172,11 @@ public class ProfileFragment extends Fragment {
         expandableListView = view.findViewById(R.id.expandableListView);
         schedule_layout = view.findViewById(R.id.schedule_layout);
         logout_cardview = view.findViewById(R.id.logout_cardview);
+        setting_cardview = view.findViewById(R.id.setting_cardview);
+        account_information_layout = view.findViewById(R.id.account_information_layout);
+        change_password_layout = view.findViewById(R.id.change_password_layout);
+        language_layout = view.findViewById(R.id.language_layout);
+        city_layout = view.findViewById(R.id.city_layout);
 
     }
 
