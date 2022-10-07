@@ -12,6 +12,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -30,6 +31,7 @@ import com.webnmobapps.yamaha.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 public class SplashActivity extends AppCompatActivity {
@@ -59,6 +61,8 @@ public class SplashActivity extends AppCompatActivity {
         Glide.with(SplashActivity.this).load(R.drawable.sub_logo).placeholder(R.drawable.ic_launcher_background).into(sub_logo_layout);
 
 
+
+        
         /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable(){

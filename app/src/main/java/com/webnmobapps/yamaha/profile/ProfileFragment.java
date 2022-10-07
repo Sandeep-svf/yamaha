@@ -1,9 +1,11 @@
 package com.webnmobapps.yamaha.profile;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -31,7 +33,9 @@ import android.widget.Toast;
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
 import com.webnmobapps.yamaha.basicfunction.Login2Activity;
+import com.webnmobapps.yamaha.basicfunction.SplashActivity;
 import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,6 +53,7 @@ public class ProfileFragment extends Fragment {
     private CardView logout_cardview,setting_cardview;
     private AppCompatTextView account_information_layout,change_password_layout,language_layout,city_layout;
     private boolean settingsFlag = true;
+    private String languageFlag = "en";
 
 
     @Override
@@ -307,6 +312,9 @@ public class ProfileFragment extends Fragment {
         }else if(childPosition==2){
              alertLayout = inflater.inflate(R.layout.language, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView english_layout = alertLayout.findViewById(R.id.english_layout);
+            final AppCompatTextView arbic_layout = alertLayout.findViewById(R.id.arbic_layout);
+            final AppCompatTextView save_layout = alertLayout.findViewById(R.id.save_layout);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -316,18 +324,71 @@ public class ProfileFragment extends Fragment {
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
 
+
+
+            arbic_layout.setOnClickListener(new View.OnClickListener() {
+                @SuppressLint("ResourceAsColor")
+                @Override
+                public void onClick(View view) {
+                    languageFlag = "ar";
+                    english_layout.setTextColor(R.color.black);
+                    arbic_layout.setTextColor(R.color.white);
+                    arbic_layout.setBackgroundResource(R.color.black);
+                    english_layout.setBackgroundResource(R.color.white);
+                }
+            });
+
+            english_layout.setOnClickListener(new View.OnClickListener() {
+                @SuppressLint("ResourceAsColor")
+                @Override
+                public void onClick(View view) {
+                    english_layout.setBackgroundResource(R.color.black);
+                    english_layout.setTextColor(R.color.white);
+                    arbic_layout.setBackgroundResource(R.color.white);
+                    arbic_layout.setTextColor(R.color.black);
+
+                    languageFlag = "en";
+                }
+            });
+
+            save_layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(languageFlag.equals("en")){
+                        Locale locale = new Locale("en");
+                        Locale.setDefault(locale);
+                        Configuration config = new Configuration();
+                        config.locale = locale;
+                        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
+
+                        Intent intent = new Intent(getActivity(), SplashActivity.class);
+                        startActivity(intent);
+                        dialogs.dismiss();
+                    }else if(languageFlag.equals("ar")){
+                        Locale locale = new Locale("ar");
+                        Locale.setDefault(locale);
+                        Configuration config = new Configuration();
+                        config.locale = locale;
+                        getActivity().getBaseContext().getResources().updateConfiguration(config,getActivity().getBaseContext().getResources().getDisplayMetrics());
+
+                        Intent intent = new Intent(getActivity(),SplashActivity.class);
+                        startActivity(intent);
+                        dialogs.dismiss();
+                    }else{
+                        Toast.makeText(getActivity(), "Something went wrong. Please try again.", Toast.LENGTH_SHORT).show();
+                        dialogs.dismiss();
+                    }
+                }
+            });
+
+
+
+
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     dialogs.dismiss();
                 }
-
-                // set language
-
-
-
-
-
             });
 
         }else if(childPosition==3){
