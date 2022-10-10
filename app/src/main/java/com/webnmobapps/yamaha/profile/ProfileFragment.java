@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -33,6 +34,7 @@ import android.widget.Toast;
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.ExpandableListViewAdapter;
 import com.webnmobapps.yamaha.basicfunction.Login2Activity;
+import com.webnmobapps.yamaha.basicfunction.LoginActivity;
 import com.webnmobapps.yamaha.basicfunction.SplashActivity;
 import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 import com.webnmobapps.yamaha.utility.StaticKey;
@@ -53,7 +55,8 @@ public class ProfileFragment extends Fragment {
     private CardView logout_cardview,setting_cardview;
     private AppCompatTextView account_information_layout,change_password_layout,language_layout,city_layout;
     private boolean settingsFlag = true;
-    private String languageFlag = "en";
+    private String languageFlag = StaticKey.languageEn;
+    SharedPreferences sharedPreferences;
 
 
     @Override
@@ -330,11 +333,15 @@ public class ProfileFragment extends Fragment {
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    languageFlag = "ar";
+                    languageFlag = StaticKey.languageAr;
                     english_layout.setTextColor(R.color.black);
                     arbic_layout.setTextColor(R.color.white);
                     arbic_layout.setBackgroundResource(R.color.black);
                     english_layout.setBackgroundResource(R.color.white);
+
+
+
+
                 }
             });
 
@@ -346,16 +353,29 @@ public class ProfileFragment extends Fragment {
                     english_layout.setTextColor(R.color.white);
                     arbic_layout.setBackgroundResource(R.color.white);
                     arbic_layout.setTextColor(R.color.black);
+                    languageFlag = StaticKey.languageEn;
 
-                    languageFlag = "en";
                 }
             });
 
             save_layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(languageFlag.equals("en")){
-                        Locale locale = new Locale("en");
+
+
+                    sharedPreferences = getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("language", languageFlag);
+                    editor.apply();
+
+                    sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+                    String checkLanguage =sharedPreferences.getString("language","");
+
+                    Log.e("test_language","checkLanguage: "+checkLanguage);
+
+
+                    if(languageFlag.equals(StaticKey.languageEn)){
+                        Locale locale = new Locale(languageFlag);
                         Locale.setDefault(locale);
                         Configuration config = new Configuration();
                         config.locale = locale;
@@ -364,8 +384,8 @@ public class ProfileFragment extends Fragment {
                         Intent intent = new Intent(getActivity(), SplashActivity.class);
                         startActivity(intent);
                         dialogs.dismiss();
-                    }else if(languageFlag.equals("ar")){
-                        Locale locale = new Locale("ar");
+                    }else if(languageFlag.equals(StaticKey.languageAr)){
+                        Locale locale = new Locale(languageFlag);
                         Locale.setDefault(locale);
                         Configuration config = new Configuration();
                         config.locale = locale;
@@ -380,9 +400,6 @@ public class ProfileFragment extends Fragment {
                     }
                 }
             });
-
-
-
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -6,7 +6,9 @@ import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,6 +26,8 @@ public class Login2Activity extends AppCompatActivity {
     Typeface typeface;
     AppCompatTextView back_textview_layout,login_text,remamber_me_text,forgot_password_text,do_not_have_account;
     AppCompatEditText email_edit_text_layout, password_edit_text_layout;
+    SharedPreferences sharedPreferences;
+    private String language = StaticKey.languageEn;
 
 
     @Override
@@ -32,30 +36,39 @@ public class Login2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_login2);
 
         intis();
-        Log.e("check_language","Sesssion 1" + "STARTED");
 
-        if(StaticKey.languageEn.equals("ar")){
-            Log.e("check_language","Sesssion 1" + "en");
+        sharedPreferences= getApplicationContext().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+        language=sharedPreferences.getString("language","");
+
+
+        Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+        if(StaticKey.languageEn.equals(language)){
             typeface = ResourcesCompat.getFont(Login2Activity.this, R.font.daxcompact_bold);
+            login2_button.setTypeface(typeface);
+            login_text.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(Login2Activity.this, R.font.daxcompact_medium);
             back_textview_layout.setTypeface(typeface);
             forgot_password_text.setTypeface(typeface);
             remamber_me_text.setTypeface(typeface);
-            login_text.setTypeface(typeface);
             password_edit_text_layout.setTypeface(typeface);
             email_edit_text_layout.setTypeface(typeface);
-            login2_button.setTypeface(typeface);
+
             do_not_have_account.setTypeface(typeface);
-        }else if(StaticKey.languageAr.equals("ar")){
+        }else if(StaticKey.languageAr.equals(language)){
             typeface = ResourcesCompat.getFont(Login2Activity.this, R.font.cairo_bold);
+            login2_button.setTypeface(typeface);
+            login_text.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(Login2Activity.this, R.font.cairo_medium);
             back_textview_layout.setTypeface(typeface);
             forgot_password_text.setTypeface(typeface);
             remamber_me_text.setTypeface(typeface);
-            login_text.setTypeface(typeface);
             password_edit_text_layout.setTypeface(typeface);
             email_edit_text_layout.setTypeface(typeface);
-            login2_button.setTypeface(typeface);
+
             do_not_have_account.setTypeface(typeface);
-            Log.e("check_language","Sesssion 1" + "ar");
         }else{
             Toast.makeText(Login2Activity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
             Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
