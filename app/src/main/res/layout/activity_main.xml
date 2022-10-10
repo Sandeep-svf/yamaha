@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_contaner"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHeight_percent="0.085"
 
 
         >
@@ -64,10 +64,9 @@
                     ></androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/home_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-
-                    android:fontFamily="@font/daxcompact_medium"
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/home"
@@ -102,9 +101,10 @@
                     ></androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/book_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:fontFamily="@font/daxcompact_medium"
+                    
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/book"
@@ -138,9 +138,10 @@
                     ></androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/event_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:fontFamily="@font/daxcompact_medium"
+                    
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/event"
@@ -174,9 +175,10 @@
                     ></androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profile_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:fontFamily="@font/daxcompact_medium"
+                    
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/profile"
@@ -210,9 +212,10 @@
                     ></androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/more_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:fontFamily="@font/daxcompact_medium"
+                    
                     android:paddingBottom="8dp"
                     android:layout_weight="1.25"
                     android:text="@string/more"

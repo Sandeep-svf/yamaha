@@ -25,7 +25,7 @@
     <string name="more">أكثر</string>
     <string name="juniour_course">دورات المبتدئين</string>
     <string name="book_a_lession">احجز درسًا</string>
-    <string name="book_script_1">إذا كانت هذه هي المرة الأولى هنا ، فننصحك بحجز تجربة مجانية لتجربة فصولنا واتخاذ القرار الأفضل بشأن الناقل الموسيقي الخاص بك.</string>
+    <string name="book_script_1">إذا كانت هذه هي المرة الأولى التي تتواجد فيها هنا ، فننصحك بحجز فترة تجريبية مجانية.</string>
     <string name="book_script_2">إذا كانت هذه هي المرة الأولى هنا ، فننصحك بحجز جلسة تجريبية مجانية لتجربة فصولنا واتخاذ القرار الأفضل لمشغل الموسيقى الخاص بك. فصولنا واتخاذ القرار الأفضل لمشغل الموسيقى الخاص بك.</string>
     <string name="welcome">أهلا وسهلا!</string>
     <string name="book_now">احجز الآن!</string>
@@ -111,4 +111,18 @@
     <string name="enter_your_email_address">أدخل عنوان بريدك الالكتروني</string>
     <string name="subscribe_now">إشترك الآن</string>
     <string name="setting">إعدادات</string>
+    <string name="juniour_course_title">اكتساب المهارات الموسيقية مدى الحياة مع ياماها.</string>
+    <string name="yamaha_piano_course_title">تعلم واستمتع وعبر عن نفسك على البيانو.</string>
+    <string name="yamaha_guitar_course_title">دعونا نطور عازف الجيتار بداخلك</string>
+    <string name="music_friend_course_title">ابدأ رحلتك الموسيقية بآلتك الموسيقية المفضلة</string>
+    <string name="popular_music_course_title">شارك إبداعك وشغفك وكن المؤدي الذي طالما رغبت في أن تكونه.</string>
+    <string name="what_to_except">ماذا تستبعد في نهاية JMC؟</string>
+    <string name="_4_5_year_old">4-5 سنوات</string>
+    <string name="_40_lession_per_year">40 حصة في السنة</string>
+    <string name="textbook_1_4">الكتب المدرسية 1-4</string>
+    <string name="workbook">المصنفات 1-4</string>
+    <string name="student_kit">طقم الطالب</string>
+    <string name="_60_minutes">60 دقيقة</string>
+    <string name="group">مجموعة (4-10 طلاب)</string>
+    <string name="audio_and_video">المواد السمعية والبصرية</string>
 </resources>

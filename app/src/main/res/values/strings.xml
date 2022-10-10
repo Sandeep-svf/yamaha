@@ -25,7 +25,7 @@
     <string name="more">More</string>
     <string name="juniour_course">Junior Cources</string>
     <string name="book_a_lession">Book a Lession</string>
-    <string name="book_script_1">If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.</string>
+    <string name="book_script_1">If this is you first time here, We recommend that you book a free trial lession.</string>
     <string name="book_script_2">If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.If this is you first time here, We recommend that you book a free trial lession to try our classes and make the best decision for your musical carrier.</string>
     <string name="welcome">Welcome!</string>
     <string name="book_now">Book Now!</string>
@@ -117,7 +117,21 @@
     <string name="enter_your_email_address">Enter your Email address</string>
     <string name="subscribe_now">Subscribe Now</string>
     <string name="setting">Settings</string>
-
+    <string name="juniour_course_title">Acquire lifelong musical skill with YAMAHA.</string>
+    <string name="yamaha_piano_course_title">Learn, enjoy and express yourself on piano.</string>
+    <string name="yamaha_guitar_course_title">Let us develop the guitarist in you</string>
+    <string name="music_friend_course_title">Start your musical journey with your favourite instrument</string>
+    <string name="popular_music_course_title">Share your creativity and passion and become the performer you always wanted to be.</string>
+    <string name="what_to_except">what to excpect at the end of JMC?</string>
+    <string name="_4_5_year_old">4-5 Years Old</string>
+    <string name="_40_lession_per_year">40 lessions per year</string>
+    <string name="textbook_1_4">Textbooks 1-4</string>
+    <string name="workbook">Workbooks 1-4</string>
+    <string name="student_kit">Student\'s Kit</string>
+    <string name="_60_minutes">60 Minutes</string>
+    <string name="group">Group (4-10 students)</string>
+    <string name="audio_and_video">Audio and Video Materials</string>
+    <string name="juniour_extension_course">Juniour Extension Course (JXC)</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>

@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.Manifest;
 import android.content.Context;
@@ -14,6 +16,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -27,6 +30,7 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 import com.webnmobapps.yamaha.MainActivity;
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,6 +47,10 @@ public class SplashActivity extends AppCompatActivity {
     final List<String> permissionsList = new ArrayList<String>();
     ConstraintLayout rlBaseLayout;
     private String UserID;
+    private AppCompatTextView splash_text;
+    SharedPreferences sharedPreferences;
+    private String language = StaticKey.languageEn;
+    Typeface typeface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +62,35 @@ public class SplashActivity extends AppCompatActivity {
 
 
         sub_logo_layout = findViewById(R.id.sub_logo_layout);
+        splash_text = findViewById(R.id.splash_text);
         logo_layout = findViewById(R.id.logo_layout);
         rlBaseLayout = findViewById(R.id.rlBaseLayout);
+
+
+
+        sharedPreferences= getApplicationContext().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+        language=sharedPreferences.getString("language","");
+
+
+        Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+        if(StaticKey.languageEn.equals(language)){
+            typeface = ResourcesCompat.getFont(SplashActivity.this, R.font.daxcompact_bold);
+            splash_text.setTypeface(typeface);
+
+
+        }else if(StaticKey.languageAr.equals(language)){
+            typeface = ResourcesCompat.getFont(SplashActivity.this, R.font.cairo_bold);
+            splash_text.setTypeface(typeface);
+
+
+        }else{
+            Toast.makeText(SplashActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+            Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+        }
+
+
+
 
         Glide.with(SplashActivity.this).load(R.drawable.logo).placeholder(R.drawable.ic_launcher_background).into(logo_layout);
         Glide.with(SplashActivity.this).load(R.drawable.sub_logo).placeholder(R.drawable.ic_launcher_background).into(sub_logo_layout);

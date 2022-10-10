@@ -2,15 +2,19 @@ package com.webnmobapps.yamaha.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Typeface;
+import android.util.Log;
 import android.view.ContentInfo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -25,6 +29,7 @@ import com.webnmobapps.yamaha.courses.PopularMusicCourseFragment;
 import com.webnmobapps.yamaha.courses.YamahaPianoCourseFragment;
 import com.webnmobapps.yamaha.courses.yamahaGuitarCoursesFragment;
 import com.webnmobapps.yamaha.model.CoourseListModel;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,11 +39,14 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
 
     private Context context;
+    private String language;
     List<CoourseListModel> coourseListModelList = new ArrayList<>();
+    private Typeface typeface;
 
-    public CourcesAdapter(Context context, List<CoourseListModel> coourseListModelList) {
+    public CourcesAdapter(Context context, List<CoourseListModel> coourseListModelList, String language) {
         this.context = context;
         this.coourseListModelList = coourseListModelList;
+        this.language = language;
     }
 
     @NonNull
@@ -52,11 +60,38 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull CourcesViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
+        if(StaticKey.languageEn.equals(language)){
+            typeface = ResourcesCompat.getFont(context, R.font.daxcompact_bold);
+            holder.course_type.setTypeface(typeface);
+            holder.course_title.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(context, R.font.daxcompact_medium);
+            holder.course_description.setTypeface(typeface);
+
+
+        }else if(StaticKey.languageAr.equals(language)){
+            typeface = ResourcesCompat.getFont(context, R.font.cairo_bold);
+            holder.course_type.setTypeface(typeface);
+            holder.course_title.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(context, R.font.cairo_medium);
+            holder.course_description.setTypeface(typeface);
+          
+
+        }else{
+            Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
+            Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+        }
+        
+        
+        
+        
        // Glide.with(context).load(R.drawable.juniour_course_image).placeholder(R.drawable.ic_launcher_background).into(holder.course_image);
         Glide.with(context).load(coourseListModelList.get(position).getCourseImage()).placeholder(R.drawable.ic_launcher_background)
                 .into(holder.course_image);
         holder.course_type.setText(coourseListModelList.get(position).getCourseType());
         holder.course_title.setText(coourseListModelList.get(position).getCourseName());
+        holder.course_description.setText(coourseListModelList.get(position).getCourseDescription());
 
         holder.course_layout_cardview.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,7 +161,7 @@ class CourcesViewHolder extends RecyclerView.ViewHolder {
     AppCompatImageView course_image;
     CircleImageView next_button_course;
     CardView course_layout_cardview;
-    AppCompatTextView course_title,course_type;
+    AppCompatTextView course_title,course_type,course_description;
 
     public CourcesViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -135,5 +170,6 @@ class CourcesViewHolder extends RecyclerView.ViewHolder {
         course_layout_cardview = itemView.findViewById(R.id.course_layout_cardview);
         course_type = itemView.findViewById(R.id.course_type);
         course_title = itemView.findViewById(R.id.course_title);
+        course_description = itemView.findViewById(R.id.course_description);
     }
 }

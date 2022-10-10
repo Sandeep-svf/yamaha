@@ -23,11 +23,12 @@ public class Login2Activity extends AppCompatActivity {
 
 
     AppCompatButton login2_button;
-    Typeface typeface;
+
     AppCompatTextView back_textview_layout,login_text,remamber_me_text,forgot_password_text,do_not_have_account;
     AppCompatEditText email_edit_text_layout, password_edit_text_layout;
     SharedPreferences sharedPreferences;
     private String language = StaticKey.languageEn;
+    Typeface typeface;
 
 
     @Override
