@@ -1805,7 +1805,7 @@ app:layout_constraintBottom_toBottomOf="parent"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
-                                                android:id="@+id/total_student_jnc"
+                                                android:id="@+id/total_student_jnc2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 

@@ -49,7 +49,7 @@ public class JuniourCourseFragment extends Fragment {
     course_setting_jmc2,lession_duration_jxc2,course_material_jxc5,course_material_jxc4,course_material_jxc3,course_material_jxc2,
             course_material_jxc,lession_duration_jxc,course_setting_jmc,total_student_jxc,number_of_lession_jxc;
 
-    AppCompatTextView jnc_text1,text_beside_image_jnc,text2_beside_image_jnc,cd_text1_jnc,total_student_jnc,
+    AppCompatTextView jnc_text1,text_beside_image_jnc,text2_beside_image_jnc,cd_text1_jnc,total_student_jnc,total_student_jnc2;
 
 
     @Override
