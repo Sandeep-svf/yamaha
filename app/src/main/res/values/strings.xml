@@ -141,6 +141,19 @@
     <string name="piano_fort_12_book">Pianoforte 1-12 books</string>
     <string name="audio_material_for">Audio materials for</string>
     <string name="book_18">books 1-8</string>
+    <string name="or_group_lession">or group lession</string>
+    <string name="book_6">Book 6</string>
+    <string name="grade_level_6">GRADE LEVEL 6</string>
+    <string name="rythm_strum">Rythm strum</string>
+    <string name="referance_pices">Reference Pieces</string>
+    <string name="exercise_for_solo_playing">Exercise for Solo Playing</string>
+    <string name="scale">Scale</string>
+    <string name="melody_exercise">Melody Exercise</string>
+    <string name="chord_exercise">Chord Exercise</string>
+    <string name="training">Training</string>
+    <string name="repertori">repertoire</string>
+    <string name="music_theory">Music Theory</string>
+    <string name="guitar_course">Guitar Course</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>

@@ -87,6 +87,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mfc_tx1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -101,6 +102,7 @@
 
                 </androidx.appcompat.widget.AppCompatTextView>
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mfc_tx2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -118,6 +120,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mfc_tx3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -151,6 +154,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mfc_tx4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -166,6 +170,7 @@
                 </androidx.appcompat.widget.AppCompatTextView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mfc_tx5"
                     android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -251,6 +256,7 @@
                             app:layout_constraintWidth_percent="0.5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
@@ -263,16 +269,18 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="6 Years Old and above"
+                                android:text="@string/_6_year_old"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
@@ -282,11 +290,12 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Indivisual Lessions"
+                                android:text="@string/indivisual_lession"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
@@ -305,6 +314,7 @@
                             app:layout_constraintWidth_percent="0.5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx10"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
@@ -317,27 +327,30 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="30 Minutes"
+                                android:text="@string/_30_minutes"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="30 Minutes"
+                                android:text="@string/_30_minutes"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
                             g
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
@@ -347,22 +360,24 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Pianoforte 1-12 books"
+                                android:text="@string/piano_fort_12_book"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Audio materials for"
+                                android:text="@string/audio_material_for"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
@@ -423,7 +438,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
 
-                android:text="@string/piano_keyboard_course"
+                android:text="@string/guitar_course"
                 android:textColor="@color/purple_app_theam_color"
                 android:textSize="@dimen/heading_extra_20dp"
                 android:fontFamily="@font/daxcompact_bold"
@@ -497,6 +512,7 @@
                             app:layout_constraintWidth_percent="0.5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
@@ -509,16 +525,18 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="6 Years Old and above"
+                                android:text="@string/_6_year_old"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
@@ -528,11 +546,12 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Indivisual Lessions"
+                                android:text="@string/indivisual_lession"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
@@ -551,6 +570,7 @@
                             app:layout_constraintWidth_percent="0.5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx21"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
@@ -563,27 +583,30 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx22"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="30 Minutes"
+                                android:text="@string/_30_minutes"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx23"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="30 Minutes"
+                                android:text="@string/_30_minutes"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
                             g
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp"
@@ -593,22 +616,24 @@
                                 app:fontFamily="@font/daxcompact_bold" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx25"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Pianoforte 1-12 books"
+                                android:text="@string/piano_fort_12_book"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/mfc_tx26"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/daxcompact_medium"
-                                android:text="Audio materials for"
+                                android:text="@string/audio_material_for"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 app:fontFamily="@font/daxcompact_bold"></androidx.appcompat.widget.AppCompatTextView>

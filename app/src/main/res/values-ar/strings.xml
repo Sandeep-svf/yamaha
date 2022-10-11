@@ -139,4 +139,17 @@
     <string name="yamaha_grade">درجات ياماها</string>
     <string name="other_grade">درجات أخرى</string>
     <string name="yamaha_grade_exm">امتحان YAMAHA GRADE</string>
+    <string name="or_group_lession">أو مجموعة تفسيرية</string>
+    <string name="book_6">كتاب 6</string>
+    <string name="grade_level_6">مستوى الصف 6</string>
+    <string name="rythm_strum">ريثم مداعبة أوتار الآلة الموسيقية</string>
+    <string name="referance_pices">قطع مرجعية</string>
+    <string name="exercise_for_solo_playing">تمرين للعب الفردي</string>
+    <string name="scale">مقياس</string>
+    <string name="melody_exercise">تمرين اللحن</string>
+    <string name="chord_exercise">تمرين الوتر</string>
+    <string name="training">تمرين</string>
+    <string name="repertori">مخزون</string>
+    <string name="music_theory">نظرية الموسيقى</string>
+    <string name="guitar_course">دورة الغيتار</string>
 </resources>

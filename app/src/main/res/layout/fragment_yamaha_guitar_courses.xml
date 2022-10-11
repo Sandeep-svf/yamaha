@@ -229,7 +229,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Melody Exercise"
+                            android:text="@string/melody_exercise"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -259,7 +259,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Scale"
+                            android:text="@string/scale"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -288,7 +288,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Exercise for Solo Playing"
+                            android:text="@string/exercise_for_solo_playing"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -318,7 +318,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Reference Pieces"
+                            android:text="@string/referance_pices"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -348,7 +348,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Rythm strum"
+                            android:text="@string/rythm_strum"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -385,7 +385,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Chord Exercise"
+                            android:text="@string/chord_exercise"
 
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
@@ -416,7 +416,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Training"
+                            android:text="@string/training"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -446,7 +446,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="repertoire"
+                            android:text="@string/repertori"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -476,7 +476,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
                             android:paddingStart="10dp"
-                            android:text="Music Theory"
+                            android:text="@string/music_theory"
                                android:layout_weight="9"
                             android:fontFamily="@font/daxcompact_medium"
                             android:textColor="@color/black"
@@ -518,7 +518,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg"
-                        android:text="BOOK 6"
+                        android:text="@string/book_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/white"
@@ -545,7 +545,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg2"
-                        android:text="GRADE LEVEL 6"
+                        android:text="@string/grade_level_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/purple_app_theam_color"
@@ -571,7 +571,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg"
-                        android:text="BOOK 6"
+                        android:text="@string/book_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/white"
@@ -598,7 +598,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg2"
-                        android:text="GRADE LEVEL 6"
+                        android:text="@string/grade_level_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/purple_app_theam_color"
@@ -624,7 +624,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg"
-                        android:text="BOOK 6"
+                        android:text="@string/book_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/white"
@@ -651,7 +651,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg2"
-                        android:text="GRADE LEVEL 6"
+                        android:text="@string/grade_level_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/purple_app_theam_color"
@@ -677,7 +677,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg"
-                        android:text="BOOK 6"
+                        android:text="@string/book_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/white"
@@ -704,7 +704,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg2"
-                        android:text="GRADE LEVEL 6"
+                        android:text="@string/grade_level_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/purple_app_theam_color"
@@ -730,7 +730,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg"
-                        android:text="BOOK 6"
+                        android:text="@string/book_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/white"
@@ -757,7 +757,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/custom_text_bg2"
-                        android:text="GRADE LEVEL 6"
+                        android:text="@string/grade_level_6"
                         android:gravity="center"
                         android:layout_weight="4"
                         android:textColor="@color/purple_app_theam_color"
@@ -783,7 +783,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/custom_text_bg"
-                    android:text="BOOK 6"
+                    android:text="@string/book_6"
                     android:gravity="center"
                     android:layout_weight="4"
                     android:textColor="@color/white"
@@ -810,7 +810,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/custom_text_bg2"
-                    android:text="GRADE LEVEL 6"
+                    android:text="@string/grade_level_6"
                     android:gravity="center"
                     android:layout_weight="4"
                     android:textColor="@color/purple_app_theam_color"
@@ -956,6 +956,7 @@
                                 app:layout_constraintStart_toStartOf="parent">
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/total_student_ygc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textColor="@color/purple_app_theam_color"
@@ -964,17 +965,19 @@
                                     android:textSize="@dimen/sub_heading_14dp"
                                     />
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/total_student_ygc2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
                                     android:textColor="@color/black"
                                     android:fontFamily="@font/daxcompact_medium"
-                                    android:text="6 Years Old and above"
+                                    android:text="@string/_6_year_old"
                                     app:fontFamily="@font/daxcompact_bold"
                                     android:textSize="@dimen/sub_heading_14dp"
                                     ></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_setting_ygc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textColor="@color/purple_app_theam_color"
@@ -984,23 +987,25 @@
                                     android:layout_marginTop="15dp"
                                     />
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_setting_ygc2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
                                     android:textColor="@color/black"
                                     android:fontFamily="@font/daxcompact_medium"
-                                    android:text="Indivisual Lessions"
+                                    android:text="@string/indivisual_lession"
                                     app:fontFamily="@font/daxcompact_bold"
                                     android:textSize="@dimen/sub_heading_14dp"
                                     ></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_setting_ygc3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
                                     android:textColor="@color/black"
                                     android:fontFamily="@font/daxcompact_medium"
-                                    android:text="Indivisual Lessions"
+                                    android:text="@string/or_group_lession"
                                     app:fontFamily="@font/daxcompact_bold"
                                     android:textSize="@dimen/sub_heading_14dp"
                                     ></androidx.appcompat.widget.AppCompatTextView>
@@ -1020,6 +1025,7 @@
                                 app:layout_constraintEnd_toEndOf="parent">
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/lession_duration_ygc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
@@ -1032,6 +1038,7 @@
                                     android:textSize="@dimen/sub_heading_14dp"
                                     />
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/lession_duration_ygc2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
@@ -1043,6 +1050,7 @@
                                     ></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_material_ygc"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textColor="@color/purple_app_theam_color"
@@ -1052,6 +1060,7 @@
                                     android:layout_marginTop="15dp"
                                     />
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_material_ygc2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
@@ -1063,6 +1072,7 @@
                                     ></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/course_material_ygc3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
