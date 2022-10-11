@@ -61,10 +61,10 @@
     <string name="course_fee">Course Fee</string>
     <string name="yamaha_piano_course">Yamaha Piano Course</string>
     <string name="piano_grade_exm">Yamaha Piano Grade Examination</string>
-    <string name="yamaha_grade" translatable="false">YAMAHA \n GRADES</string>
-    <string name="other_grade" translatable="false">OTHER \n GRADES</string>
+    <string name="yamaha_grade" >YAMAHA  GRADES</string>
+    <string name="other_grade" >OTHER  GRADES</string>
     <string name="exm_recom">Examination are recommended but not mendatory.</string>
-    <string name="yamaha_grade_exm" translatable="false">YAMAHA GRADE EXAMINATION</string>
+    <string name="yamaha_grade_exm" >YAMAHA GRADE EXAMINATION</string>
     <string name="course_progressin">Course Progression</string>
     <string name="yamaha_guitar_course">Yamaha Guitar Course</string>
     <string name="let_us_develp">Let us develop the guitarist in you!</string>
@@ -132,6 +132,15 @@
     <string name="group">Group (4-10 students)</string>
     <string name="audio_and_video">Audio and Video Materials</string>
     <string name="juniour_extension_course">Juniour Extension Course (JXC)</string>
+    <string name="acquire_life_long_musical_skill">Acquire life long musical skill with YAHAMA</string>
+    <string name="_6_year_old">6 Year old and above</string>
+    <string name="indivisual_lession">Indivisual Lessions</string>
+    <string name="level_1_be">Level 1 (Beginner) to</string>
+    <string name="level_12_advance">Level 12 (Advance)</string>
+    <string name="_30_minutes">30 Minutes</string>
+    <string name="piano_fort_12_book">Pianoforte 1-12 books</string>
+    <string name="audio_material_for">Audio materials for</string>
+    <string name="book_18">books 1-8</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>

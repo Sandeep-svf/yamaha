@@ -125,4 +125,18 @@
     <string name="_60_minutes">60 دقيقة</string>
     <string name="group">مجموعة (4-10 طلاب)</string>
     <string name="audio_and_video">المواد السمعية والبصرية</string>
+    <string name="juniour_extension_course">دورة ملحق جونيور (JXC)</string>
+
+    <string name="acquire_life_long_musical_skill">اكتساب مهارة موسيقية تدوم مدى الحياة مع YAHAMA</string>
+    <string name="_6_year_old">6 سنوات فما فوق</string>
+    <string name="indivisual_lession">الدروس الفردية</string>
+    <string name="level_1_be">المستوى 1 (مبتدئ) إلى</string>
+    <string name="level_12_advance">المستوى 12 (متقدم)</string>
+    <string name="_30_minutes">30 دقيقة</string>
+    <string name="piano_fort_12_book">بيانو فورت 1-12 كتابا</string>
+    <string name="audio_material_for">المواد الصوتية لـ</string>
+    <string name="book_18">الكتب 1-8</string>
+    <string name="yamaha_grade">درجات ياماها</string>
+    <string name="other_grade">درجات أخرى</string>
+    <string name="yamaha_grade_exm">امتحان YAMAHA GRADE</string>
 </resources>

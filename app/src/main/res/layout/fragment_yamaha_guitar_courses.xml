@@ -89,6 +89,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -103,6 +104,7 @@
 
                 </androidx.appcompat.widget.AppCompatTextView>
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -120,6 +122,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -148,6 +151,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -166,6 +170,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -219,6 +224,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx6"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -248,6 +254,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx7"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -276,6 +283,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx8"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -305,6 +313,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx9"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -334,6 +343,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx10"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -370,6 +380,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx11"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -400,6 +411,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx12"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -429,6 +441,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx13"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -458,6 +471,7 @@
                             ></de.hdodenhof.circleimageview.CircleImageView>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ygc_tx14"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
@@ -499,6 +513,7 @@
                     >
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx15"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -525,6 +540,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx21"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -550,6 +566,7 @@
                     >
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx16"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -576,6 +593,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx22"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -601,6 +619,7 @@
                     >
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx17"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -627,6 +646,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx23"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -652,6 +672,7 @@
                     >
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx18"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -678,6 +699,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx24"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -703,6 +725,7 @@
                     >
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx19"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -729,6 +752,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ygc_tx25"
                         android:padding="2dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -754,6 +778,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx20"
                     android:padding="2dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -780,6 +805,7 @@
                 </androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx26"
                     android:padding="2dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -798,6 +824,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx27"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -806,6 +833,7 @@
                     android:text="@string/book_script_1"
                     ></androidx.appcompat.widget.AppCompatTextView>
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ygc_tx28"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -930,11 +958,7 @@
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-
-
                                     android:textColor="@color/purple_app_theam_color"
-
-
                                     android:text="@string/target_student"
                                     app:fontFamily="@font/daxcompact_bold"
                                     android:textSize="@dimen/sub_heading_14dp"

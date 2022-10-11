@@ -49,7 +49,13 @@ public class JuniourCourseFragment extends Fragment {
     course_setting_jmc2,lession_duration_jxc2,course_material_jxc5,course_material_jxc4,course_material_jxc3,course_material_jxc2,
             course_material_jxc,lession_duration_jxc,course_setting_jmc,total_student_jxc,number_of_lession_jxc;
 
-    AppCompatTextView jnc_text1,text_beside_image_jnc,text2_beside_image_jnc,cd_text1_jnc,total_student_jnc,total_student_jnc2;
+    AppCompatTextView jnc_text1,text_beside_image_jnc,text2_beside_image_jnc,cd_text1_jnc,total_student_jnc,total_student_jnc2,number_of_lession_jnc
+            ,number_of_lession_jnc2,course_material_jnc,course_material_jnc5,course_material_jnc4,course_material_jnc3,course_material_jnc2
+            ,lession_duration_jnc,lession_duration_jnc2,course_setting_jnc,course_setting_jnc2;
+
+    AppCompatTextView anc_text1,anc_text2,text_beside_image_anc,text2_beside_image_anc,cd_text1_anc,total_student_anc,total_student_anc2
+            ,number_of_lession_anc,number_of_lession_anc2,course_material_anc5,course_material_anc4,course_material_anc3,course_material_anc2
+            ,course_material_anc,lession_duration_anc,lession_duration_anc2,course_setting_anc,course_setting_anc2;
 
 
     @Override
@@ -69,6 +75,9 @@ public class JuniourCourseFragment extends Fragment {
         if(StaticKey.languageEn.equals(language)){
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_extrabold);
             cd_text1.setTypeface(typeface);
+            cd_text1_jnc.setTypeface(typeface);
+            //###############################
+            cd_text1_anc.setTypeface(typeface);
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
             course_fee_button_anc.setTypeface(typeface);
@@ -111,10 +120,40 @@ public class JuniourCourseFragment extends Fragment {
             course_material_jxc4.setTypeface(typeface);
             course_material_jxc3.setTypeface(typeface);
             course_material_jxc2.setTypeface(typeface);
+            text_beside_image_jnc.setTypeface(typeface);
+            total_student_jnc.setTypeface(typeface);
+            total_student_jnc2.setTypeface(typeface);
+            number_of_lession_jnc.setTypeface(typeface);
+            number_of_lession_jnc2.setTypeface(typeface);
+            course_material_jnc.setTypeface(typeface);
+            course_material_jnc5.setTypeface(typeface);
+            course_material_jnc4.setTypeface(typeface);
+            course_material_jnc3.setTypeface(typeface);
+            course_material_jnc2.setTypeface(typeface);
+            lession_duration_jnc.setTypeface(typeface);
+            lession_duration_jnc2.setTypeface(typeface);
+            course_setting_jnc.setTypeface(typeface);
+            course_setting_jnc2.setTypeface(typeface);
 
+            //###################################
+            text_beside_image_anc.setTypeface(typeface);
+            total_student_anc.setTypeface(typeface);
+            total_student_anc2.setTypeface(typeface);
+            number_of_lession_anc.setTypeface(typeface);
+            number_of_lession_anc2.setTypeface(typeface);
+            course_material_anc5.setTypeface(typeface);
+            course_material_anc4.setTypeface(typeface);
+            course_material_anc3.setTypeface(typeface);
+            course_material_anc2.setTypeface(typeface);
+            course_material_anc.setTypeface(typeface);
+            lession_duration_anc.setTypeface(typeface);
+            lession_duration_anc2.setTypeface(typeface);
+            course_setting_anc.setTypeface(typeface);
+            course_setting_anc2.setTypeface(typeface);
 
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+            text2_beside_image_jnc.setTypeface(typeface);
             course_title.setTypeface(typeface);
             course_description.setTypeface(typeface);
             jc_txt2.setTypeface(typeface);
@@ -130,12 +169,20 @@ public class JuniourCourseFragment extends Fragment {
             jxc_text2.setTypeface(typeface);
             jxc_text1.setTypeface(typeface);
             text2_beside_image_jxc.setTypeface(typeface);
+            jnc_text1.setTypeface(typeface);
+            //##################
+            anc_text1.setTypeface(typeface);
+            anc_text2.setTypeface(typeface);
 
 
         }else if(StaticKey.languageAr.equals(language)){
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_extrabold);
             cd_text1.setTypeface(typeface);
+            cd_text1_jnc.setTypeface(typeface);
+            //###############################
+            cd_text1_anc.setTypeface(typeface);
+
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
             course_fee_button_anc.setTypeface(typeface);
@@ -178,11 +225,41 @@ public class JuniourCourseFragment extends Fragment {
             course_material_jxc4.setTypeface(typeface);
             course_material_jxc3.setTypeface(typeface);
             course_material_jxc2.setTypeface(typeface);
+            text_beside_image_jnc.setTypeface(typeface);
+            total_student_jnc.setTypeface(typeface);
+            total_student_jnc2.setTypeface(typeface);
+            number_of_lession_jnc.setTypeface(typeface);
+            number_of_lession_jnc2.setTypeface(typeface);
+            course_material_jnc.setTypeface(typeface);
+            course_material_jnc5.setTypeface(typeface);
+            course_material_jnc4.setTypeface(typeface);
+            course_material_jnc3.setTypeface(typeface);
+            course_material_jnc2.setTypeface(typeface);
+            lession_duration_jnc.setTypeface(typeface);
+            lession_duration_jnc2.setTypeface(typeface);
+            course_setting_jnc.setTypeface(typeface);
+            course_setting_jnc2.setTypeface(typeface);
+            //#################################
+            text_beside_image_anc.setTypeface(typeface);
+            total_student_anc.setTypeface(typeface);
+            total_student_anc2.setTypeface(typeface);
+            number_of_lession_anc.setTypeface(typeface);
+            number_of_lession_anc2.setTypeface(typeface);
+            course_material_anc5.setTypeface(typeface);
+            course_material_anc4.setTypeface(typeface);
+            course_material_anc3.setTypeface(typeface);
+            course_material_anc2.setTypeface(typeface);
+            course_material_anc.setTypeface(typeface);
+            lession_duration_anc.setTypeface(typeface);
+            lession_duration_anc2.setTypeface(typeface);
+            course_setting_anc.setTypeface(typeface);
+            course_setting_anc2.setTypeface(typeface);
 
 
 
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+            text2_beside_image_jnc.setTypeface(typeface);
             course_title.setTypeface(typeface);
             course_description.setTypeface(typeface);
             jc_txt2.setTypeface(typeface);
@@ -198,6 +275,10 @@ public class JuniourCourseFragment extends Fragment {
             jxc_text2.setTypeface(typeface);
             jxc_text1.setTypeface(typeface);
             text2_beside_image_jxc.setTypeface(typeface);
+            jnc_text1.setTypeface(typeface);
+            //##################
+            anc_text1.setTypeface(typeface);
+            anc_text2.setTypeface(typeface);
 
         }else{
             Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
@@ -380,6 +461,42 @@ public class JuniourCourseFragment extends Fragment {
 
     private void init(View view) {
 
+
+        course_setting_anc2 = view.findViewById(R.id.course_setting_anc2);
+        course_setting_anc = view.findViewById(R.id.course_setting_anc);
+        anc_text1 = view.findViewById(R.id.anc_text1);
+        anc_text2 = view.findViewById(R.id.anc_text2);
+        text_beside_image_anc = view.findViewById(R.id.text_beside_image_anc);
+        text2_beside_image_anc = view.findViewById(R.id.text2_beside_image_anc);
+        cd_text1_anc = view.findViewById(R.id.cd_text1_anc);
+        total_student_anc = view.findViewById(R.id.total_student_anc);
+        total_student_anc2 = view.findViewById(R.id.total_student_anc2);
+        number_of_lession_anc = view.findViewById(R.id.number_of_lession_anc);
+        number_of_lession_anc2 = view.findViewById(R.id.number_of_lession_anc2);
+        course_material_anc5 = view.findViewById(R.id.course_material_anc5);
+        course_material_anc4 = view.findViewById(R.id.course_material_anc4);
+        course_material_anc3 = view.findViewById(R.id.course_material_anc3);
+        course_material_anc2 = view.findViewById(R.id.course_material_anc2);
+        course_material_anc = view.findViewById(R.id.course_material_anc);
+        lession_duration_anc = view.findViewById(R.id.lession_duration_anc);
+        lession_duration_anc2 = view.findViewById(R.id.lession_duration_anc2);
+        total_student_jnc2 = view.findViewById(R.id.total_student_jnc2);
+        jnc_text1 = view.findViewById(R.id.jnc_text1);
+        text_beside_image_jnc = view.findViewById(R.id.text_beside_image_jnc);
+        text2_beside_image_jnc = view.findViewById(R.id.text2_beside_image_jnc);
+        cd_text1_jnc = view.findViewById(R.id.cd_text1_jnc);
+        total_student_jnc = view.findViewById(R.id.total_student_jnc);
+        number_of_lession_jnc = view.findViewById(R.id.number_of_lession_jnc);
+        number_of_lession_jnc2 = view.findViewById(R.id.number_of_lession_jnc2);
+        course_material_jnc5 = view.findViewById(R.id.course_material_jnc5);
+        course_material_jnc4 = view.findViewById(R.id.course_material_jnc4);
+        course_material_jnc3 = view.findViewById(R.id.course_material_jnc3);
+        course_material_jnc2 = view.findViewById(R.id.course_material_jnc2);
+        course_material_jnc = view.findViewById(R.id.course_material_jnc);
+        lession_duration_jnc = view.findViewById(R.id.lession_duration_jnc);
+        lession_duration_jnc2 = view.findViewById(R.id.lession_duration_jnc2);
+        course_setting_jnc = view.findViewById(R.id.course_setting_jnc);
+        course_setting_jnc2 = view.findViewById(R.id.course_setting_jnc2);
         course_type = view.findViewById(R.id.course_type);
         course_title = view.findViewById(R.id.course_title);
         course_description = view.findViewById(R.id.course_description);
@@ -445,7 +562,5 @@ public class JuniourCourseFragment extends Fragment {
         course_setting_jmc = view.findViewById(R.id.course_setting_jmc);
         lession_duration_jxc = view.findViewById(R.id.lession_duration_jxc);
         course_material_jxc = view.findViewById(R.id.course_material_jxc);
-
-
     }
 }
