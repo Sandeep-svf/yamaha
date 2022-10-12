@@ -98,6 +98,11 @@ public class CourcesAdapter extends RecyclerView.Adapter<CourcesViewHolder> {
             public void onClick(View view) {
 
 
+                /*if(language.equals(StaticKey.languageEn)){
+                    holder.next_button_course.setRotation(90);
+                }else if(language.equals(StaticKey.languageAr)){
+                    holder.next_button_course.setRotation(270);
+                }*/
 
                 if(position==0) {
                     JuniourCourseFragment fragment = new JuniourCourseFragment();
