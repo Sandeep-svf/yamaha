@@ -13,6 +13,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
@@ -409,9 +410,9 @@ public class ProfileFragment extends Fragment {
             final AppCompatTextView cp_text7 = alertLayout.findViewById(R.id.cp_text7);
             final AppCompatTextView cp_text6 = alertLayout.findViewById(R.id.cp_text6);
             final AppCompatTextView cp_text5 = alertLayout.findViewById(R.id.cp_text5);
-            final AppCompatTextView cp_text4 = alertLayout.findViewById(R.id.cp_text4);
-            final AppCompatTextView cp_text3 = alertLayout.findViewById(R.id.cp_text3);
-            final AppCompatTextView cp_text2 = alertLayout.findViewById(R.id.cp_text2);
+            final AppCompatEditText cp_text4 = alertLayout.findViewById(R.id.cp_text4);
+            final AppCompatEditText cp_text3 = alertLayout.findViewById(R.id.cp_text3);
+            final AppCompatEditText cp_text2 = alertLayout.findViewById(R.id.cp_text2);
             final AppCompatTextView cp_text1 = alertLayout.findViewById(R.id.cp_text1);
 
 
@@ -525,9 +526,10 @@ public class ProfileFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     languageFlag = StaticKey.languageAr;
-                    english_layout.setTextColor(R.color.black);
+                    english_layout.setTextColor(R.color.light_black);
+                    arbic_layout.setBackgroundResource(R.color.light_black);
                     arbic_layout.setTextColor(R.color.white);
-                    arbic_layout.setBackgroundResource(R.color.black);
+
                     english_layout.setBackgroundResource(R.color.white);
                 }
             });
@@ -536,10 +538,11 @@ public class ProfileFragment extends Fragment {
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    english_layout.setBackgroundResource(R.color.black);
-                    english_layout.setTextColor(R.color.white);
+                    english_layout.setBackgroundResource(R.color.light_black);
                     arbic_layout.setBackgroundResource(R.color.white);
-                    arbic_layout.setTextColor(R.color.black);
+                    english_layout.setTextColor(R.color.white);
+
+                    arbic_layout.setTextColor(R.color.light_black);
                     languageFlag = StaticKey.languageEn;
 
                 }

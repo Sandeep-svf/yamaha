@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -271,7 +272,7 @@ public class MoreFragment extends Fragment {
                 alertLayout = inflater.inflate(R.layout.subcribe_to_news_letter_xml, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
             final AppCompatTextView text = alertLayout.findViewById(R.id.text);
-            final AppCompatTextView text2 = alertLayout.findViewById(R.id.text2);
+            final AppCompatEditText text2 = alertLayout.findViewById(R.id.text2);
             final AppCompatTextView text3 = alertLayout.findViewById(R.id.text3);
 
 
