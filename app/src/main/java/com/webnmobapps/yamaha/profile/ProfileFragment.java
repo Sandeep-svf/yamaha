@@ -324,6 +324,7 @@ public class ProfileFragment extends Fragment {
         // Dialoogs...
         Dialog dialogs;
 
+
         LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View alertLayout = null;
 
@@ -332,6 +333,16 @@ public class ProfileFragment extends Fragment {
              alertLayout = inflater.inflate(R.layout.account_information, null);
 
              final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+             final AppCompatTextView abd_text1 = alertLayout.findViewById(R.id.abd_text1);
+             final AppCompatTextView adb_text2 = alertLayout.findViewById(R.id.adb_text2);
+             final AppCompatTextView adb_text3 = alertLayout.findViewById(R.id.adb_text3);
+             final AppCompatTextView adb_text4 = alertLayout.findViewById(R.id.adb_text4);
+             final AppCompatTextView adb_text5 = alertLayout.findViewById(R.id.adb_text5);
+             final AppCompatTextView adb_text6 = alertLayout.findViewById(R.id.adb_text6);
+             final AppCompatTextView adb_text7 = alertLayout.findViewById(R.id.adb_text7);
+             final AppCompatTextView adb_text8 = alertLayout.findViewById(R.id.adb_text8);
+
+
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -340,6 +351,46 @@ public class ProfileFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+
+
+            Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                abd_text1.setTypeface(typeface);
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                adb_text2.setTypeface(typeface);
+                adb_text3.setTypeface(typeface);
+                adb_text4.setTypeface(typeface);
+                adb_text5.setTypeface(typeface);
+                adb_text6.setTypeface(typeface);
+                adb_text7.setTypeface(typeface);
+                adb_text8.setTypeface(typeface);
+
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                abd_text1.setTypeface(typeface);
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                adb_text2.setTypeface(typeface);
+                adb_text3.setTypeface(typeface);
+                adb_text4.setTypeface(typeface);
+                adb_text5.setTypeface(typeface);
+                adb_text6.setTypeface(typeface);
+                adb_text7.setTypeface(typeface);
+                adb_text8.setTypeface(typeface);
+
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
@@ -354,6 +405,14 @@ public class ProfileFragment extends Fragment {
         }else if(childPosition==1){
              alertLayout = inflater.inflate(R.layout.change_password, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView cp_text8 = alertLayout.findViewById(R.id.cp_text8);
+            final AppCompatTextView cp_text7 = alertLayout.findViewById(R.id.cp_text7);
+            final AppCompatTextView cp_text6 = alertLayout.findViewById(R.id.cp_text6);
+            final AppCompatTextView cp_text5 = alertLayout.findViewById(R.id.cp_text5);
+            final AppCompatTextView cp_text4 = alertLayout.findViewById(R.id.cp_text4);
+            final AppCompatTextView cp_text3 = alertLayout.findViewById(R.id.cp_text3);
+            final AppCompatTextView cp_text2 = alertLayout.findViewById(R.id.cp_text2);
+            final AppCompatTextView cp_text1 = alertLayout.findViewById(R.id.cp_text1);
 
 
             dialogs = new Dialog(getActivity());
@@ -364,6 +423,44 @@ public class ProfileFragment extends Fragment {
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
 
+            Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                cp_text1.setTypeface(typeface);
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                cp_text2.setTypeface(typeface);
+                cp_text3.setTypeface(typeface);
+                cp_text4.setTypeface(typeface);
+                cp_text5.setTypeface(typeface);
+                cp_text6.setTypeface(typeface);
+                cp_text7.setTypeface(typeface);
+                cp_text8.setTypeface(typeface);
+
+
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                cp_text1.setTypeface(typeface);
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                cp_text2.setTypeface(typeface);
+                cp_text3.setTypeface(typeface);
+                cp_text4.setTypeface(typeface);
+                cp_text5.setTypeface(typeface);
+                cp_text6.setTypeface(typeface);
+                cp_text7.setTypeface(typeface);
+                cp_text8.setTypeface(typeface);
+
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
@@ -379,6 +476,7 @@ public class ProfileFragment extends Fragment {
             final AppCompatTextView english_layout = alertLayout.findViewById(R.id.english_layout);
             final AppCompatTextView arbic_layout = alertLayout.findViewById(R.id.arbic_layout);
             final AppCompatTextView save_layout = alertLayout.findViewById(R.id.save_layout);
+            final AppCompatTextView l_text1 = alertLayout.findViewById(R.id.l_text1);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -387,6 +485,38 @@ public class ProfileFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+
+             //   Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                l_text1.setTypeface(typeface);
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                save_layout.setTypeface(typeface);
+                english_layout.setTypeface(typeface);
+                arbic_layout.setTypeface(typeface);
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                l_text1.setTypeface(typeface);
+
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                save_layout.setTypeface(typeface);
+                english_layout.setTypeface(typeface);
+                arbic_layout.setTypeface(typeface);
+
+
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
+
 
 
 
@@ -399,10 +529,6 @@ public class ProfileFragment extends Fragment {
                     arbic_layout.setTextColor(R.color.white);
                     arbic_layout.setBackgroundResource(R.color.black);
                     english_layout.setBackgroundResource(R.color.white);
-
-
-
-
                 }
             });
 
@@ -472,6 +598,10 @@ public class ProfileFragment extends Fragment {
         }else if(childPosition==3){
              alertLayout = inflater.inflate(R.layout.city, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView c_text1 = alertLayout.findViewById(R.id.c_text1);
+            final AppCompatTextView c_text2 = alertLayout.findViewById(R.id.c_text2);
+            final AppCompatTextView city_name1 = alertLayout.findViewById(R.id.city_name1);
+            final AppCompatTextView city_name2 = alertLayout.findViewById(R.id.city_name2);
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -480,6 +610,31 @@ public class ProfileFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                c_text1.setTypeface(typeface);
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                c_text2.setTypeface(typeface);
+                city_name1.setTypeface(typeface);
+                city_name2.setTypeface(typeface);
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                c_text1.setTypeface(typeface);
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                c_text2.setTypeface(typeface);
+                city_name1.setTypeface(typeface);
+                city_name2.setTypeface(typeface);
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {

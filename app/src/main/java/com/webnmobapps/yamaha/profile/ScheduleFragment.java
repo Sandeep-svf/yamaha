@@ -1,5 +1,7 @@
 package com.webnmobapps.yamaha.profile;
 
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,12 +15,16 @@ import android.view.ViewGroup;
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.adapter.CourcesAdapter;
 import com.webnmobapps.yamaha.adapter.EventListAdapter;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 
 public class ScheduleFragment extends Fragment {
 
 
     private RecyclerView rcv_event_list;
+    private String language = StaticKey.languageEn;
+    Typeface typeface;
+    SharedPreferences sharedPreferences;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,9 +36,12 @@ public class ScheduleFragment extends Fragment {
         inits(view);
 
 
+
+
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
-        EventListAdapter eventListAdapter = new EventListAdapter(getActivity());
+        EventListAdapter eventListAdapter = new EventListAdapter(getActivity(),language);
         rcv_event_list.setLayoutManager(linearLayoutManager);
         rcv_event_list.setAdapter(eventListAdapter);
 

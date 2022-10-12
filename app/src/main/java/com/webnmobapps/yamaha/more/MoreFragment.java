@@ -154,6 +154,11 @@ public class MoreFragment extends Fragment {
         if(layout_type.equals("1")){
             alertLayout = inflater.inflate(R.layout.contact_us_xml, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView jeddah = alertLayout.findViewById(R.id.jeddah);
+            final AppCompatTextView cs_text1 = alertLayout.findViewById(R.id.cs_text1);
+            final AppCompatTextView cs_text2 = alertLayout.findViewById(R.id.cs_text2);
+            final AppCompatTextView cs_text3 = alertLayout.findViewById(R.id.cs_text3);
+
 
             dialogs = new Dialog(getActivity());
             dialogs.setContentView(alertLayout);
@@ -162,6 +167,37 @@ public class MoreFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                jeddah.setTypeface(typeface);
+                cs_text1.setTypeface(typeface);
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                cs_text2.setTypeface(typeface);
+                cs_text3.setTypeface(typeface);
+
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                jeddah.setTypeface(typeface);
+                cs_text1.setTypeface(typeface);
+
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                cs_text2.setTypeface(typeface);
+                cs_text3.setTypeface(typeface);
+
+
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
+
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
@@ -234,6 +270,9 @@ public class MoreFragment extends Fragment {
             }else if(layout_type.equals("5")){
                 alertLayout = inflater.inflate(R.layout.subcribe_to_news_letter_xml, null);
             final AppCompatImageView cross_image_layout = alertLayout.findViewById(R.id.cross_image_layout);
+            final AppCompatTextView text = alertLayout.findViewById(R.id.text);
+            final AppCompatTextView text2 = alertLayout.findViewById(R.id.text2);
+            final AppCompatTextView text3 = alertLayout.findViewById(R.id.text3);
 
 
             dialogs = new Dialog(getActivity());
@@ -243,6 +282,37 @@ public class MoreFragment extends Fragment {
             dialogs.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT,WindowManager.LayoutParams.FILL_PARENT);
             dialogs.show();
             dialogs.setCanceledOnTouchOutside(true);
+
+
+
+
+            if(StaticKey.languageEn.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+                text.setTypeface(typeface);
+                text3.setTypeface(typeface);
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+                text2.setTypeface(typeface);
+
+
+
+            }else if(StaticKey.languageAr.equals(language)){
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+                text.setTypeface(typeface);
+                text3.setTypeface(typeface);
+
+
+
+                typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+                text2.setTypeface(typeface);
+
+
+
+
+            }else{
+                Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+            }
 
 
             cross_image_layout.setOnClickListener(new View.OnClickListener() {
