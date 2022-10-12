@@ -2,17 +2,22 @@ package com.webnmobapps.yamaha.more;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,12 +27,18 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 
 public class MoreFragment extends Fragment {
 
     ConstraintLayout contact_us_layout, faq_layout, privacy_policy_layout, terms_condition_layout, subscribe_layout, visit_website_layout;
     private String layout_type;
+    AppCompatTextView contact_us_text,faq_text,privacy_policy_text,tc_text,stn_text,vow_text;
+
+    private String language = StaticKey.languageEn;
+    Typeface typeface;
+    SharedPreferences sharedPreferences;
 
 
 
@@ -36,8 +47,49 @@ public class MoreFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_more, container, false);
-
         intis(view);
+
+
+
+        sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+        language=sharedPreferences.getString("language","");
+
+
+        Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+        if(StaticKey.languageEn.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+
+
+            contact_us_text.setTypeface(typeface);
+            faq_text.setTypeface(typeface);
+            privacy_policy_text.setTypeface(typeface);
+            tc_text.setTypeface(typeface);
+            stn_text.setTypeface(typeface);
+            vow_text.setTypeface(typeface);
+
+
+
+        }else if(StaticKey.languageAr.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+            contact_us_text.setTypeface(typeface);
+            faq_text.setTypeface(typeface);
+            privacy_policy_text.setTypeface(typeface);
+            tc_text.setTypeface(typeface);
+            stn_text.setTypeface(typeface);
+            vow_text.setTypeface(typeface);
+
+
+
+
+
+        }else{
+            Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+            Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+        }
+
+
+
 
         visit_website_layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -253,6 +305,15 @@ public class MoreFragment extends Fragment {
 
 
     private void intis(View view) {
+
+
+
+        contact_us_text = view.findViewById(R.id.contact_us_text);
+        faq_text = view.findViewById(R.id.faq_text);
+        privacy_policy_text = view.findViewById(R.id.privacy_policy_text);
+        tc_text = view.findViewById(R.id.tc_text);
+        stn_text = view.findViewById(R.id.stn_text);
+        vow_text = view.findViewById(R.id.vow_text);
         contact_us_layout = view.findViewById(R.id.contact_us_layout);
         faq_layout = view.findViewById(R.id.faq_layout);
         privacy_policy_layout = view.findViewById(R.id.privacy_policy_layout);

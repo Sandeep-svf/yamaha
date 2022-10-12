@@ -138,7 +138,7 @@
     <string name="book_18">الكتب 1-8</string>
     <string name="yamaha_grade">درجات ياماها</string>
     <string name="other_grade">درجات أخرى</string>
-    <string name="yamaha_grade_exm">امتحان YAMAHA GRADE</string>
+    <string name="yamaha_grade_exm">فحص ياماهاغراد</string>
     <string name="or_group_lession">أو مجموعة تفسيرية</string>
     <string name="book_6">كتاب 6</string>
     <string name="grade_level_6">مستوى الصف 6</string>
@@ -154,4 +154,8 @@
     <string name="guitar_course">دورة الغيتار</string>
     <string name="user_name">إيما واتسون</string>
     <string name="user_email">إيماواتسون هوتميل. كوم</string>
+    <string name="the_yamaha_music">دورة ياهاما للموسيقى للناشئين الآن في جنوب الجزيرة العربية</string>
+    <string name="script_3">موسيقى البرامج أو الموسيقى المبرمجة هي نوع من موسيقى فن الآلات التي تحاول تقديم سرد موسيقي خارج نطاق الموسيقى.</string>
+    <string name="hotmail_name">حفلة هيتوميل</string>
+    <string name="march_2022">مارس 2022</string>
 </resources>

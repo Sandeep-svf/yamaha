@@ -53,8 +53,6 @@ public class EventFragment extends Fragment {
         setupTabtitle();
 
 
-
-
         sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
         language=sharedPreferences.getString("language","");
 

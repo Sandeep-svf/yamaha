@@ -82,7 +82,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center"
-            android:text="Lena Wilson"
+            android:text="@string/user_name"
             android:textSize="18dp"
            android:fontFamily="@font/daxcompact_bold"
             android:textColor="@color/black"
@@ -101,7 +101,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center"
-            android:text="lena@gmail.com"
+            android:text="@string/user_email"
             android:textSize="16dp"
             android:textColor="@color/black"
 
@@ -178,6 +178,7 @@
                 </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/schedule_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -241,6 +242,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/payment_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -299,6 +301,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/setting_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -491,6 +494,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lagout_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"

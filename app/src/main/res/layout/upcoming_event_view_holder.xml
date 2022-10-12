@@ -56,10 +56,12 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/uef_title"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.95"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
+
 
                     app:layout_constraintBottom_toBottomOf="parent"
 
@@ -68,7 +70,7 @@
 
                     app:layout_constraintVertical_bias="0.1"
 
-                    android:text="The Yahama junior Music Course now in South Arabia"
+                    android:text="@string/the_yamaha_music"
 
                     android:textColor="@color/purple_app_theam_color"
                     android:textSize="16dp"
@@ -80,6 +82,7 @@
                 </androidx.appcompat.widget.AppCompatTextView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/uef_description"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
 
@@ -93,18 +96,20 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
 
+                    android:maxLines="3"
                     app:layout_constraintHeight_percent="0.4"
-                    app:layout_constraintVertical_bias="0.55"
+                    app:layout_constraintVertical_bias="0.65"
 
                     app:fontFamily="@font/daxcompact_medium"
                     android:textSize="12dp"
                     android:textColor="@color/black"
-                    android:text="Program music or programatic music is a type of instrumental art music that attempts to musically render an extramusical narrative."
+                    android:text="@string/script_3"
                     >
 
                 </androidx.appcompat.widget.AppCompatTextView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/sunscribe_button_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"

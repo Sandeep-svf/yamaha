@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
@@ -16,6 +17,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -57,6 +59,9 @@ public class ProfileFragment extends Fragment {
     private boolean settingsFlag = true;
     private String languageFlag = StaticKey.languageEn;
     SharedPreferences sharedPreferences;
+    private AppCompatTextView schedule_text,payment_text,setting_text,lagout_text,user_name,user_email;
+    private String language = StaticKey.languageEn;
+    Typeface typeface;
 
 
     @Override
@@ -70,6 +75,56 @@ public class ProfileFragment extends Fragment {
         initViews(view);
 
         //language(getActivity());
+
+
+        sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+        language=sharedPreferences.getString("language","");
+
+
+        Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+        if(StaticKey.languageEn.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+            user_name.setTypeface(typeface);
+            schedule_text.setTypeface(typeface);
+            payment_text.setTypeface(typeface);
+            setting_text.setTypeface(typeface);
+            city_layout.setTypeface(typeface);
+
+
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+            user_email.setTypeface(typeface);
+            account_information_layout.setTypeface(typeface);
+            change_password_layout.setTypeface(typeface);
+            language_layout.setTypeface(typeface);
+            user_email.setTypeface(typeface);
+
+
+        }else if(StaticKey.languageAr.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+            user_name.setTypeface(typeface);
+            schedule_text.setTypeface(typeface);
+            payment_text.setTypeface(typeface);
+            setting_text.setTypeface(typeface);
+            lagout_text.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+            user_email.setTypeface(typeface);
+            account_information_layout.setTypeface(typeface);
+            change_password_layout.setTypeface(typeface);
+            language_layout.setTypeface(typeface);
+            user_email.setTypeface(typeface);
+
+
+
+
+        }else{
+            Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+            Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+        }
+
+
+
 
         setting_cardview.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -177,6 +232,12 @@ public class ProfileFragment extends Fragment {
      */
     private void initViews(View view) {
 
+        schedule_text = view.findViewById(R.id.schedule_text);
+        payment_text = view.findViewById(R.id.payment_text);
+        setting_text = view.findViewById(R.id.setting_text);
+        lagout_text = view.findViewById(R.id.lagout_text);
+        user_name = view.findViewById(R.id.user_name);
+        user_email = view.findViewById(R.id.user_email);
         expandableListView = view.findViewById(R.id.expandableListView);
         schedule_layout = view.findViewById(R.id.schedule_layout);
         logout_cardview = view.findViewById(R.id.logout_cardview);

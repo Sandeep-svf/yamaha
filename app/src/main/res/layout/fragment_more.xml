@@ -80,6 +80,7 @@
                 </androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contact_us_text"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -143,6 +144,7 @@
                 </androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/faq_text"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -207,6 +209,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/privacy_policy_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -271,6 +274,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tc_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -335,6 +339,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/stn_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -399,6 +404,7 @@
                     </androidx.appcompat.widget.AppCompatImageView>
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/vow_text"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:background="@null"
