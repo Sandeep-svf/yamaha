@@ -154,6 +154,8 @@
     <string name="repertori">repertoire</string>
     <string name="music_theory">Music Theory</string>
     <string name="guitar_course">Guitar Course</string>
+    <string name="user_name">Emma Watson</string>
+    <string name="user_email">emmawatson@hotmail.com</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>

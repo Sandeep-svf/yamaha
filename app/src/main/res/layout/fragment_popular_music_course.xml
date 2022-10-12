@@ -598,6 +598,7 @@
                                 >
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/ag_text"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -639,6 +640,7 @@
                         </androidx.cardview.widget.CardView>
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/jmc_attatched_layout"
+                            android:visibility="gone"
                             android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1151,6 +1153,7 @@
                             >
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/eg_text"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -1193,6 +1196,7 @@
                             android:id="@+id/jxc_attatched_layout"
 
                             android:visibility="gone"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_jxc"
@@ -1282,6 +1286,7 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx20"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
@@ -1311,11 +1316,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx21"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Scale"
+                                                android:text="@string/scale"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -1339,11 +1345,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx22"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Exercise for Solo Playing"
+                                                android:text="@string/exercise_for_solo_playing"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -1377,11 +1384,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx23"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Chord Exercise"
+                                                android:text="@string/chord_exercise"
 
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
@@ -1407,11 +1415,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx24"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Training"
+                                                android:text="@string/training"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -1495,6 +1504,7 @@
                                             app:layout_constraintStart_toStartOf="parent">
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/total_student_eg"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
@@ -1507,17 +1517,19 @@
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/total_student_eg2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="6 Years Old and above"
+                                                android:text="@string/_6_year_old"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eg"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:textColor="@color/purple_app_theam_color"
@@ -1527,23 +1539,25 @@
                                                 android:layout_marginTop="15dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eg2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Indivisual Lessions"
+                                                android:text="@string/indivisual_lession"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eg3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Indivisual Lessions"
+                                                android:text="@string/indivisual_lession"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
@@ -1563,6 +1577,7 @@
                                             app:layout_constraintEnd_toEndOf="parent">
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/lession_duration_bg"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
@@ -1575,17 +1590,19 @@
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/lession_duration_bg2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="30 Minutes"
+                                                android:text="@string/_30_minutes"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_bg"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:textColor="@color/purple_app_theam_color"
@@ -1595,23 +1612,26 @@
                                                 android:layout_marginTop="15dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_bg2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Pianoforte 1-12 books"
+                                                android:text="@string/piano_fort_12_book"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_bg3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
+                                                android:singleLine="true"
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Audio materials for"
+                                                android:text="@string/audio_material_for"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 android:layout_marginBottom="10dp"
@@ -1692,6 +1712,7 @@
                             >
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/eb_text"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -1733,6 +1754,7 @@
                             android:id="@+id/jnc_attatched_layout"
 
                             android:visibility="gone"
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/linear_layout_jnc"
@@ -1823,6 +1845,7 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx25"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
@@ -1852,11 +1875,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx26"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Scale"
+                                                android:text="@string/scale"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -1880,11 +1904,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx27"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Exercise for Solo Playing"
+                                                android:text="@string/exercise_for_solo_playing"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -1918,11 +1943,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx28"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Chord Exercise"
+                                                android:text="@string/chord_exercise"
 
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
@@ -1948,11 +1974,12 @@
                                                 ></de.hdodenhof.circleimageview.CircleImageView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/pmc_tx29"
                                                 android:layout_width="0dp"
                                                 android:layout_height="match_parent"
                                                 android:gravity="center_vertical"
                                                 android:paddingStart="10dp"
-                                                android:text="Training"
+                                                android:text="@string/training"
                                                 android:layout_weight="9"
                                                 android:fontFamily="@font/daxcompact_medium"
                                                 android:textColor="@color/black"
@@ -2036,6 +2063,7 @@
                                             app:layout_constraintStart_toStartOf="parent">
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/total_student_eb"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
@@ -2048,17 +2076,20 @@
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/total_student_eb2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="6 Years Old and above"
+                                                android:text="@string/_6_year_old"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eb"
+
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:textColor="@color/purple_app_theam_color"
@@ -2068,23 +2099,24 @@
                                                 android:layout_marginTop="15dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eb2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Indivisual Lessions"
+                                                android:text="@string/indivisual_lession"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_setting_eb3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
-
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Indivisual Lessions"
+                                                android:text="@string/indivisual_lession"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
@@ -2104,6 +2136,7 @@
                                             app:layout_constraintEnd_toEndOf="parent">
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/lession_duration_eb"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
@@ -2116,17 +2149,19 @@
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/lession_duration_eb2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="30 Minutes"
+                                                android:text="@string/_30_minutes"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_eb"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:textColor="@color/purple_app_theam_color"
@@ -2136,23 +2171,25 @@
                                                 android:layout_marginTop="15dp"
                                                 />
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_eb2"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Pianoforte 1-12 books"
+                                                android:text="@string/piano_fort_12_book"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 ></androidx.appcompat.widget.AppCompatTextView>
 
                                             <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/course_material_eb3"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
 
                                                 android:textColor="@color/black"
                                                 android:fontFamily="@font/daxcompact_medium"
-                                                android:text="Audio materials for"
+                                                android:text="@string/audio_material_for"
                                                 app:fontFamily="@font/daxcompact_bold"
                                                 android:textSize="@dimen/sub_heading_14dp"
                                                 android:layout_marginBottom="10dp"

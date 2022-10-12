@@ -40,6 +40,14 @@ public class PopularMusicCourseFragment extends Fragment {
     AppCompatTextView jmc_text1,jmc_text2,pmc_tx15,pmc_tx16,pmc_tx17,pmc_tx18,pmc_tx19,cd_text1,total_student_ag,total_student_ag2 ,course_setting_ag
             ,course_setting_ag2,course_setting_ag3,couse_duration_ag,couse_duration_ag2,course_material_ag3,course_material_ag2,course_material_ag;
 
+    AppCompatTextView ag_text,eg_text,eb_text,jmc_text1_2,jmc_text2_2,pmc_tx24,pmc_tx23,pmc_tx22,pmc_tx21,pmc_tx20,cd_text1_2
+            ,total_student_eg,total_student_eg2,course_setting_eg,course_setting_eg2,course_setting_eg3,lession_duration_bg2
+            ,lession_duration_bg,course_material_bg,course_material_bg2,course_material_bg3;
+
+
+    AppCompatTextView jmc_text1_2_3,jmc_text2_2_3,pmc_tx29,pmc_tx28,pmc_tx27,pmc_tx26,pmc_tx25,cd_text1_2_3,total_student_eb2,total_student_eb
+    ,course_setting_eb3,course_setting_eb2,course_setting_eb,lession_duration_eb2,lession_duration_eb;
+
 
     SharedPreferences sharedPreferences;
     private String language = StaticKey.languageEn;
@@ -91,6 +99,36 @@ public class PopularMusicCourseFragment extends Fragment {
             cd_text1.setTypeface(typeface);
 
 
+            //********************************
+
+            ag_text.setTypeface(typeface);
+            eg_text.setTypeface(typeface);
+            eb_text.setTypeface(typeface);
+            jmc_text1_2.setTypeface(typeface);
+            jmc_text2_2.setTypeface(typeface);
+            cd_text1_2.setTypeface(typeface);
+            total_student_eg.setTypeface(typeface);
+            total_student_eg2.setTypeface(typeface);
+            course_setting_eg.setTypeface(typeface);
+            course_setting_eg2.setTypeface(typeface);
+            course_setting_eg3.setTypeface(typeface);
+            lession_duration_bg2.setTypeface(typeface);
+            lession_duration_bg.setTypeface(typeface);
+            course_material_bg.setTypeface(typeface);
+            course_material_bg2.setTypeface(typeface);
+            course_material_bg3.setTypeface(typeface);
+
+            //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+            lession_duration_eb.setTypeface(typeface);
+            lession_duration_eb2.setTypeface(typeface);
+            course_setting_eb.setTypeface(typeface);
+            course_setting_eb2.setTypeface(typeface);
+            course_setting_eb3.setTypeface(typeface);
+            total_student_eb.setTypeface(typeface);
+            total_student_eb2.setTypeface(typeface);
+            cd_text1_2_3.setTypeface(typeface);
+
 
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
@@ -116,6 +154,23 @@ public class PopularMusicCourseFragment extends Fragment {
             pmc_tx17.setTypeface(typeface);
             pmc_tx18.setTypeface(typeface);
             pmc_tx19.setTypeface(typeface);
+
+            //************************************
+
+            pmc_tx24.setTypeface(typeface);
+            pmc_tx23.setTypeface(typeface);
+            pmc_tx22.setTypeface(typeface);
+            pmc_tx21.setTypeface(typeface);
+            pmc_tx20.setTypeface(typeface);
+
+            //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            jmc_text1_2_3.setTypeface(typeface);
+            jmc_text2_2_3.setTypeface(typeface);
+            pmc_tx29.setTypeface(typeface);
+            pmc_tx28.setTypeface(typeface);
+            pmc_tx27.setTypeface(typeface);
+            pmc_tx26.setTypeface(typeface);
+            pmc_tx25.setTypeface(typeface);
 
 
 
@@ -148,6 +203,34 @@ public class PopularMusicCourseFragment extends Fragment {
             total_student_ag.setTypeface(typeface);
             cd_text1.setTypeface(typeface);
 
+            //***************************************
+            ag_text.setTypeface(typeface);
+            eg_text.setTypeface(typeface);
+            eb_text.setTypeface(typeface);
+            jmc_text1_2.setTypeface(typeface);
+            jmc_text2_2.setTypeface(typeface);
+            cd_text1_2.setTypeface(typeface);
+            total_student_eg.setTypeface(typeface);
+            total_student_eg2.setTypeface(typeface);
+            course_setting_eg.setTypeface(typeface);
+            course_setting_eg2.setTypeface(typeface);
+            course_setting_eg3.setTypeface(typeface);
+            lession_duration_bg2.setTypeface(typeface);
+            lession_duration_bg.setTypeface(typeface);
+            course_material_bg.setTypeface(typeface);
+            course_material_bg2.setTypeface(typeface);
+            course_material_bg3.setTypeface(typeface);
+
+            //@@@@@@@@@@@@@@@@@
+            lession_duration_eb.setTypeface(typeface);
+            lession_duration_eb2.setTypeface(typeface);
+            course_setting_eb.setTypeface(typeface);
+            course_setting_eb2.setTypeface(typeface);
+            course_setting_eb3.setTypeface(typeface);
+            total_student_eb.setTypeface(typeface);
+            total_student_eb2.setTypeface(typeface);
+            cd_text1_2_3.setTypeface(typeface);
+
 
 
 
@@ -174,6 +257,22 @@ public class PopularMusicCourseFragment extends Fragment {
             pmc_tx17.setTypeface(typeface);
             pmc_tx18.setTypeface(typeface);
             pmc_tx19.setTypeface(typeface);
+
+            //*************************
+            pmc_tx24.setTypeface(typeface);
+            pmc_tx23.setTypeface(typeface);
+            pmc_tx22.setTypeface(typeface);
+            pmc_tx21.setTypeface(typeface);
+            pmc_tx20.setTypeface(typeface);
+
+            //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            jmc_text1_2_3.setTypeface(typeface);
+            jmc_text2_2_3.setTypeface(typeface);
+            pmc_tx29.setTypeface(typeface);
+            pmc_tx28.setTypeface(typeface);
+            pmc_tx27.setTypeface(typeface);
+            pmc_tx26.setTypeface(typeface);
+            pmc_tx25.setTypeface(typeface);
 
 
         }else{
@@ -300,6 +399,44 @@ public class PopularMusicCourseFragment extends Fragment {
 
     private void intis(View view) {
 
+
+
+        jmc_text1_2_3 = view.findViewById(R.id.jmc_text1_2_3);
+        jmc_text2_2_3 = view.findViewById(R.id.jmc_text2_2_3);
+        pmc_tx29 = view.findViewById(R.id.pmc_tx29);
+        pmc_tx28 = view.findViewById(R.id.pmc_tx28);
+        pmc_tx27 = view.findViewById(R.id.pmc_tx27);
+        pmc_tx26 = view.findViewById(R.id.pmc_tx26);
+        pmc_tx25 = view.findViewById(R.id.pmc_tx25);
+        cd_text1_2_3 = view.findViewById(R.id.cd_text1_2_3);
+        total_student_eb2 = view.findViewById(R.id.total_student_eb2);
+        total_student_eb = view.findViewById(R.id.total_student_eb);
+        course_setting_eb3 = view.findViewById(R.id.course_setting_eb3);
+        course_setting_eb2 = view.findViewById(R.id.course_setting_eb2);
+        course_setting_eb = view.findViewById(R.id.course_setting_eb);
+        lession_duration_eb2 = view.findViewById(R.id.lession_duration_eb2);
+        lession_duration_eb = view.findViewById(R.id.lession_duration_eb);
+        eg_text = view.findViewById(R.id.eg_text);
+        eb_text = view.findViewById(R.id.eb_text);
+        jmc_text1_2 = view.findViewById(R.id.jmc_text1_2);
+        jmc_text2_2 = view.findViewById(R.id.jmc_text2_2);
+        pmc_tx24 = view.findViewById(R.id.pmc_tx24);
+        pmc_tx23 = view.findViewById(R.id.pmc_tx23);
+        pmc_tx22 = view.findViewById(R.id.pmc_tx22);
+        pmc_tx21 = view.findViewById(R.id.pmc_tx21);
+        pmc_tx20 = view.findViewById(R.id.pmc_tx20);
+        cd_text1_2 = view.findViewById(R.id.cd_text1_2);
+        total_student_eg = view.findViewById(R.id.total_student_eg);
+        total_student_eg2 = view.findViewById(R.id.total_student_eg2);
+        course_setting_eg = view.findViewById(R.id.course_setting_eg);
+        course_setting_eg2 = view.findViewById(R.id.course_setting_eg2);
+        course_setting_eg3 = view.findViewById(R.id.course_setting_eg3);
+        lession_duration_bg2 = view.findViewById(R.id.lession_duration_bg2);
+        lession_duration_bg = view.findViewById(R.id.lession_duration_bg);
+        course_material_bg = view.findViewById(R.id.course_material_bg);
+        course_material_bg2 = view.findViewById(R.id.course_material_bg2);
+        course_material_bg3 = view.findViewById(R.id.course_material_bg3);
+        ag_text = view.findViewById(R.id.ag_text);
         course_material_ag = view.findViewById(R.id.course_material_ag);
         course_material_ag2 = view.findViewById(R.id.course_material_ag2);
         course_material_ag3 = view.findViewById(R.id.course_material_ag3);

@@ -1,21 +1,28 @@
 package com.webnmobapps.yamaha.events;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.tabs.TabLayout;
 import com.webnmobapps.yamaha.R;
+import com.webnmobapps.yamaha.utility.StaticKey;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +35,11 @@ public class EventFragment extends Fragment {
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
 
+
+    SharedPreferences sharedPreferences;
+    private String language = StaticKey.languageEn;
+    Typeface typeface;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -39,6 +51,38 @@ public class EventFragment extends Fragment {
         setupViewPager(viewPager,adapter);
         tabLayout.setupWithViewPager(viewPager);
         setupTabtitle();
+
+
+
+
+        sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
+        language=sharedPreferences.getString("language","");
+
+
+        Log.e("check_language","Sesssion 1" +"language is: "+ language);
+
+        if(StaticKey.languageEn.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
+          //  book_tx1.setTypeface(typeface);
+
+
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
+          //  book_tx2.setTypeface(typeface);
+
+
+        }else if(StaticKey.languageAr.equals(language)){
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
+          //  book_tx1.setTypeface(typeface);
+
+            typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
+          //  book_tx2.setTypeface(typeface);
+
+
+
+        }else{
+            Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_SHORT).show();
+            Log.e("check_language","Sesssion 1" + "ALL WENT WRONG");
+        }
 
 
 
@@ -57,6 +101,8 @@ public class EventFragment extends Fragment {
 
     }
     private void setupTabtitle() {
+
+
         tabLayout.getTabAt(0).setText(getResources().getString(R.string.upcoming));
 
         tabLayout.getTabAt(1).setText(getResources().getString(R.string.previous));

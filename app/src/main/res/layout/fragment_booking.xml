@@ -63,6 +63,7 @@
         >
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/book_tx1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +86,7 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/book_tx2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -188,7 +190,7 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/sub_layout2"
+                    android:id="@+id/user_name_book"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -197,7 +199,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
 
-                    android:text="Emma Watson"
+                    android:text="@string/user_name"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18dp"
@@ -213,6 +215,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
 
+                    android:id="@+id/user_email_book"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -222,7 +225,7 @@
                     app:layout_constraintTop_toTopOf="parent"
 
                     app:fontFamily="@font/daxcompact_medium"
-                    android:text="emmawatson@hotmail.com"
+                    android:text="@string/user_email"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="14dp"
@@ -465,7 +468,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/book_now_button"
+                android:id="@+id/book_now_button"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
