@@ -91,6 +91,7 @@ public class ProfileFragment extends Fragment {
             payment_text.setTypeface(typeface);
             setting_text.setTypeface(typeface);
             city_layout.setTypeface(typeface);
+            lagout_text.setTypeface(typeface);
 
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
@@ -108,6 +109,7 @@ public class ProfileFragment extends Fragment {
             payment_text.setTypeface(typeface);
             setting_text.setTypeface(typeface);
             lagout_text.setTypeface(typeface);
+            city_layout.setTypeface(typeface);
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
             user_email.setTypeface(typeface);
