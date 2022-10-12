@@ -65,12 +65,13 @@
                                 ></androidx.appcompat.widget.AppCompatImageView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
 
 
                                 android:layout_marginTop="5dp"
-                                android:text="YAMAHA PIANO COURSE"
+                                android:text="@string/yamaha_piano_course"
                                 android:textSize="@dimen/sub_heading_14dp"
                                 android:fontFamily="@font/daxcompact_bold"
                                 android:textColor="@color/black"
@@ -81,6 +82,7 @@
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fs_text2"
                             android:layout_width="match_parent"
                             android:layout_height="46dp"
 
@@ -103,12 +105,13 @@
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
-                            android:layout_height="46dp"
+                            android:layout_height="50dp"
                             android:layout_marginTop="5dp"
                             android:orientation="horizontal"
                             android:weightSum="5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -121,6 +124,7 @@
                                 android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -133,6 +137,7 @@
                                 android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text5"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -145,6 +150,7 @@
                                 android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text6"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -157,6 +163,7 @@
                                 android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text7"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -180,6 +187,7 @@
                             android:weightSum="5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text8"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -259,6 +267,7 @@
                             android:weightSum="5">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text9"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -332,6 +341,7 @@
 
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fs_text10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
 
@@ -345,6 +355,7 @@
 
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fs_text11"
                             android:layout_width="match_parent"
                             android:layout_height="46dp"
 
@@ -374,6 +385,7 @@
                             android:weightSum="2">
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text12"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -386,6 +398,7 @@
                                 android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text13"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="2dp"
@@ -436,6 +449,7 @@
 
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fs_text14"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
 
@@ -449,6 +463,7 @@
 
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fs_text15"
                             android:layout_width="match_parent"
                             android:layout_height="46dp"
 
@@ -472,13 +487,14 @@
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
-                            android:layout_height="36dp"
+                            android:layout_height="40dp"
                             android:layout_marginTop="5dp"
                             android:orientation="horizontal"
                             android:weightSum="4">
 
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text16"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -493,6 +509,7 @@
                             </androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text17"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -507,6 +524,7 @@
                             </androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text18"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -521,6 +539,7 @@
                             </androidx.appcompat.widget.AppCompatTextView>
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fs_text19"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="5dp"
@@ -555,6 +574,7 @@
                                 >
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text20"
                                     android:layout_width="match_parent"
                                     android:layout_height="241dp"
                                     android:background="@drawable/custom_text_bg3"
@@ -567,6 +587,7 @@
                                     ></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text21"
                                     android:layout_width="match_parent"
                                     android:layout_height="118dp"
                                     android:layout_marginTop="5dp"
@@ -591,6 +612,7 @@
                                 android:weightSum="12">
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text22"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
@@ -602,6 +624,7 @@
                                     android:textSize="@dimen/text_size_10dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text23"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -614,6 +637,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text24"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -626,6 +650,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text25"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -638,6 +663,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text26"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -650,6 +676,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text33"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -662,6 +689,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text27"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -674,6 +702,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text32"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -686,6 +715,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text28"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -698,6 +728,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text29"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -710,6 +741,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text30"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"
@@ -722,6 +754,7 @@
                                     android:textSize="@dimen/default_text_size_12dp"></androidx.appcompat.widget.AppCompatTextView>
 
                                 <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/fs_text31"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_marginTop="5dp"

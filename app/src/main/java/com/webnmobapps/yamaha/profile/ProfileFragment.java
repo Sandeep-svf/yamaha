@@ -90,7 +90,7 @@ public class ProfileFragment extends Fragment {
             schedule_text.setTypeface(typeface);
             payment_text.setTypeface(typeface);
             setting_text.setTypeface(typeface);
-            city_layout.setTypeface(typeface);
+
             lagout_text.setTypeface(typeface);
 
 
@@ -100,6 +100,7 @@ public class ProfileFragment extends Fragment {
             change_password_layout.setTypeface(typeface);
             language_layout.setTypeface(typeface);
             user_email.setTypeface(typeface);
+            city_layout.setTypeface(typeface);
 
 
         }else if(StaticKey.languageAr.equals(language)){
@@ -109,7 +110,7 @@ public class ProfileFragment extends Fragment {
             payment_text.setTypeface(typeface);
             setting_text.setTypeface(typeface);
             lagout_text.setTypeface(typeface);
-            city_layout.setTypeface(typeface);
+
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
             user_email.setTypeface(typeface);
@@ -117,6 +118,7 @@ public class ProfileFragment extends Fragment {
             change_password_layout.setTypeface(typeface);
             language_layout.setTypeface(typeface);
             user_email.setTypeface(typeface);
+            city_layout.setTypeface(typeface);
 
 
 

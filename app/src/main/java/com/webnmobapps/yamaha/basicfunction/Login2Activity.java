@@ -76,6 +76,22 @@ public class Login2Activity extends AppCompatActivity {
         }
 
 
+        do_not_have_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login2Activity.this, SignupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        back_textview_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login2Activity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         login2_button.setOnClickListener(new View.OnClickListener() {
             @Override
