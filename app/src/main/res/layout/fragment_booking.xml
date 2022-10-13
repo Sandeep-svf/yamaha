@@ -293,6 +293,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:gravity="fill"
 
+                    android:entries="@array/string_array_city"
+
                     >
 
                 </androidx.appcompat.widget.AppCompatSpinner>

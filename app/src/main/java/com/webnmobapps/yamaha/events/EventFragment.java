@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -61,7 +62,7 @@ public class EventFragment extends Fragment {
 
         if(StaticKey.languageEn.equals(language)){
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
-          //  book_tx1.setTypeface(typeface);
+           // tabLayout.setTypeface(typeface);
 
 
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);

@@ -169,5 +169,19 @@
         <item>City</item>
     </string-array>
 
+    <string-array name="string_array_city">
+        <item>Please select city</item>
+        <item>Riyadh</item>
+        <item>Jeddah</item>
+    </string-array>
+
+    <string-array name="string_array_course">
+        <item>Select course</item>
+        <item>Junior Course</item>
+        <item>Jeddah</item>
+    </string-array>
+
+
+
 
 </resources>
