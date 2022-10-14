@@ -161,6 +161,23 @@
     <string name="hotmail_name">Hitomil\'s Concert</string>
     <string name="march_2022">March 2022</string>
     <string name="dob">June 16th 1992</string>
+    <string name="select_city">Please select city</string>
+    <string name="select_course">Select Course</string>
+    <string name="type_a">Type A</string>
+    <string name="type_b">Type B</string>
+    <string name="type_c">Type C</string>
+    <string name="type_of_course">Type Of Course</string>
+    <string name="type_d">Type D</string>
+    <string name="type_e">Type  E</string>
+    <string name="type_f">Type F</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="preferred_day">Preferred Day</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>
@@ -178,8 +195,14 @@
     <string-array name="string_array_course">
         <item>Select course</item>
         <item>Junior Course</item>
-        <item>Jeddah</item>
+        <item>Yamaha Piano Course</item>
+        <item>Yamaha Guitar Course</item>
+        <item>Music Friend Course</item>
+        <item>Music Friend Course</item>
+        <item>Popular Music Course</item>
     </string-array>
+
+
 
 
 

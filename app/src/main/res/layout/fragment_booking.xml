@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHeight_percent="0.32"
         >
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
@@ -126,6 +126,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
 
             app:layout_constraintWidth_percent="0.9"
             app:layout_constraintHeight_percent="0.9"
@@ -136,6 +137,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+
 
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -253,7 +255,7 @@
         app:layout_constraintEnd_toEndOf="parent"
 
 
-        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHeight_percent="0.275"
 
         >
         <androidx.cardview.widget.CardView
@@ -262,7 +264,7 @@
 
 
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHeight_percent="0.205"
 
 
 
@@ -291,11 +293,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:gravity="fill"
-
-                    android:entries="@array/string_array_city"
-
-                    >
+                    android:gravity="fill">
 
                 </androidx.appcompat.widget.AppCompatSpinner>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -306,7 +304,7 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHeight_percent="0.205"
 
             app:layout_constraintHorizontal_bias="0.08"
 
@@ -347,7 +345,7 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHeight_percent="0.205"
 
             app:layout_constraintHorizontal_bias="0.9"
 
@@ -390,7 +388,7 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHeight_percent="0.205"
 
             app:layout_constraintHorizontal_bias="0.08"
 
@@ -431,7 +429,7 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHeight_percent="0.205"
 
             app:layout_constraintHorizontal_bias="0.9"
 
@@ -450,7 +448,7 @@
 
 
 
-                <androidx.appcompat.widget.AppCompatSpinner
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/prefered_time_spin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -464,7 +462,9 @@
 
                     >
 
-                </androidx.appcompat.widget.AppCompatSpinner>
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
