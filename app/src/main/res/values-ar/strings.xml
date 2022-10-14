@@ -177,4 +177,5 @@
     <string name="saturday">السبت</string>
     <string name="preferred_day">اليوم المفضل</string>
     <string name="get_hours">اختر الساعة:</string>
+    <string name="preferred_time">الوقت المفضل</string>
 </resources>
