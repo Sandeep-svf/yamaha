@@ -65,6 +65,7 @@ public class ProfileFragment extends Fragment {
     Typeface typeface;
 
     ConstraintLayout setting_layout;
+    AppCompatImageView setting_image;
 
 
     @Override
@@ -133,6 +134,7 @@ public class ProfileFragment extends Fragment {
 
 
         setting_cardview.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
                 if (settingsFlag) {
@@ -142,12 +144,16 @@ public class ProfileFragment extends Fragment {
                     city_layout.setVisibility(View.VISIBLE);
                     setting_layout.setBackgroundResource(R.color.purple_app_theam_color);
                     settingsFlag = false;
+                    setting_text.setTextColor(getResources().getColor(R.color.white));
+                    setting_image.setImageResource(R.drawable.setting_white);
                 } else {
                     account_information_layout.setVisibility(View.GONE);
                     change_password_layout.setVisibility(View.GONE);
                     language_layout.setVisibility(View.GONE);
                     city_layout.setVisibility(View.GONE);
                     setting_layout.setBackgroundResource(R.color.white);
+                    setting_text.setTextColor(getResources().getColor(R.color.black));
+                    setting_image.setImageResource(R.drawable.settings);
                     settingsFlag = true;
                 }
             }
@@ -240,6 +246,7 @@ public class ProfileFragment extends Fragment {
      */
     private void initViews(View view) {
 
+        setting_image = view.findViewById(R.id.setting_image);
         setting_layout = view.findViewById(R.id.setting_layout);
         schedule_text = view.findViewById(R.id.schedule_text);
         payment_text = view.findViewById(R.id.payment_text);
@@ -534,9 +541,9 @@ public class ProfileFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     languageFlag = StaticKey.languageAr;
-                    english_layout.setTextColor(R.color.light_black);
-                    arbic_layout.setBackgroundResource(R.color.light_black);
-                    arbic_layout.setTextColor(R.color.white);
+                    english_layout.setTextColor(getResources().getColor(R.color.black));
+                    arbic_layout.setBackgroundResource(R.color.black);
+                    arbic_layout.setTextColor(getResources().getColor(R.color.white));
 
                     english_layout.setBackgroundResource(R.color.white);
                 }
@@ -546,11 +553,11 @@ public class ProfileFragment extends Fragment {
                 @SuppressLint("ResourceAsColor")
                 @Override
                 public void onClick(View view) {
-                    english_layout.setBackgroundResource(R.color.light_black);
+                    english_layout.setBackgroundResource(R.color.black);
                     arbic_layout.setBackgroundResource(R.color.white);
-                    english_layout.setTextColor(R.color.white);
+                    english_layout.setTextColor(getResources().getColor(R.color.white));
 
-                    arbic_layout.setTextColor(R.color.light_black);
+                    arbic_layout.setTextColor(getResources().getColor(R.color.black));
                     languageFlag = StaticKey.languageEn;
 
                 }

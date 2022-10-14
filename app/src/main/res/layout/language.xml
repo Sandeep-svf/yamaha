@@ -93,7 +93,7 @@
                         android:layout_weight="8"
                         android:gravity="center"
                         android:textColor="@color/white"
-                        android:background="@color/light_black"
+                        android:background="@color/black"
                         android:textSize="@dimen/default_text_size_12dp"
                         android:fontFamily="@font/daxcompact_medium"
 
