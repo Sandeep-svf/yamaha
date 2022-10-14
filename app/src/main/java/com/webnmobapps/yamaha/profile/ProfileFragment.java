@@ -64,6 +64,8 @@ public class ProfileFragment extends Fragment {
     private String language = StaticKey.languageEn;
     Typeface typeface;
 
+    ConstraintLayout setting_layout;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -90,7 +92,6 @@ public class ProfileFragment extends Fragment {
             schedule_text.setTypeface(typeface);
             payment_text.setTypeface(typeface);
             setting_text.setTypeface(typeface);
-
             lagout_text.setTypeface(typeface);
 
 
@@ -139,12 +140,14 @@ public class ProfileFragment extends Fragment {
                     change_password_layout.setVisibility(View.VISIBLE);
                     language_layout.setVisibility(View.VISIBLE);
                     city_layout.setVisibility(View.VISIBLE);
+                    setting_layout.setBackgroundResource(R.color.purple_app_theam_color);
                     settingsFlag = false;
                 } else {
                     account_information_layout.setVisibility(View.GONE);
                     change_password_layout.setVisibility(View.GONE);
                     language_layout.setVisibility(View.GONE);
                     city_layout.setVisibility(View.GONE);
+                    setting_layout.setBackgroundResource(R.color.white);
                     settingsFlag = true;
                 }
             }
@@ -237,6 +240,7 @@ public class ProfileFragment extends Fragment {
      */
     private void initViews(View view) {
 
+        setting_layout = view.findViewById(R.id.setting_layout);
         schedule_text = view.findViewById(R.id.schedule_text);
         payment_text = view.findViewById(R.id.payment_text);
         setting_text = view.findViewById(R.id.setting_text);

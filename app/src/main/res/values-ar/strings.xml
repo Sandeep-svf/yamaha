@@ -159,4 +159,22 @@
     <string name="hotmail_name">حفلة هيتوميل</string>
     <string name="march_2022">مارس 2022</string>
     <string name="dob">16 يونيو 1992</string>
+    <string name="select_city">الرجاء تحديد المدينة</string>
+    <string name="select_course">حدد دورة</string>
+    <string name="type_a">نوع أ</string>
+    <string name="type_b">اكتب ب</string>
+    <string name="type_c">اكتب ج</string>
+    <string name="type_of_course">نوع الدورة</string>
+    <string name="type_d">اكتب د</string>
+    <string name="type_e">اكتب E.</string>
+    <string name="type_f">اكتب F.</string>
+    <string name="sunday">الأحد</string>
+    <string name="monday">الاثنين</string>
+    <string name="tuesday">يوم الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">يوم الخميس</string>
+    <string name="friday">جمعة</string>
+    <string name="saturday">السبت</string>
+    <string name="preferred_day">اليوم المفضل</string>
+    <string name="get_hours">اختر الساعة:</string>
 </resources>

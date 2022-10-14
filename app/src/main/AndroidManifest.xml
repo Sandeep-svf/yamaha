@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yamaha">
         <activity
+            android:name=".utility.WebviewActivity"
+            android:exported="true" />
+        <activity
             android:name=".feestructure.FeeStructureFragment"
             android:exported="true" />
         <activity
@@ -42,7 +45,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

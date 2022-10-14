@@ -8,6 +8,7 @@
 
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imag_banner_1245"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -15,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:scaleType="fitXY"
         android:src="@drawable/more_image_banner"
-        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHeight_percent="0.25"
         >
 
     </androidx.appcompat.widget.AppCompatImageView>
@@ -26,8 +27,8 @@
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toBottomOf="@+id/imag_banner_1245"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,7 +54,7 @@
             android:elevation="4dp"
 
             app:layout_constraintWidth_percent="0.9"
-            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintHeight_percent="0.125"
             >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/contact_us_layout"
@@ -113,7 +114,7 @@
             android:elevation="4dp"
 
             app:layout_constraintWidth_percent="0.9"
-            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintHeight_percent="0.125"
             >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/faq_layout"
@@ -178,7 +179,7 @@
                 android:elevation="4dp"
 
                 app:layout_constraintWidth_percent="0.9"
-                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHeight_percent="0.125"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/privacy_policy_layout"
@@ -243,7 +244,7 @@
                 android:elevation="4dp"
 
                 app:layout_constraintWidth_percent="0.9"
-                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHeight_percent="0.125"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/terms_condition_layout"
@@ -308,7 +309,7 @@
                 android:elevation="4dp"
 
                 app:layout_constraintWidth_percent="0.9"
-                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHeight_percent="0.125"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/subscribe_layout"
@@ -373,7 +374,7 @@
                 android:elevation="4dp"
 
                 app:layout_constraintWidth_percent="0.9"
-                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHeight_percent="0.125"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/visit_website_layout"
@@ -443,13 +444,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                //C3C3C3
+
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/appCompatImageView2"
+                    android:id="@+id/instagram_image"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/instagram"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/twitter"
+                    app:layout_constraintEnd_toStartOf="@+id/twitter_image"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -458,26 +461,26 @@
                 </androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/twitter"
+                    android:id="@+id/twitter_image"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/twitter"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
-                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
+                    app:layout_constraintEnd_toStartOf="@+id/facebook_image"
+                    app:layout_constraintStart_toEndOf="@+id/instagram_image"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.15">
 
                 </androidx.appcompat.widget.AppCompatImageView>
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/appCompatImageView"
+                    android:id="@+id/facebook_image"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/facebook"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/twitter"
+                    app:layout_constraintStart_toEndOf="@+id/twitter_image"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.15">
 

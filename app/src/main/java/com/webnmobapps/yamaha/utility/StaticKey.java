@@ -10,6 +10,7 @@ public class StaticKey {
 
     public static final String languageEn = "en";
     public static final String languageAr = "ar";
+    public static  String languageData ;
 
     public static void setLocale(Activity activity, String languageCode) {
         Locale locale = new Locale(languageCode);

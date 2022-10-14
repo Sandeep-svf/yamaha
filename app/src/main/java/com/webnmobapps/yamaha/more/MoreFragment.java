@@ -2,6 +2,7 @@ package com.webnmobapps.yamaha.more;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -29,6 +30,7 @@ import android.widget.Toast;
 
 import com.webnmobapps.yamaha.R;
 import com.webnmobapps.yamaha.utility.StaticKey;
+import com.webnmobapps.yamaha.utility.WebviewActivity;
 
 
 public class MoreFragment extends Fragment {
@@ -41,6 +43,8 @@ public class MoreFragment extends Fragment {
     Typeface typeface;
     SharedPreferences sharedPreferences;
 
+    AppCompatImageView instagram_image,twitter_image,facebook_image;
+
 
 
     @Override
@@ -50,6 +54,33 @@ public class MoreFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_more, container, false);
         intis(view);
 
+
+        instagram_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), WebviewActivity.class);
+                intent.putExtra("url","https://www.instagram.com/adawliahyms/");
+                startActivity(intent);
+            }
+        });
+
+        twitter_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), WebviewActivity.class);
+                intent.putExtra("url","https://twitter.com/adawliahyms");
+                startActivity(intent);
+            }
+        });
+
+        facebook_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), WebviewActivity.class);
+                intent.putExtra("url","https://www.facebook.com/people/aDawliah-Yamaha-Music-School/100075789537022/");
+                startActivity(intent);
+            }
+        });
 
 
         sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
@@ -96,7 +127,10 @@ public class MoreFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 layout_type="6";
-                alert_dialog(layout_type);
+              //  alert_dialog(layout_type);
+                Intent intent = new Intent(getActivity(), WebviewActivity.class);
+                intent.putExtra("url","https://adawliahyms.com/");
+                startActivity(intent);
             }
         });
         contact_us_layout.setOnClickListener(new View.OnClickListener() {
@@ -285,8 +319,6 @@ public class MoreFragment extends Fragment {
             dialogs.setCanceledOnTouchOutside(true);
 
 
-
-
             if(StaticKey.languageEn.equals(language)){
                 typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_bold);
                 text.setTypeface(typeface);
@@ -301,13 +333,8 @@ public class MoreFragment extends Fragment {
                 typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
                 text.setTypeface(typeface);
                 text3.setTypeface(typeface);
-
-
-
                 typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
                 text2.setTypeface(typeface);
-
-
 
 
             }else{
@@ -338,6 +365,9 @@ public class MoreFragment extends Fragment {
 
 
             // Webview....
+
+
+
 
             web.setWebViewClient(new WebViewClient());
             web.getSettings().setLoadsImagesAutomatically(true);
@@ -379,6 +409,9 @@ public class MoreFragment extends Fragment {
 
 
 
+        facebook_image = view.findViewById(R.id.facebook_image);
+        twitter_image = view.findViewById(R.id.twitter_image);
+        instagram_image = view.findViewById(R.id.instagram_image);
         contact_us_text = view.findViewById(R.id.contact_us_text);
         faq_text = view.findViewById(R.id.faq_text);
         privacy_policy_text = view.findViewById(R.id.privacy_policy_text);

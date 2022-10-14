@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -35,6 +36,8 @@ import java.util.List;
 
 
 public class BookingFragment extends Fragment {
+
+
 
 
     List<String> city_list = new ArrayList<>();
@@ -52,6 +55,9 @@ public class BookingFragment extends Fragment {
 
     AppCompatSpinner city_spin, course_spin, course_type_spin, prefered_day_spin;
 
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -59,14 +65,26 @@ public class BookingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_booking, container, false);
 
         inits(view);
+
+
+
+
+
+
+
+
         add_data_in_cityList();
         add_data_in_course_lis();
         add_data_in_course_type_list();
         add_data_in_day_list();
 
+        //default
+        prefered_time_spin.setText(getResources().getString(R.string.preferred_time));
+
 
         sharedPreferences = getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
         language = sharedPreferences.getString("language", "");
+        StaticKey.languageData=language;
 
 
         Log.e("check_language", "Sesssion 1" + "language is: " + language);
@@ -81,6 +99,7 @@ public class BookingFragment extends Fragment {
             typeface = ResourcesCompat.getFont(getActivity(), R.font.daxcompact_medium);
             book_tx2.setTypeface(typeface);
             user_email_book.setTypeface(typeface);
+            prefered_time_spin.setTypeface(typeface);
 
         } else if (StaticKey.languageAr.equals(language)) {
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_bold);
@@ -92,6 +111,7 @@ public class BookingFragment extends Fragment {
             typeface = ResourcesCompat.getFont(getActivity(), R.font.cairo_medium);
             book_tx2.setTypeface(typeface);
             user_email_book.setTypeface(typeface);
+            prefered_time_spin.setTypeface(typeface);
 
 
         } else {
@@ -100,8 +120,12 @@ public class BookingFragment extends Fragment {
         }
 
 
-        Glide.with(getActivity()).load(R.drawable.music_friend_course_image).placeholder(R.drawable.ic_launcher_background).into(book_imag_1);
-        Glide.with(getActivity()).load(R.drawable.book_banner2).placeholder(R.drawable.ic_launcher_background).into(book_imag_2);
+        try {
+            Glide.with(getActivity()).load(R.drawable.music_friend_course_image).placeholder(R.drawable.ic_launcher_background).into(book_imag_1);
+            Glide.with(getActivity()).load(R.drawable.book_banner2).placeholder(R.drawable.ic_launcher_background).into(book_imag_2);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
 
         prefered_time_spin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,7 +189,7 @@ public class BookingFragment extends Fragment {
             }
         };
         TimePickerDialog timePickerDialog = new TimePickerDialog(getActivity(), android.R.style.Theme_Holo_Light_Dialog_NoActionBar, myTimeListener, hour, minute, true);
-        timePickerDialog.setTitle("Choose hour:");
+        timePickerDialog.setTitle(getResources().getString(R.string.get_hours));
         timePickerDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         timePickerDialog.show();
 
@@ -176,6 +200,7 @@ public class BookingFragment extends Fragment {
 
 
     private void add_data_in_day_list() {
+        day_list = new ArrayList<>();
         day_list.add(getResources().getString(R.string.sunday));
         day_list.add(getResources().getString(R.string.monday));
         day_list.add(getResources().getString(R.string.tuesday));
@@ -186,6 +211,7 @@ public class BookingFragment extends Fragment {
     }
 
     private void add_data_in_course_type_list() {
+        course_type_list = new ArrayList<>();
         course_type_list.add(getResources().getString(R.string.type_a));
         course_type_list.add(getResources().getString(R.string.type_b));
         course_type_list.add(getResources().getString(R.string.type_c));
@@ -196,6 +222,7 @@ public class BookingFragment extends Fragment {
 
     @SuppressLint("ResourceType")
     private void add_data_in_course_lis() {
+        course_list = new ArrayList<>();
         course_list.add(getResources().getString(R.string.juniour_course));
         course_list.add(getResources().getString(R.string.yamaha_piano_course));
         course_list.add(getResources().getString(R.string.yamaha_guitar_course));
@@ -204,6 +231,7 @@ public class BookingFragment extends Fragment {
     }
 
     private void add_data_in_cityList() {
+        city_list = new ArrayList<>();
         city_list.add(getResources().getString(R.string.riyadh));
         city_list.add(getResources().getString(R.string.jeddah));
     }
@@ -230,22 +258,69 @@ public class BookingFragment extends Fragment {
 
  class spinnerAdapter extends ArrayAdapter<String>
 {
-    protected spinnerAdapter(Context context, int textViewResourceId, List<String> smonking)
+
+
+    protected spinnerAdapter(Context context, int textViewResourceId, List<String> items)
     {
-        super(context, textViewResourceId);
+        super(context, textViewResourceId,items);
     }
 
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        return super.getView(position, convertView, parent);
+       // return super.getView(position, convertView, parent);
+
+        Typeface typeface = null;
+        try {
+            typeface = set_method_body();
+            Log.e("try_catch","TRY"+ "SUCCESS");
+        } catch (Exception exception) {
+             exception.printStackTrace();
+             Log.e("try_catch","Catch"+ exception);
+        }
+
+        TextView view = (TextView) super.getView(position, convertView, parent);
+        view.setTypeface(typeface);
+        return view;
+
+
+    }
+
+    private Typeface set_method_body() {
+        String language = StaticKey.languageData;
+
+        Typeface font = null;
+
+        if(language.equals(StaticKey.languageEn)){
+            // font = Typeface.createFromAsset(getContext().getAssets(), "font/daxcompact_medium.otf");
+            font = ResourcesCompat.getFont(getContext(), R.font.daxcompact_medium);
+        }else if(language.equals(StaticKey.languageAr)){
+            //font = Typeface.createFromAsset(getContext().getAssets(), "font/cairo_medium.ttf");
+            font = ResourcesCompat.getFont(getContext(), R.font.cairo_medium);
+        }
+
+        return font;
     }
 
 
     @Override
     public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        return super.getDropDownView(position, convertView, parent);
+        //return super.getDropDownView(position, convertView, parent);
+
+        Typeface typeface = null;
+        try {
+            typeface = set_method_body();
+            Log.e("try_catch","TRY1"+ "SUCCESS");
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            Log.e("try_catch","Catch2"+ exception);
+        }
+
+        TextView view = (TextView) super.getDropDownView(position, convertView, parent);
+        view.setTypeface(typeface);
+        return view;
+
     }
 
     @Override

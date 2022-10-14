@@ -61,10 +61,10 @@
     <string name="course_fee">Course Fee</string>
     <string name="yamaha_piano_course">Yamaha Piano Course</string>
     <string name="piano_grade_exm">Yamaha Piano Grade Examination</string>
-    <string name="yamaha_grade" >YAMAHA  GRADES</string>
-    <string name="other_grade" >OTHER  GRADES</string>
+    <string name="yamaha_grade">YAMAHA  GRADES</string>
+    <string name="other_grade">OTHER  GRADES</string>
     <string name="exm_recom">Examination are recommended but not mendatory.</string>
-    <string name="yamaha_grade_exm" >YAMAHA GRADE EXAMINATION</string>
+    <string name="yamaha_grade_exm">YAMAHA GRADE EXAMINATION</string>
     <string name="course_progressin">Course Progression</string>
     <string name="yamaha_guitar_course">Yamaha Guitar Course</string>
     <string name="let_us_develp">Let us develop the guitarist in you!</string>
@@ -178,6 +178,8 @@
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
     <string name="preferred_day">Preferred Day</string>
+    <string name="get_hours">Choose hour:</string>
+    <string name="preferred_time">Preferred Time</string>
 
     <string-array name="string_array_alcohol">
         <item>Account Information</item>
@@ -185,26 +187,5 @@
         <item>Language</item>
         <item>City</item>
     </string-array>
-
-    <string-array name="string_array_city">
-        <item>Please select city</item>
-        <item>Riyadh</item>
-        <item>Jeddah</item>
-    </string-array>
-
-    <string-array name="string_array_course">
-        <item>Select course</item>
-        <item>Junior Course</item>
-        <item>Yamaha Piano Course</item>
-        <item>Yamaha Guitar Course</item>
-        <item>Music Friend Course</item>
-        <item>Music Friend Course</item>
-        <item>Popular Music Course</item>
-    </string-array>
-
-
-
-
-
 
 </resources>

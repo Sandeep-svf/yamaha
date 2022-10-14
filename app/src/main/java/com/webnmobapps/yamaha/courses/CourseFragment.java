@@ -38,6 +38,8 @@ public class CourseFragment extends Fragment {
     private String language = StaticKey.languageEn;
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -45,7 +47,7 @@ public class CourseFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_course, container, false);
         intis(view);
 
-
+        coourseListModelList = new ArrayList<>();
 
         sharedPreferences= getActivity().getSharedPreferences("LANGUAGE_NAME", Context.MODE_PRIVATE);
         language=sharedPreferences.getString("language","");
@@ -115,4 +117,7 @@ public class CourseFragment extends Fragment {
         course_banner_image = view.findViewById(R.id.course_banner_image);
         rcv_courses = view.findViewById(R.id.rcv_courses);
     }
+
+
 }
+
